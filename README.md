@@ -111,5 +111,9 @@ surge public my-project.surge.sh
 * create stores
 * create app
 * add deploy https://github.com/dutscher/batb12/blob/master/.github/workflows/deploy.yml
+* create gh-pages branch + settings
+* create secret 
+** https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token
+** https://github.com/settings/tokens
 
 
