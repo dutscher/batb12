@@ -14,7 +14,7 @@ Object.keys(youtubeJSON).map(round => {
             return {
                 youtube: "https://www.youtube.com/watch?v=" + data[0],
                 title: data[1],
-                result: data[2],
+                result: data[2].split(' '),
                 winner: data[3],
                 referee: data[4],
             };
