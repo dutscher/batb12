@@ -7,7 +7,7 @@
 </script>
 
 <div class="table">
-    <a class="playlist" target="_blank" href="https://www.youtube.com/playlist?list=PLmxvVi4Ors7Y_Zoa9FRYyZ7SwmK8e_VDz" title="Open Youtube Playlist"></a>
+    <a class="playlist" target="_blank" href="https://www.youtube.com/playlist?list=PLmxvVi4Ors7Y_Zoa9FRYyZ7SwmK8e_VDz" title="Open Youtube Playlist">&nbsp;</a>
     <Battles battles={rounds["1"]["Joes"]} type="joes" />
     <Battles battles={rounds["1"]["Influencers"]} type="infl" />
     <img class="table__img" src="../assets/table.jpg" alt="Battle at the Berrics 12 - Community" />

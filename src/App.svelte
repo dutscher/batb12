@@ -17,7 +17,7 @@
 		margin: 0 auto;
 	}
 
-	body {
+	:global(body) {
 		padding: 0;
 		margin: 0;
 	}

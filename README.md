@@ -109,5 +109,7 @@ surge public my-project.surge.sh
 * `npm install`
 * added costum plugins to package.json and rollup.config.js
 * create stores
+* create app
+* add deploy https://github.com/dutscher/batb12/blob/master/.github/workflows/deploy.yml
 
 
