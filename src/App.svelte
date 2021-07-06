@@ -11,7 +11,7 @@
 </main>
 
 <style>
-	html, body {
+	:global(html), :global(body) {
 		height: 100%;
 	}
 	:global(body) {
