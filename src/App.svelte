@@ -11,6 +11,9 @@
 </main>
 
 <style>
+	html, body {
+		height: 100%;
+	}
 	:global(body) {
 		margin: 0;
 		padding: 0;
