@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "npm:install": "npm install",
-    "build": "rollup -c",
+    "build": "rollup -c && node ./scripts/build.js",
     "dev": "rollup -c -w",
     "start": "sirv public --no-clear"
   },
@@ -24,7 +24,8 @@
     "svelte-preprocess": "^4.0.0",
     "svelte": "^3.0.0",
     "svelte-click-outside": "^1.0.0",
-    "node-sass": "^6.0.0"
+    "node-sass": "^6.0.0",
+    "fs-extra": "^10.0.0"
   },
   "dependencies": {
     "sirv-cli": "^1.0.0"
