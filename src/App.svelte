@@ -20,7 +20,7 @@
 		background: #050505;
 		display: flex;
 		align-items: center;
-		min-height: 1500px;
+		min-height: 1000px;
 	}
 
 	@media (min-width: 640px) {
