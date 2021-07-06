@@ -20,6 +20,7 @@
     .table {
         position: relative;
         color: #fff;
+        min-height: 929px;
 
         .playlist {
             position: absolute;
