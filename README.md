@@ -3,10 +3,8 @@
 * [Youtube Playlist](https://www.youtube.com/watch?v=ewf6FvD-MtQ&list=PLmxvVi4Ors7Y_Zoa9FRYyZ7SwmK8e_VDz&index=14)
 
 --- TODO's ---
-* correct position of round winner
-* show letter end result above the name "SKxxx" vs. "SKATE"
 * integrate youtube player inside the app
-* collect all other batb videos
+* collect all other pre batb videos
 
 --- How i created this app ---
 * `npx degit sveltejs/template my-svelte-project`

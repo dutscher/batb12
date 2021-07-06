@@ -11,15 +11,12 @@
 </main>
 
 <style>
-	main {
-		text-align: center;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
 	:global(body) {
-		padding: 0;
 		margin: 0;
+		padding: 0;
+		background: #050505;
+		display: flex;
+		align-items: center;
 	}
 
 	@media (min-width: 640px) {

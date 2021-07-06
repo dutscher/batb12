@@ -7,7 +7,7 @@
 
 <div class="battles battles--{type}">
     {#each battles as video, index}
-        <Battle {video} {index} />
+        <Battle {video} {index} {type} />
     {/each}
 </div>
 
@@ -15,19 +15,19 @@
     .battles {
         position: absolute;
         height: 50%;
-        width: 19%;
+        width: 15%;
         text-align: right;
         text-transform: uppercase;
         font-size: 10px;
 
         &--joes {
-            left: 0;
+            left: 4%;
             bottom: 0;
         }
 
         &--infl {
             text-align: left;
-            right: 0;
+            right: 4%;
             top: 4%;
         }
     }
