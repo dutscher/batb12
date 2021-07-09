@@ -12,13 +12,13 @@
     ],
     "Joes": [
       "mAW1xNYSXlM|Tyler Peterson Vs. Evon Martinez|S◻◻◻◻ SKATE|Tyler Peterson|Justin Ladner",
-      "YID|Name Vs. Name|◻◻◻◻◻ ◻◻◻◻◻|-|Referee",
-      "YID|Name Vs. Name|◻◻◻◻◻ ◻◻◻◻◻|-|Referee",
-      "YID|Name Vs. Name|◻◻◻◻◻ ◻◻◻◻◻|-|Referee",
-      "YID|Name Vs. Name|◻◻◻◻◻ ◻◻◻◻◻|-|Referee",
-      "YID|Name Vs. Name|◻◻◻◻◻ ◻◻◻◻◻|-|Referee",
+      "YID|Deon Harris Vs. Marcos Montoya|◻◻◻◻◻ ◻◻◻◻◻|-|Referee",
+      "YID|Justin Ladner Vs. Mikey Whitehouse|◻◻◻◻◻ ◻◻◻◻◻|-|Referee",
+      "YID|Ray Corey Vs. Becker Dunn|◻◻◻◻◻ ◻◻◻◻◻|-|Referee",
+      "YID|Dylan Jaeb Vs. Donny Hixson|◻◻◻◻◻ ◻◻◻◻◻|-|Referee",
+      "YID|Sean Davis Vs. Shaun Hover|◻◻◻◻◻ ◻◻◻◻◻|-|Referee",
       "t1Ps2qCbKrQ|Nick Holt Vs. Chris Pierre|S◻◻◻◻ SKATE|Nick Holt|Garret Ginner",
-      "YID|Name Vs. Name|◻◻◻◻◻ ◻◻◻◻◻|-|Referee"
+      "YID|Eric G.L.X. Vs. Filipe Mota|◻◻◻◻◻ ◻◻◻◻◻|-|Referee"
     ],
     "Influencers": [
       "YID|Chris Chann Vs. Eamon Samojla|◻◻◻◻◻ ◻◻◻◻◻|-|Referee",
@@ -33,8 +33,8 @@
     "Icons": [
       "YID|Paul Rodriguez Vs. Nyjah Houston|◻◻◻◻◻ ◻◻◻◻◻|-|Referee",
       "YID|Torey Pudwill Vs. Sean Malto|◻◻◻◻◻ ◻◻◻◻◻|-|Referee",
-      "YID|Stevie Williams Vs. Ronnie Creager|◻◻◻◻◻ ◻◻◻◻◻|Sunny Suljic|Alex Midler",
-      "YID|Chris Roberts Vs. Kelly Hart|◻◻◻◻◻ ◻◻◻◻◻|Garrett Ginner|Nick Holt",
+      "YID|Stevie Williams Vs. Ronnie Creager|◻◻◻◻◻ ◻◻◻◻◻|-|Referee",
+      "YID|Chris Roberts Vs. Kelly Hart|◻◻◻◻◻ ◻◻◻◻◻|-|Referee",
       "YID|Mike Mo Vs. Eric Koston|◻◻◻◻◻ ◻◻◻◻◻|-|Referee",
       "YID|Chaz Ortiz Vs. Shane O'Neill|◻◻◻◻◻ ◻◻◻◻◻|-|Referee",
       "YID|Mike Vallely Vs. Ribs Man|◻◻◻◻◻ ◻◻◻◻◻|-|Referee",
@@ -99,7 +99,9 @@
       "YID|Name Vs. Name|◻◻◻◻◻ ◻◻◻◻◻|-|Referee"
     ]
   },
-  "Round 5": [
-    "YID|Name Vs. Name|◻◻◻◻◻ ◻◻◻◻◻|-|Referee"
-  ]
+  "Round 5": {
+    "Final": [
+      "YID|Name Vs. Name|◻◻◻◻◻ ◻◻◻◻◻|-|Referee"
+    ]
+  }
 }

@@ -19,7 +19,7 @@ Object.keys(youtubeJSON).map(round => {
                 winner: data[3],
                 referee: data[4],
             };
-        })
+        });
     })
 });
 

@@ -77,23 +77,23 @@
         }
 
         &--4 {
-            top: 158px;
+            top: 163px;
         }
 
         &--5 {
-            top: 198px;
+            top: 204px;
         }
 
         &--6 {
-            top: 237px;
+            top: 243px;
         }
 
         &--7 {
-            top: 274px;
+            top: 285px;
         }
 
         &--8 {
-            top: 315px;
+            top: 325px;
         }
     }
 </style>

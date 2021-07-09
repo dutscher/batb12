@@ -20,6 +20,11 @@
         text-transform: uppercase;
         font-size: 10px;
 
+        &--pros {
+            left: 4%;
+            top: 4%;
+        }
+
         &--joes {
             left: 4%;
             bottom: 0;
@@ -29,6 +34,12 @@
             text-align: left;
             right: 4%;
             top: 4%;
+        }
+
+        &--icons {
+            text-align: left;
+            right: 4%;
+            bottom: 0;
         }
     }
 </style>
