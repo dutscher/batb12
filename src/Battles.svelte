@@ -12,34 +12,36 @@
 </div>
 
 <style lang="scss">
+    @import "./scss/mixins";
+
     .battles {
         position: absolute;
-        height: 50%;
-        width: 15%;
+        height: rem(415px);
+        width: rem(253px);
         text-align: right;
         text-transform: uppercase;
-        font-size: 10px;
+        font-size: rem(10px);
 
         &--pros {
-            left: 70px;
-            top: 40px;
+            left: rem(68px);
+            top: rem(65px);
         }
 
         &--joes {
-            left: 70px;
-            bottom: 0;
+            left: rem(68px);
+            top: rem(494px);
         }
 
         &--infl {
             text-align: left;
-            right: 70px;
-            top: 40px;
+            right: rem(65px);
+            top: rem(65px);
         }
 
         &--icons {
             text-align: left;
-            right: 70px;
-            bottom: 0;
+            right: rem(65px);
+            top: rem(494px);
         }
     }
 </style>

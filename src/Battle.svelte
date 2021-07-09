@@ -18,9 +18,12 @@
 {/if}
 
 <style lang="scss">
+    @import "./scss/mixins";
+
     $selector: ".battle";
     #{$selector} {
-        position: relative;
+        position: absolute;
+        width: 100%;
         cursor: default;
 
         &__link {
@@ -65,35 +68,35 @@
         }
 
         &--1 {
-            top: 40px;
+            top: rem(13px);
         }
 
         &--2 {
-            top: 80px;
+            top: rem(67px);
         }
 
         &--3 {
-            top: 120px;
+            top: rem(120px);
         }
 
         &--4 {
-            top: 158px;
+            top: rem(174px);
         }
 
         &--5 {
-            top: 198px;
+            top: rem(227px);
         }
 
         &--6 {
-            top: 237px;
+            top: rem(281px);
         }
 
         &--7 {
-            top: 274px;
+            top: rem(333px);
         }
 
         &--8 {
-            top: 315px;
+            top: rem(387px);
         }
     }
 </style>

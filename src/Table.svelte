@@ -5,17 +5,19 @@
     let rounds;
     storedYoutubeLinks.subscribe(value => rounds = value);
     let innerWidth;
+
+    let imgDim = "1669x929".split("x");
 </script>
 
 <svelte:window bind:innerWidth={innerWidth} />
 
-<div class="table" style="zoom: {Math.ceil((100 * ( innerWidth / 1669 )))}%">
+<div class="table" style="zoom:{Math.ceil((100 * ( innerWidth / imgDim[0] )))}%; width:{imgDim[0]}px; height:{imgDim[1]}px">
     <a class="playlist" target="_blank" href="https://www.youtube.com/playlist?list=PLmxvVi4Ors7Y_Zoa9FRYyZ7SwmK8e_VDz" title="Open Youtube Playlist">&nbsp;</a>
     <Battles battles={rounds["1"]["Pros"]} type="pros" />
     <Battles battles={rounds["1"]["Joes"]} type="joes" />
     <Battles battles={rounds["1"]["Influencers"]} type="infl" />
     <Battles battles={rounds["1"]["Icons"]} type="icons" />
-    <img class="table__img" src="../assets/table.jpg" alt="Battle at the Berrics 12 - Community" />
+    <img class="table__img" src="../assets/table.jpg" alt="Battle at the Berrics 12 - Community" style="width:100%" />
 </div>
 
 <style lang="scss">
@@ -37,10 +39,6 @@
             &:hover {
                 border: solid 1px #B20C1E;
             }
-        }
-
-        &__img {
-            width: 100%;
         }
     }
 </style>
