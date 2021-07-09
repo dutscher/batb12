@@ -9,7 +9,7 @@
 
 <svelte:window bind:innerWidth={innerWidth} />
 
-<div class="table" style="zoom: {(100 * ( innerWidth / 1669 ))}%">
+<div class="table" style="zoom: {Math.ceil((100 * ( innerWidth / 1669 )))}%">
     <a class="playlist" target="_blank" href="https://www.youtube.com/playlist?list=PLmxvVi4Ors7Y_Zoa9FRYyZ7SwmK8e_VDz" title="Open Youtube Playlist">&nbsp;</a>
     <Battles battles={rounds["1"]["Pros"]} type="pros" />
     <Battles battles={rounds["1"]["Joes"]} type="joes" />
