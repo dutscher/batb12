@@ -21,24 +21,24 @@
         font-size: 10px;
 
         &--pros {
-            left: 4%;
-            top: 4%;
+            left: 70px;
+            top: 40px;
         }
 
         &--joes {
-            left: 4%;
+            left: 70px;
             bottom: 0;
         }
 
         &--infl {
             text-align: left;
-            right: 4%;
-            top: 4%;
+            right: 70px;
+            top: 70px;
         }
 
         &--icons {
             text-align: left;
-            right: 4%;
+            right: 70px;
             bottom: 0;
         }
     }
