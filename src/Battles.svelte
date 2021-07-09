@@ -33,7 +33,7 @@
         &--infl {
             text-align: left;
             right: 70px;
-            top: 70px;
+            top: 40px;
         }
 
         &--icons {
