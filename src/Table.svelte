@@ -17,7 +17,7 @@
     <Battles battles={rounds["1"]["Joes"]} type="joes" />
     <Battles battles={rounds["1"]["Influencers"]} type="infl" />
     <Battles battles={rounds["1"]["Icons"]} type="icons" />
-    <img class="table__img" src="../assets/table.jpg" alt="Battle at the Berrics 12 - Community" style="width:100%" />
+    <img class="table__img" src="../assets/table-12.jpg" alt="Battle at the Berrics 12 - Community" style="width:100%" />
 </div>
 
 <style lang="scss">

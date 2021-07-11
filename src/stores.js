@@ -1,6 +1,6 @@
 import { writable } from 'svelte/store';
 
-import youtubeJSON from '../data/youtube.json';
+import youtubeJSON from '../data/batb12.json';
 
 export const storedYoutubeLinks = writable({});
 const mappedVideos = {};
@@ -17,7 +17,6 @@ Object.keys(youtubeJSON).map(round => {
                 title: data[1],
                 result: data[2].split(' '),
                 winner: data[3],
-                referee: data[4],
             };
         });
     })
