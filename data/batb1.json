@@ -1,63 +1,72 @@
 {
   "Round 1": {
     "left-top": [
-      "YID|Name Vs. Name|◻◻◻◻◻ ◻◻◻◻◻|-"
+      "EmQyQ-RgtA8|Joey Brezinski Vs. Chad Tim Tim|SKAT SKATE|Joey Brezinski",
+      "T7hRpU2a8WQ|Jeron Wilson Vs. Mike Carroll|SKATE SK|Mike Carroll",
+      "duSN0KHFK44|Arto Saari Vs. Chico Brenes|SKATE SKA|Chico Brenes",
+      "eGTsIL-xJB8|Mike Mo Capaldi Vs. Furby|S SKATE|Mike Mo Capaldi"
     ],
     "left-bottom": [
-      "lCwIIcbNUDc|Marc Johnson Vs Chris Roberts and The Legion of Doom|SKA SKATE|Marc Johnson"
+      "fwZ7sUXKSBo|Steve Berra Vs. Chris Roberts|SKA SKATE|Steve Berra|Johnny Layton",
+      "YX7Vr0QUedk|Marc Johnson Vs. Johnny Layton|SKAT SKATE|Marc Johnson",
+      "POQaDcvhpTs|Billy Marks Vs. Danny Supa|SKA SKATE|Billy Marks",
+      "3lqNen-Qccw|Brandon Biebel Vs. Nick McLouth|SKAT SKATE|Brandon Biebel"
     ],
     "right-top": [
-      "YID|Name Vs. Name|◻◻◻◻◻ ◻◻◻◻◻|-"
+      "QC1aI707y3E|Clint Peterson Vs. Paul Shier|SKATE SKAT|Paul Shier",
+      "yG35K0UE01k|Mikey Taylor Vs. Benny Fairfax|SKATE -|Benny Fairfax",
+      "WwjZzIuJLwo|Erik Ellington Vs. Danny Montoya|SKAT SKATE|Erik Ellington",
+      "nOCxC08-bZ0|Jimmy Cao Vs. Bryan Herman|SKATE SK|Jimmy Cao"
     ],
     "right-bottom": [
-      "YID|Name Vs. Name|◻◻◻◻◻ ◻◻◻◻◻|-"
+      "P-a7pyXL12M|Daniel Castillo Vs. Andrew Reynolds|SKATE -|Andrew Reynolds",
+      "EG55_X4U8E8|PJ Ladd Vs. Tyler Bledsoe|SKA SKATE|PJ Ladd",
+      "lWeiGaQQV2g|Eric Koston Vs. Rob Dyrdek|- SKATE|Eric Koston",
+      "wGSotlk4uQc|Sean Malto Vs. Donovan Strain|SKATE SKAT|Donovan Strain"
+    ],
+    "special": [
+      "lCwIIcbNUDc|Marc Johnson Vs. Chris Roberts and The Legion of Doom|SKA SKATE|Marc Johnson"
     ]
   },
   "Round 2": {
     "left-top": [
+      "yG5fXcCwOlk|Joey Brezinski Vs. Mike Carroll|SKATE SKAT|Mike Carroll",
       "s3mzDwF2Za4|Chico Brenes Vs. Mike Mo Capaldi|SKATE S|Mike Mo Capaldi"
     ],
     "left-bottom": [
-      "YID|Name Vs. Name|◻◻◻◻◻ ◻◻◻◻◻|-"
+      "YX7Vr0QUedk|Marc Johnson Vs. Johnny Layton|SKATE SKAT|Johnny Layton",
+      "mjuS0Mwt5pA|Billy Marks Vs. Brandon Biebel|SK SKATE|Billy Marks"
     ],
     "right-top": [
-      "YID|Name Vs. Name|◻◻◻◻◻ ◻◻◻◻◻|-"
+      "oD8FxxslG-Y|Paul Shier Vs. Benny Fairfax|SKATE SK|Benny Fairfax",
+      "MPnNijJ0cfA|Erik Ellington Vs. Jimmy Cao|SKA SKATE|Erik Ellington"
     ],
     "right-bottom": [
-      "6UTl5_AG954|PJ Ladd Vs. Andrew Reynolds|S SKATE|PJ Ladd"
+      "6UTl5_AG954|PJ Ladd Vs. Andrew Reynolds|S SKATE|PJ Ladd",
+      "gJCBEDIzRZg|Eric Koston Vs. Donovan Strain|SK SKATE|Eric Koston"
     ]
   },
   "Round 3": {
-    "left-top": [
-      "YID|Name Vs. Name|◻◻◻◻◻ ◻◻◻◻◻|-"
+    "left": [
+      "GeY9yQjN05c|Mike Carroll Vs. Mike Mo Capaldi|SKATE SK|Mike Mo Capaldi",
+      "r8O11Pgw4FU|Billy Marks Vs. Johnny Layton|SKA SKATE|Billy Marks"
     ],
-    "left-bottom": [
-      "YID|Name Vs. Name|◻◻◻◻◻ ◻◻◻◻◻|-"
-    ],
-    "right-top": [
-      "YID|Name Vs. Name|◻◻◻◻◻ ◻◻◻◻◻|-"
-    ],
-    "right-bottom": [
-      "YID|Name Vs. Name|◻◻◻◻◻ ◻◻◻◻◻|-"
+    "right": [
+      "vDnyaU0eX-U|Benny Fairfax Vs. Erik Ellington|SKA SKATE|Benny Fairfax",
+      "ptn2v4gs6YM|PJ Ladd Vs. Eric Koston|SKAT SKATE|PJ Ladd"
     ]
   },
-  "Round 4": {
-    "left-top": [
-      "YID|Name Vs. Name|◻◻◻◻◻ ◻◻◻◻◻|-"
+  "Finals": {
+    "left": [
+      "JeS0KhgBTPg|Mike Mo Capaldi Vs. Billy Marks|SKAT SKATE|Mike Mo Capaldi"
     ],
-    "left-bottom": [
-      "YID|Name Vs. Name|◻◻◻◻◻ ◻◻◻◻◻|-"
-    ],
-    "right-top": [
-      "YID|Name Vs. Name|◻◻◻◻◻ ◻◻◻◻◻|-"
-    ],
-    "right-bottom": [
-      "YID|Name Vs. Name|◻◻◻◻◻ ◻◻◻◻◻|-"
+    "right": [
+      "EwcnZDzs4BI|Benny Fairfax Vs. PJ Ladd|SKAT SKATE|Benny Fairfax"
     ]
   },
-  "Round 5": {
-    "Final": [
-      "YID|Name Vs. Name|◻◻◻◻◻ ◻◻◻◻◻|-"
+  "Championship Battle": {
+    "middle": [
+      "rVNZxVhcmDs|Mike Mo Capaldi Vs. Benny Fairfax|SK SKATE|Mike Mo Capaldi"
     ]
   }
 }

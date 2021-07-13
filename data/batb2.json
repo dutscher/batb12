@@ -1,0 +1,69 @@
+{
+  "Round 1": {
+    "left-top": [
+      "R_Absdq34C4|Chris Cole Vs Mike Vallely|SKAT SKATE|Chris Cole",
+      "40HS1pUewBA|Jamie Thomas Vs Dennis Busenitz|SKATE -|Dennis Busenitz",
+      "w6jSqSm6oeg|Lizard King Vs Heath Kirchart|SKATE S|Heath Kirchart",
+      "eyU9JutcRqA|Corey Duffel Vs Rick Howard|SKATE SKA|Rick Howard"
+    ],
+    "left-bottom": [
+      "yHHrrtd5kd8|Chris Haslam Vs David Gonzalez|SKATE SK|David Gonzalez",
+      "Jiqn0p2AV8s|Torey Pudwill Vs Jimmy Carlin|S SKATE|Torey Pudwill",
+      "nT33lECC_3Q|Josiah Gatlyn Vs Cairo Foster|SK SKATE|Josiah Gatlyn",
+      "YzsJp8u8ytU|Guy Mariano Vs Cesar Fernandez|SKATE SKAT|Cesar Fernandez"
+    ],
+    "right-top": [
+      "Ahswb5RLa04|Cory Kennedy Vs Josh Kalis|S SKATE|Cory Kennedy",
+      "yeQvAQvtWxY|Lucas Puig Vs Greg Lutzka|SKATE SK|Greg Lutzka",
+      "8732zVk_FrE|Stefan Janoski Vs Peter Ramondetta|SKATE S|Peter Ramondetta",
+      "-iHxLBR--I4|Mark Appleyard Vs Ben Gore|SK SKATE|Mark Appleyard"
+    ],
+    "right-bottom": [
+      "rsHhHfhd4D0|Paul Rodriguez Vs Kelly Hart|- SKATE|Paul Rodriguez",
+      "vPrGlcgt_JA|Gilbert Crockett Vs Kerry Getz|SKAT SKATE|Gilbert Crockett",
+      "lYqbu0gpCvE|Nick Trapasso Vs Silas Daxter Neal-Danny Garcia|SKATE SKA|Danny Garcia",
+      "64ZCqWpx93w|Jerry Hsu vs Raymond Molinar-Kenny Anderson|- SKATE|Jerry Hsu"
+    ]
+  },
+  "Round 2": {
+    "left-top": [
+      "I53qCjASwks|Chris Cole Vs Dennis Busenitz|SKAT SKATE|Chris Cole",
+      "TdMXac9CGQY|Heath Kirchart Vs Rick Howard|S SKATE|Heath Kirchart"
+    ],
+    "left-bottom": [
+      "WUj47G6gvKs|David Gonzalez Vs Torey Pudwill|SKATE SKA|Torey Pudwill",
+      "8ux-NRb3658|Josiah Gatlyn Vs Cesar Fernandez|SKAT SKATE|Josiah Gatlyn"
+    ],
+    "right-top": [
+      "zzxe7pCFfds|Cory Kennedy Vs Greg Lutzka|S SKATE|Cory Kennedy",
+      "bt9STPA_kUg|Peter Ramondetta Vs Mark Appleyard-Chris Roberts & The Legion of Doom|S SKATE|-"
+    ],
+    "right-bottom": [
+      "AnGwIs9MtxA|Paul Rodriguez Vs Gilbert Crockett|S SKATE|Paul Rodriguez",
+      "-|Danny Garcia Vs Jerry Hsu|- -|Danny Garcia"
+    ]
+  },
+  "Round 3": {
+    "left": [
+      "6pqxcyM2zbQ|Chris Cole Vs Heath Kirchart|SK SKATE|Chris Cole",
+      "TVlIU01BNHo|Torey Pudwill Vs Josiah Gatlyn|SKA SKATE|Torey Pudwill"
+    ],
+    "right": [
+      "DaHVu_Z60fI|Cory Kennedy Vs Peter Ramondetta|S SKATE|Cory Kennedy",
+      "FTjADrgLwhk|Paul Rodriguez Vs Danny Garcia|S SKATE|Paul Rodriguez"
+    ]
+  },
+  "Finals": {
+    "left": [
+      "5qt2NHcshF4|Chris Cole Vs Torey Pudwill|S SKATE|Chris Cole"
+    ],
+    "right": [
+      "rI0EMZrxhhk|Cory Kennedy Vs Paul Rodriguez|SKATE S|Paul Rodriguez"
+    ]
+  },
+  "Championship Battle": {
+    "middle": [
+      "t9nKpo16wjo|Chris Cole Vs Paul Rodriguez|SKAT SKATE|Chris Cole"
+    ]
+  }
+}
