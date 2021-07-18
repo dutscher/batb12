@@ -22,23 +22,23 @@
         text-transform: uppercase;
         font-size: rem(10px);
 
-        &--pros {
+        &--lt {
             left: rem(68px);
             top: rem(65px);
         }
 
-        &--joes {
+        &--lb {
             left: rem(68px);
             top: rem(494px);
         }
 
-        &--infl {
+        &--rt {
             text-align: left;
             right: rem(65px);
             top: rem(65px);
         }
 
-        &--icons {
+        &--rb {
             text-align: left;
             right: rem(65px);
             top: rem(494px);

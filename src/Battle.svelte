@@ -59,7 +59,8 @@
                 top: 100%;
             }
 
-            #{$selector}--infl & {
+            #{$selector}--rt &,
+            #{$selector}--rb & {
                 &::before,
                 &::after {
                     right: 0
