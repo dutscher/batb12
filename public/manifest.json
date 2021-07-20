@@ -6,7 +6,7 @@
  "background_color": "#050505",
  "theme_color": "#050505",
  "description": "Battle At The Berrics 12 Community Table",
- "orientation": "portrait-primary",
+ "orientation": "landscape-primary",
  "prefer_related_applications": false,
  "icons": [
   {
