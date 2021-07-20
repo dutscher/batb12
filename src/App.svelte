@@ -1,7 +1,9 @@
 <script>
+	import Github from "./Github.svelte";
 	import Table from "./Table.svelte";
 </script>
 
+<Github />
 <Table />
 
 <style>
