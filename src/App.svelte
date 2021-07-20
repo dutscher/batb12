@@ -2,9 +2,7 @@
 	import Table from "./Table.svelte";
 </script>
 
-<main>
-	<Table />
-</main>
+<Table />
 
 <style>
 	:global(html), :global(body) {
