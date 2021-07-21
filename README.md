@@ -20,3 +20,5 @@
 ** https://github.com/settings/tokens
 * create icons https://www.favicon-generator.org/
 * add PWA stuff to public/manifest.json
+* add maskable icons https://maskable.app/editor
+* add `<script>window.onload = () => {if ('serviceWorker' in navigator) {navigator.serviceWorker.register('./sw.js');}}</script>` to index.html
