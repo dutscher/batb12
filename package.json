@@ -1,6 +1,7 @@
 {
   "name": "btab-12",
   "version": "1.0.0",
+  "licence": "MIT",
   "scripts": {
     "npm:install": "npm install",
     "build": "rollup -c && node ./scripts/build.js",
