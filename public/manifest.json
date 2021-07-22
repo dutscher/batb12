@@ -1,7 +1,7 @@
 {
   "name": "BATB12 Community Table",
   "short_name": "BATB12",
-  "start_url": ".",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#050505",
   "theme_color": "#050505",
