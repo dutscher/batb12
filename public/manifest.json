@@ -1,11 +1,11 @@
 {
-  "name": "BATB12 Community Table",
+  "name": "BATB12 Community  Brackets Table",
   "short_name": "BATB12",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#050505",
   "theme_color": "#050505",
-  "description": "Battle At The Berrics 12 Community Table",
+  "description": "Battle At The Berrics 12 Community Brackets Table",
   "orientation": "landscape-primary",
   "prefer_related_applications": false,
   "icons": [
