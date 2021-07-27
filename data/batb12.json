@@ -43,65 +43,65 @@
   },
   "Round 2": {
     "left-top": [
-      "YID|Name Vs. Name|-|-",
-      "YID|Name Vs. Name|-|-",
-      "YID|Name Vs. Name|-|-",
-      "YID|Name Vs. Name|-|-"
+      "-|-|- -|-",
+      "-|-|- -|-",
+      "-|-|- -|-",
+      "-|-|- -|-"
     ],
     "left-bottom": [
-      "YID|Name Vs. Name|-|-",
-      "YID|Name Vs. Name|-|-",
-      "YID|Name Vs. Name|-|-",
-      "YID|Name Vs. Name|-|-"
+      "-|-|- -|-",
+      "-|-|- -|-",
+      "-|-|- -|-",
+      "-|-|- -|-"
     ],
     "right-top": [
-      "YID|Name Vs. Name|-|-",
-      "YID|Name Vs. Name|-|-",
-      "YID|Name Vs. Name|-|-",
-      "YID|Name Vs. Name|-|-"
+      "-|-|- -|-",
+      "-|-|- -|-",
+      "-|-|- -|-",
+      "-|-|- -|-"
     ],
     "right-bottom": [
-      "YID|Name Vs. Name|-|-",
-      "YID|Name Vs. Name|-|-",
-      "YID|Name Vs. Name|-|-",
-      "YID|Name Vs. Name|-|-"
+      "-|-|- -|-",
+      "-|-|- -|-",
+      "-|-|- -|-",
+      "-|-|- -|-"
     ]
   },
   "Round 3": {
     "left-top": [
-      "YID|Name Vs. Name|-|-",
-      "YID|Name Vs. Name|-|-"
+      "-|-|- -|-",
+      "-|-|- -|-"
     ],
     "left-bottom": [
-      "YID|Name Vs. Name|-|-",
-      "YID|Name Vs. Name|-|-"
+      "-|-|- -|-",
+      "-|-|- -|-"
     ],
     "right-top": [
-      "YID|Name Vs. Name|-|-",
-      "YID|Name Vs. Name|-|-"
+      "-|-|- -|-",
+      "-|-|- -|-"
     ],
     "right-bottom": [
-      "YID|Name Vs. Name|-|-",
-      "YID|Name Vs. Name|-|-"
+      "-|-|- -|-",
+      "-|-|- -|-"
     ]
   },
   "Round 4": {
     "left-top": [
-      "YID|Name Vs. Name|-|-"
+      "-|-|- -|-"
     ],
     "left-bottom": [
-      "YID|Name Vs. Name|-|-"
+      "-|-|- -|-"
     ],
     "right-top": [
-      "YID|Name Vs. Name|-|-"
+      "-|-|- -|-"
     ],
     "right-bottom": [
-      "YID|Name Vs. Name|-|-"
+      "-|-|- -|-"
     ]
   },
   "Round 5": {
     "middle": [
-      "YID|Name Vs. Name|-|-"
+      "-|-|- -|-"
     ]
   }
 }
