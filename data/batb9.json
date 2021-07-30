@@ -1,72 +1,72 @@
 {
   "Round 1": {
     "left-top": [
-      "-|-|- -|",
-      "-|-|- -|",
-      "-|-|- -|",
-      "-|-|- -|"
+      "mlGd2-8t3qY|Bobby De Keyzer Vs Aramis Hudson|SKATE SKAT|Aramis Hudson",
+      "25uFhefSey0|Alec Majerus Vs Blake Carpenter|SKATE -|Blake Carpenter",
+      "UnLo2HiHIo4|Micky Papa Vs Cody McEntire|SKA SKATE|Micky Papa",
+      "NmNAljc0QKA|Brian Peacock Vs Stephen Lawyer|SKATE S|Brian Peacock"
     ],
     "left-bottom": [
-      "-|-|- -|",
-      "-|-|- -|",
-      "-|-|- -|",
-      "-|-|- -|"
+      "LaIG-AGoTY8|Jack Curtin Vs Youness Amrani|SKATE -|Youness Amrani",
+      "vQB97VrOMt4|Bobby Worrest Vs Daniel Lutheran|- SKATE|Bobby Worrest",
+      "z2wa4ed9KGE|Mason Silva Vs Leo Romero|S SKATE|Mason Silva",
+      "QOoRkPG4Nbg|Dashawn Jordan Vs Robbie Brockel|- SKATE|Dashawn Jordan"
     ],
     "right-top": [
-      "-|-|- -|",
-      "-|-|- -|",
-      "-|-|- -|",
-      "-|-|- -|"
+      "aHo57viK-bI|Chris Colbourn Vs Antonio Durao|S SKATE|Chris Colbourn",
+      "mt0boNPtkls|Walker Ryan Vs Zion Wright|- SKATE|Walker Ryan",
+      "gu5RRIGNx3E|Tiago Lemos Vs Frankie Heck|SKATE SKA|Frankie Heck",
+      "ecuAl4iWPsw|Michael Sommer Vs Carlos Iqui|S SKATE|Michael Sommer"
     ],
     "right-bottom": [
-      "-|-|- -|",
-      "-|-|- -|",
-      "-|-|- -|",
-      "-|-|- -|"
+      "WnkgkiM7lR8|Denny Pham Vs Paul Hart|- SKATE|Denny Pham",
+      "xWOIOlsJ1MI|Nick Matthews Vs Brandon Westgate|S SKATE|Nick Matthews",
+      "eWkmEwsOqr0|Diego Najera Vs Timmy Johnson|- SKATE|Diego Najera",
+      "RxM2buj6hjM|Dan Plunkett Vs Josh Matthews|SKATE SKA|Josh Matthews"
     ]
   },
   "Round 2": {
     "left-top": [
-      "-|-|- -|",
-      "-|-|- -|"
+      "ubtLlPVIqaM|Aramis Hudson Vs Blake Carpenter|SKATE SKA|Aramis Hudson",
+      "XglSQFPyuMA|Micky Papa Vs Brian Peacock|- SKATE|Micky Papa"
     ],
     "left-bottom": [
-      "-|-|- -|",
-      "-|-|- -|"
+      "Fyee6J4BCss|Youness Amrani Vs Bobby Worrest|SKAT SKATE|Youness Amrani",
+      "ygX93EO9xt0|Mason Silva Vs Dashawn Jordan|SKAT SKATE|Mason Silva"
     ],
     "right-top": [
-      "-|-|- -|",
-      "-|-|- -|"
+      "L_dzgUjGhts|Chris Colbourn Vs Walker Ryan|SKATE SKAT|Walker Ryan",
+      "TuMSnLF-uys|Frankie Heck Vs Michael Sommer|SKATE -|Michael Sommer"
     ],
     "right-bottom": [
-      "-|-|- -|",
-      "-|-|- -|"
+      "hmvsokgNUnQ|Denny Pham Vs Nick Matthews|SK SKATE|Denny Pham",
+      "oVPtm6tjeFY|Diego Najera Vs Josh Matthews|S SKATE|Diego Najera"
     ]
   },
   "Round 3": {
     "left": [
-      "-|-|- -|",
-      "-|-|- -|"
+      "-yy-s4JF60Y|Aramis Hudson Vs Micky Papa|SKATE SKA|Micky Papa",
+      "fxfnryeEDKY|Youness Amrani Vs Mason Silva|SKAT SKATE|Youness Amrani"
     ],
     "right": [
-      "-|-|- -|",
-      "-|-|- -|"
+      "yBoJLUQRhtM|Walker Ryan Vs Michael Sommer|SKATE -|Michael Sommer",
+      "87RCckG5-NA|Denny Pham Vs Diego Najera|SKATE SKAT|Diego Najera"
     ]
   },
   "Finals": {
     "left": [
-      "-|-|- -|"
+      "AOJy7eR1frQ|Micky Papa Vs Youness Amrani|- SKATE|Micky Papa"
     ],
     "right": [
-      "-|-|- -|"
+      "g7QGE5pO3sE|Michael Sommer Vs Diego Najera|SKATE SK|Diego Najera"
     ]
   },
   "Championship Battle": {
     "middle": [
-      "-|-|- -|"
+      "QhIL10-3VsY|Micky Papa Vs Diego Najera|SKA SKATE|Diego Najera"
     ],
     "3rd-place": [
-      "-|-|- -|-"
+      "gLovSXdyXo8|Youness Amrani Vs Michael Sommer|SKAT SKAT|Youness Amrani"
     ]
   }
 }
