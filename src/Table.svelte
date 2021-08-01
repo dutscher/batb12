@@ -23,7 +23,7 @@
         <Battles battles={bracket.videos["1"]["right-bottom"]} type="rb" />
         <img
             class="table__img"
-            src="../{bracket.data.img.src}"
+            src="/{bracket.data.img.src}"
             alt={bracket.data.title}
             style="width:100%" />
     </div>
