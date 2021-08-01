@@ -1,72 +1,82 @@
 {
-  "Round 1": {
-    "left-top": [
-      "llbUrRCYhvA|Chris Cole Vs Billy Marks|SKA SKATE|Chris Cole",
-      "AcADjKENhY0|Shane O'neill Vs Ryan Decenzo|- SKATE|Shane O'neill",
-      "1hFNX856E2A|Jimmy Carlin Vs Sebo Walker|SKAT SKATE|Jimmy Carlin",
-      "BzliCefNukc|Ryan Pearce Vs Boo Johnson|SK SKATE|Ryan Pearce"
-    ],
-    "left-bottom": [
-      "ekB_jSOPy54|Cory Kennedy Vs Matt Miller|- SKATE|Cory Kennedy",
-      "1H2rKQbnPpI|Nyjah Huston Vs Kevin Romar|SK SKATE|Nyjah Huston",
-      "lC2fl0DtlZs|Ronnie Creager Vs Nick Tucker|S SKATE|Ronnie Creager",
-      "6OUNERcavkw|Mike Mo Capaldi Vs Theotis Beasley|SKA SKATE|Mike Mo Capaldi"
-    ],
-    "right-top": [
-      "FMGmEXE7ip0|Paul Rodriguez Vs Davis Torgerson|S SKATE|Paul Rodriguez",
-      "HfAyQXH5Ks4|Tom Asta Vs Marquise Henry|- SKATE|Tom Asta",
-      "dOCfWc0Im6M|PJ Ladd Vs Manny Santiago|SK SKATE|PJ Ladd",
-      "12c2cXyXqu4|Sean Malto Vs Trent McClung|SKATE SKA|Trent McClung"
-    ],
-    "right-bottom": [
-      "75e33hp_GyM|Ishod Wair Vs Felipe Gustavo|- SKATE|Ishod Wair",
-      "jywjVowDmzg|Keelan Dadd Vs Tommy Fynn|SKATE SKA|Tommy Fynn",
-      "sVPrQOXVCNc|Torey Pudwill Vs Evan Smith|- SKATE|Torey Pudwill",
-      "Eus1T_0XM2c|Morgan Smith Vs Moose|- SKATE|Morgan Smith"
-    ]
+  "data": {
+    "name": "BATB 5",
+    "title": "Civil War",
+    "date": "May 20, 2012",
+    "yt": "https://www.youtube.com/c/berrics/search?query=BATB5",
+    "ws": "https://theberrics.com/battle-at-the-berrics-5"
   },
-  "Round 2": {
-    "left-top": [
-      "97X9VM6gGuc|Chris Cole Vs Shane O'neill|SKATE SKAT|Shane O'neill",
-      "v1rtVBhc8Y8|Jimmy Carlin Vs Ryan Pearce|SK SKATE|Jimmy Carlin"
-    ],
-    "left-bottom": [
-      "B9FlrMRjILg|Cory Kennedy Vs Nyjah Huston|S SKATE|Nyjah Huston",
-      "zo2xGWFYeeg|Ronnie Creager Vs Mike Mo Capaldi|SKATE SKA|Mike Mo Capaldi"
-    ],
-    "right-top": [
-      "-|Paul Rodriguez Vs Tom Asta|? SKATE|Paul Rodriguez",
-      "mhLxeuUy8aQ|PJ Ladd Vs Trent McClung|- SKATE|PJ Ladd"
-    ],
-    "right-bottom": [
-      "FcAF4xpjjyI|Ishod Wair Vs Tommy Fynn|S SKATE|Ishod Wair",
-      "KCRNCrW5tmY|Torey Pudwill Vs Morgan Smith|SKATE S|Morgan Smith"
-    ]
-  },
-  "Round 3": {
-    "left": [
-      "ycvi1cKAE2c|Shane O'neill Vs Jimmy Carlin|SK SKATE|Shane O'neill",
-      "PEGJxsvpc7M|Nyjah Huston Vs Mike Mo Capaldi|SKATE SKAT|Mike Mo Capaldi"
-    ],
-    "right": [
-      "qDYt6OILiv8|Paul Rodriguez Vs PJ Ladd|SKATE SKA|PJ Ladd",
-      "dLLV74msHN0|Ishod Wair Vs Morgan Smith|SKAT SKATE|Ishod Wair"
-    ]
-  },
-  "Finals": {
-    "left": [
-      "VXgc2yG651E|Shane O'neill Vs Mike Mo Capaldi|SKATE SKAT|Mike Mo Capaldi"
-    ],
-    "right": [
-      "1npfxcXSvP4|PJ Ladd Vs Ishod Wair|SKAT SKATE|PJ Ladd"
-    ]
-  },
-  "Championship Battle": {
-    "middle": [
-      "qrURAO_RUAI|Mike Mo Capaldi Vs PJ Ladd|SKATE SKA|PJ Ladd"
-    ],
-    "3rd-place": [
-      "aFW16sjXtkw|Shane O'neill Vs Ishod Wair|SK SKATE|Shane O'neill"
-    ]
+  "videos": {
+    "Round 1": {
+      "left-top": [
+        "llbUrRCYhvA|Chris Cole Vs Billy Marks|SKA SKATE|Chris Cole",
+        "AcADjKENhY0|Shane O'neill Vs Ryan Decenzo|- SKATE|Shane O'neill",
+        "1hFNX856E2A|Jimmy Carlin Vs Sebo Walker|SKAT SKATE|Jimmy Carlin",
+        "BzliCefNukc|Ryan Pearce Vs Boo Johnson|SK SKATE|Ryan Pearce"
+      ],
+      "left-bottom": [
+        "ekB_jSOPy54|Cory Kennedy Vs Matt Miller|- SKATE|Cory Kennedy",
+        "1H2rKQbnPpI|Nyjah Huston Vs Kevin Romar|SK SKATE|Nyjah Huston",
+        "lC2fl0DtlZs|Ronnie Creager Vs Nick Tucker|S SKATE|Ronnie Creager",
+        "6OUNERcavkw|Mike Mo Capaldi Vs Theotis Beasley|SKA SKATE|Mike Mo Capaldi"
+      ],
+      "right-top": [
+        "FMGmEXE7ip0|Paul Rodriguez Vs Davis Torgerson|S SKATE|Paul Rodriguez",
+        "HfAyQXH5Ks4|Tom Asta Vs Marquise Henry|- SKATE|Tom Asta",
+        "dOCfWc0Im6M|PJ Ladd Vs Manny Santiago|SK SKATE|PJ Ladd",
+        "12c2cXyXqu4|Sean Malto Vs Trent McClung|SKATE SKA|Trent McClung"
+      ],
+      "right-bottom": [
+        "75e33hp_GyM|Ishod Wair Vs Felipe Gustavo|- SKATE|Ishod Wair",
+        "jywjVowDmzg|Keelan Dadd Vs Tommy Fynn|SKATE SKA|Tommy Fynn",
+        "sVPrQOXVCNc|Torey Pudwill Vs Evan Smith|- SKATE|Torey Pudwill",
+        "Eus1T_0XM2c|Morgan Smith Vs Moose|- SKATE|Morgan Smith"
+      ]
+    },
+    "Round 2": {
+      "left-top": [
+        "97X9VM6gGuc|Chris Cole Vs Shane O'neill|SKATE SKAT|Shane O'neill",
+        "v1rtVBhc8Y8|Jimmy Carlin Vs Ryan Pearce|SK SKATE|Jimmy Carlin"
+      ],
+      "left-bottom": [
+        "B9FlrMRjILg|Cory Kennedy Vs Nyjah Huston|S SKATE|Nyjah Huston",
+        "zo2xGWFYeeg|Ronnie Creager Vs Mike Mo Capaldi|SKATE SKA|Mike Mo Capaldi"
+      ],
+      "right-top": [
+        "-|Paul Rodriguez Vs Tom Asta|? SKATE|Paul Rodriguez",
+        "mhLxeuUy8aQ|PJ Ladd Vs Trent McClung|- SKATE|PJ Ladd"
+      ],
+      "right-bottom": [
+        "FcAF4xpjjyI|Ishod Wair Vs Tommy Fynn|S SKATE|Ishod Wair",
+        "KCRNCrW5tmY|Torey Pudwill Vs Morgan Smith|SKATE S|Morgan Smith"
+      ]
+    },
+    "Round 3": {
+      "left": [
+        "ycvi1cKAE2c|Shane O'neill Vs Jimmy Carlin|SK SKATE|Shane O'neill",
+        "PEGJxsvpc7M|Nyjah Huston Vs Mike Mo Capaldi|SKATE SKAT|Mike Mo Capaldi"
+      ],
+      "right": [
+        "qDYt6OILiv8|Paul Rodriguez Vs PJ Ladd|SKATE SKA|PJ Ladd",
+        "dLLV74msHN0|Ishod Wair Vs Morgan Smith|SKAT SKATE|Ishod Wair"
+      ]
+    },
+    "Finals": {
+      "left": [
+        "VXgc2yG651E|Shane O'neill Vs Mike Mo Capaldi|SKATE SKAT|Mike Mo Capaldi"
+      ],
+      "right": [
+        "1npfxcXSvP4|PJ Ladd Vs Ishod Wair|SKAT SKATE|PJ Ladd"
+      ]
+    },
+    "Championship Battle": {
+      "middle": [
+        "qrURAO_RUAI|Mike Mo Capaldi Vs PJ Ladd|SKATE SKA|PJ Ladd"
+      ],
+      "3rd-place": [
+        "aFW16sjXtkw|Shane O'neill Vs Ishod Wair|SK SKATE|Shane O'neill"
+      ]
+    }
   }
 }
+

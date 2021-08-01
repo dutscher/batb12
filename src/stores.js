@@ -1,19 +1,32 @@
 import { writable } from 'svelte/store';
 
-import youtubeJSON from '../data/batb12.json';
+import bracketsJSON from '../data/batb12.json';
 
-export const storedYoutubeLinks = writable({});
-const mappedVideos = {};
-
-Object.keys(youtubeJSON).map(round => {
-    const roundKey = round.replace("Round ", "")
-    mappedVideos[roundKey] = {};
-    Object.keys(youtubeJSON[round]).map(category => {
-        mappedVideos[roundKey][category] = youtubeJSON[round][category].map(video => {
+export const storedBracketData = writable({});
+const brackets = {
+    data: {
+        name: 'BATB',
+        title: 'Battle At The Berrics',
+        date: 'Feb 23, 2009',
+        yt: 'https://www.youtube.com/c/berrics/search?query=',
+        ws: 'https://theberrics.com/',
+        img: 'assets/table-12.jpg|1669x929',
+        // insert data from json
+        ...bracketsJSON.data,
+    },
+    videos: {},
+};
+// map videos
+Object.keys(bracketsJSON.videos).map(round => {
+    const roundKey = round.replace('Round ', "")
+    // iterate round
+    brackets.videos[roundKey] = {};
+    Object.keys(bracketsJSON.videos[round]).map(category => {
+        brackets.videos[roundKey][category] = bracketsJSON.videos[round][category].map(video => {
             const data = video.split('|');
 
             return {
-                youtube: "https://www.youtube.com/watch?v=" + data[0],
+                youtube: 'https://www.youtube.com/watch?v=' + data[0],
                 title: data[1],
                 result: data[2].split(' '),
                 winner: data[3],
@@ -21,5 +34,12 @@ Object.keys(youtubeJSON).map(round => {
         });
     })
 });
-
-storedYoutubeLinks.set(mappedVideos);
+// map image
+const img = brackets.data.img.split('|')
+const dim = img[1].split('x');
+brackets.data.img = {
+    src: img[0],
+    w: dim[0],
+    h: dim[1],
+}
+storedBracketData.set(brackets);

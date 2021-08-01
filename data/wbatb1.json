@@ -1,48 +1,57 @@
 {
-  "Round 1": {
-    "left-top": [
-      "lmD-a6Z8PSU|Lacey Baker vs. Mariah Duran|S SKATE|Lacey Baker",
-      "1CGzs0-2RvA|Leticia Bufoni-Marina Gabriela vs. Karen Feitosa|SKATE SKAT|Marina Gabriela "
-    ],
-    "left-bottom": [
-      "2p6ORQ3BGsc|Christiana Means vs. Chelsea Castro|S SKATE|Christiana Means",
-      "1QwcyVbvMh8|Eliana Sosco vs. Monica Torres|SKATE S|Monica Torres"
-    ],
-    "right-top": [
-      "R26jAuu1b3E|Alexis Sablone vs. Nika Washington|SKA SKATE|Alexis Sablone",
-      "O3mtJ_v5Cuo|Candy Jacobs vs. Jenn Soto|SKATE SKAT|Candy Jacobs"
-    ],
-    "right-bottom": [
-      "CG97VOAbUa8|Margie Didal vs. Adrianne Sloboh|SK SKATE|Margie Didal",
-      "nYJ__2J2rrg|Samarria Brevard vs. Liv Lovelace|S SKATE|Samarria Brevard"
-    ]
+  "data": {
+    "name": "WBATB",
+    "title": "1st Womens Battle At The Berrics",
+    "date": "Dec 10, 2019",
+    "yt": "https://www.youtube.com/watch?v=JAlJRZX0Lcg&list=PLmxvVi4Ors7YOST7UCgfYBBnEBJenatoj",
+    "ws": "https://theberrics.com/series/wbatb"
   },
-  "Round 2": {
-    "left": [
-      "Jb55NmFa0To|Lacey Baker vs. Karen Feitosa|SKA SKATE|Lacey Baker",
-      "f-BKV9oI9dk|Christiana Means vs. Monica Torres|- SKATE|Christiana Means",
-      "FDdOxrwlS1g|Redemption Battle: Monica Torres vs. Chelsea Castro|- SKATE|Monica Torres"
-    ],
-    "right": [
-      "neEdPgg4hac|Alexis Sablone vs. Candy Jacobs|SKATE SKA|Candy Jacobs",
-      "S2x4_JhLE4Q|Redemption Battle: Alexis Sablone vs. Jenn Soto|SKA SKATE|Alexis Sablone",
-      "PZIAnreM_ss|Samarria Brevard vs. Margie Didal|- SKATE|Samarria Brevard"
-    ]
-  },
-  "Finals": {
-    "left": [
-      "lFtKq60W8nY|Lacey Baker vs. Monica Torres|SKATE SK|Monica Torres"
-    ],
-    "right": [
-      "tBaaVS5JAVo|Alexis Sablone vs. Samarria Brevard|SKAT SKATE|Alexis Sablone"
-    ]
-  },
-  "Championship Battle": {
-    "middle": [
-      "JAlJRZX0Lcg|Monica Torres vs. Alexis Sablone|- SKATE|Monica Torres"
-    ],
-    "3rd-place": [
-      "j1xrgfClWK8|Samarria Brevard vs. Lacey Baker|SKATE SKA|Lacey Baker"
-    ]
+  "videos": {
+    "Round 1": {
+      "left-top": [
+        "lmD-a6Z8PSU|Lacey Baker vs. Mariah Duran|S SKATE|Lacey Baker",
+        "1CGzs0-2RvA|Leticia Bufoni-Marina Gabriela vs. Karen Feitosa|SKATE SKAT|Marina Gabriela "
+      ],
+      "left-bottom": [
+        "2p6ORQ3BGsc|Christiana Means vs. Chelsea Castro|S SKATE|Christiana Means",
+        "1QwcyVbvMh8|Eliana Sosco vs. Monica Torres|SKATE S|Monica Torres"
+      ],
+      "right-top": [
+        "R26jAuu1b3E|Alexis Sablone vs. Nika Washington|SKA SKATE|Alexis Sablone",
+        "O3mtJ_v5Cuo|Candy Jacobs vs. Jenn Soto|SKATE SKAT|Candy Jacobs"
+      ],
+      "right-bottom": [
+        "CG97VOAbUa8|Margie Didal vs. Adrianne Sloboh|SK SKATE|Margie Didal",
+        "nYJ__2J2rrg|Samarria Brevard vs. Liv Lovelace|S SKATE|Samarria Brevard"
+      ]
+    },
+    "Round 2": {
+      "left": [
+        "Jb55NmFa0To|Lacey Baker vs. Karen Feitosa|SKA SKATE|Lacey Baker",
+        "f-BKV9oI9dk|Christiana Means vs. Monica Torres|- SKATE|Christiana Means",
+        "FDdOxrwlS1g|Redemption Battle: Monica Torres vs. Chelsea Castro|- SKATE|Monica Torres"
+      ],
+      "right": [
+        "neEdPgg4hac|Alexis Sablone vs. Candy Jacobs|SKATE SKA|Candy Jacobs",
+        "S2x4_JhLE4Q|Redemption Battle: Alexis Sablone vs. Jenn Soto|SKA SKATE|Alexis Sablone",
+        "PZIAnreM_ss|Samarria Brevard vs. Margie Didal|- SKATE|Samarria Brevard"
+      ]
+    },
+    "Finals": {
+      "left": [
+        "lFtKq60W8nY|Lacey Baker vs. Monica Torres|SKATE SK|Monica Torres"
+      ],
+      "right": [
+        "tBaaVS5JAVo|Alexis Sablone vs. Samarria Brevard|SKAT SKATE|Alexis Sablone"
+      ]
+    },
+    "Championship Battle": {
+      "middle": [
+        "JAlJRZX0Lcg|Monica Torres vs. Alexis Sablone|- SKATE|Monica Torres"
+      ],
+      "3rd-place": [
+        "j1xrgfClWK8|Samarria Brevard vs. Lacey Baker|SKATE SKA|Lacey Baker"
+      ]
+    }
   }
 }

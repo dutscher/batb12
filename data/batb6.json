@@ -1,72 +1,81 @@
 {
-  "Round 1": {
-    "left-top": [
-      "qHMC80rPnsE|Chaz Ortiz Vs Brad Cromer|SK SKATE|Chaz Ortiz",
-      "H4MEulcgUTc|Moose Vs Bastien Salabanzi|SKA SKATE|Moose",
-      "FDyDLJNeI20|Tom Asta Vs Johnny Layton|- SKATE|Tom Asta",
-      "WpzZa7pChs4|Carlos Ribeiro Vs PJ Ladd|SKATE -|PJ Ladd"
-    ],
-    "left-bottom": [
-      "S175BQgtZiw|Nick Tucker Vs Torey Pudwill|SKATE -|Torey Pudwill",
-      "VVwAnyd6I9g|Chris Cole Vs Keelan Dadd|S SKATE|Chris Cole",
-      "D_0g7DwcCF4|Billy Marks Vs Cory Kennedy|- SKATE|Billy Marks",
-      "tym_A9RB7Gg|Mike Mo Capaldi Vs Austyn Gillette|S SKATE|Mike Mo Capaldi"
-    ],
-    "right-top": [
-      "wI4N18EYyts|Shane O'neill Vs Jereme Rogers|- SKATE|Shane O'neill",
-      "vJ4SDYqQLc0|Nyjah Huston Vs Trent McClung|SKA SKATE|Nyjah Huston",
-      "Q7gHTZ3ORHI|Davis Torgerson Vs Morgan Smith|SKATE -|Morgan Smith",
-      "e0cq8xWaGwc|Eric Koston Vs Dennis Busenitz|- SKATE|Eric Koston"
-    ],
-    "right-bottom": [
-      "i8jPt6jHk98|Ishod Wair Vs Wes Kremer|SKAT SKATE|Wes Kremer",
-      "QyoxnrVmn7c|Manny Santiago Vs Sewa Kroetkov|SKATE SKA|Sewa Kroetkov ",
-      "hMFW1RXEEjw|Felipe Gustavo Vs David Gonzalez|SKAT SKATE|Felipe Gustavo",
-      "RX37gFaxNx4|Matt Miller Vs Paul Rodriguez|SKATE S|Paul Rodriguez"
-    ]
+  "data": {
+    "name": "BATB 6",
+    "title": "Regular Vs. Goofy",
+    "date": "Apr 28, 2013",
+    "yt": "https://www.youtube.com/c/berrics/search?query=BATB6",
+    "ws": "https://theberrics.com/battle-at-the-berrics-6"
   },
-  "Round 2": {
-    "left-top": [
-      "q6LBISSo0Ow|Chaz Ortiz Vs Moose|SKATE SKA|Moose",
-      "FM6JBHoqQVs|Tom Asta Vs PJ Ladd|SKATE -|PJ Ladd"
-    ],
-    "left-bottom": [
-      "id7EXKSRyDc|Torey Pudwill Vs Chris Cole|SKATE S|Chris Cole",
-      "RxMKrBBvYt0|Billy Marks Vs Mike Mo Capaldi|SKATE -|Mike Mo Capaldi"
-    ],
-    "right-top": [
-      "IMm3B8etpEM|Shane O'neill Vs Nyjah Huston|- SKATE|Shane O'neill",
-      "ffhCD9EA8hw|Morgan Smith Vs Eric Koston|SKATE SKAT|Eric Koston"
-    ],
-    "right-bottom": [
-      "Fz0HkReMr8o|Wes Kremer Vs Sewa Kroetkov|SKATE S|Sewa Kroetkov",
-      "DBH8PZB7pOk|Felipe Gustavo Vs Paul Rodriguez|SKATE -|Paul Rodriguez"
-    ]
-  },
-  "Round 3": {
-    "left": [
-      "QLYpudiZjQA|Moose Vs PJ Ladd|SKATE SK|PJ Ladd",
-      "fSUEh_HcCBo|Chris Cole Vs Mike Mo Capaldi|SKATE -|Mike Mo Capaldi"
-    ],
-    "right": [
-      "Db3AohzLm7s|Shane O'neill Vs Eric Koston|- SKATE|Shane O'neill",
-      "amXm848UsaU|Sewa Kroetkov Vs Paul Rodriguez|SKATE SKAT|Paul Rodriguez"
-    ]
-  },
-  "Finals": {
-    "left": [
-      "gddKGHxf1Qo|PJ Ladd Vs Mike Mo Capaldi|SK SKATE|PJ Ladd"
-    ],
-    "right": [
-      "8uIweiIG1Jw|Shane O'neill Vs Paul Rodriguez|SKATE S|Paul Rodriguez"
-    ]
-  },
-  "Championship Battle": {
-    "middle": [
-      "ukBP__lkTrU|PJ Ladd Vs Paul Rodriguez|SKAT SKATE|PJ Ladd"
-    ],
-    "3rd-place": [
-      "ZJ4tEkjLdQk|Shane O'neill Vs Mike Mo Capaldi|- SKATE|Shane O'neill"
-    ]
+  "videos": {
+    "Round 1": {
+      "left-top": [
+        "qHMC80rPnsE|Chaz Ortiz Vs Brad Cromer|SK SKATE|Chaz Ortiz",
+        "H4MEulcgUTc|Moose Vs Bastien Salabanzi|SKA SKATE|Moose",
+        "FDyDLJNeI20|Tom Asta Vs Johnny Layton|- SKATE|Tom Asta",
+        "WpzZa7pChs4|Carlos Ribeiro Vs PJ Ladd|SKATE -|PJ Ladd"
+      ],
+      "left-bottom": [
+        "S175BQgtZiw|Nick Tucker Vs Torey Pudwill|SKATE -|Torey Pudwill",
+        "VVwAnyd6I9g|Chris Cole Vs Keelan Dadd|S SKATE|Chris Cole",
+        "D_0g7DwcCF4|Billy Marks Vs Cory Kennedy|- SKATE|Billy Marks",
+        "tym_A9RB7Gg|Mike Mo Capaldi Vs Austyn Gillette|S SKATE|Mike Mo Capaldi"
+      ],
+      "right-top": [
+        "wI4N18EYyts|Shane O'neill Vs Jereme Rogers|- SKATE|Shane O'neill",
+        "vJ4SDYqQLc0|Nyjah Huston Vs Trent McClung|SKA SKATE|Nyjah Huston",
+        "Q7gHTZ3ORHI|Davis Torgerson Vs Morgan Smith|SKATE -|Morgan Smith",
+        "e0cq8xWaGwc|Eric Koston Vs Dennis Busenitz|- SKATE|Eric Koston"
+      ],
+      "right-bottom": [
+        "i8jPt6jHk98|Ishod Wair Vs Wes Kremer|SKAT SKATE|Wes Kremer",
+        "QyoxnrVmn7c|Manny Santiago Vs Sewa Kroetkov|SKATE SKA|Sewa Kroetkov ",
+        "hMFW1RXEEjw|Felipe Gustavo Vs David Gonzalez|SKAT SKATE|Felipe Gustavo",
+        "RX37gFaxNx4|Matt Miller Vs Paul Rodriguez|SKATE S|Paul Rodriguez"
+      ]
+    },
+    "Round 2": {
+      "left-top": [
+        "q6LBISSo0Ow|Chaz Ortiz Vs Moose|SKATE SKA|Moose",
+        "FM6JBHoqQVs|Tom Asta Vs PJ Ladd|SKATE -|PJ Ladd"
+      ],
+      "left-bottom": [
+        "id7EXKSRyDc|Torey Pudwill Vs Chris Cole|SKATE S|Chris Cole",
+        "RxMKrBBvYt0|Billy Marks Vs Mike Mo Capaldi|SKATE -|Mike Mo Capaldi"
+      ],
+      "right-top": [
+        "IMm3B8etpEM|Shane O'neill Vs Nyjah Huston|- SKATE|Shane O'neill",
+        "ffhCD9EA8hw|Morgan Smith Vs Eric Koston|SKATE SKAT|Eric Koston"
+      ],
+      "right-bottom": [
+        "Fz0HkReMr8o|Wes Kremer Vs Sewa Kroetkov|SKATE S|Sewa Kroetkov",
+        "DBH8PZB7pOk|Felipe Gustavo Vs Paul Rodriguez|SKATE -|Paul Rodriguez"
+      ]
+    },
+    "Round 3": {
+      "left": [
+        "QLYpudiZjQA|Moose Vs PJ Ladd|SKATE SK|PJ Ladd",
+        "fSUEh_HcCBo|Chris Cole Vs Mike Mo Capaldi|SKATE -|Mike Mo Capaldi"
+      ],
+      "right": [
+        "Db3AohzLm7s|Shane O'neill Vs Eric Koston|- SKATE|Shane O'neill",
+        "amXm848UsaU|Sewa Kroetkov Vs Paul Rodriguez|SKATE SKAT|Paul Rodriguez"
+      ]
+    },
+    "Finals": {
+      "left": [
+        "gddKGHxf1Qo|PJ Ladd Vs Mike Mo Capaldi|SK SKATE|PJ Ladd"
+      ],
+      "right": [
+        "8uIweiIG1Jw|Shane O'neill Vs Paul Rodriguez|SKATE S|Paul Rodriguez"
+      ]
+    },
+    "Championship Battle": {
+      "middle": [
+        "ukBP__lkTrU|PJ Ladd Vs Paul Rodriguez|SKAT SKATE|PJ Ladd"
+      ],
+      "3rd-place": [
+        "ZJ4tEkjLdQk|Shane O'neill Vs Mike Mo Capaldi|- SKATE|Shane O'neill"
+      ]
+    }
   }
 }
