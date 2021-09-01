@@ -24,12 +24,13 @@ Object.keys(bracketsJSON.videos).map(round => {
     Object.keys(bracketsJSON.videos[round]).map(category => {
         brackets.videos[roundKey][category] = bracketsJSON.videos[round][category].map(video => {
             const data = video.split('|');
+            const hasRematch = data.length > 4;
 
             return {
-                youtube: 'https://www.youtube.com/watch?v=' + data[0],
+                youtube: 'https://www.youtube.com/watch?v=' + data[!hasRematch ? 0 : 4],
                 title: data[1],
-                result: data[2].split(' '),
-                winner: data[3],
+                result: data[!hasRematch ? 2 : 5].split(' '),
+                winner: data[!hasRematch ? 3 : 6],
             };
         });
     })
