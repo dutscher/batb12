@@ -24,6 +24,8 @@ Object.keys(bracketsJSON.videos).map(round => {
     Object.keys(bracketsJSON.videos[round]).map(category => {
         brackets.videos[roundKey][category] = bracketsJSON.videos[round][category].map(video => {
             const data = video.split('|');
+            // "0          |1                         |2      |3         |4          |5      |6          "
+            // "p1v7MNvUzbk|Sean Davis Vs. Shaun Hover|S SKATE|Sean Davis|l2I37cC1YWc|SKATE S|Shaun Hover" "
             const hasRematch = data.length > 4;
 
             return {
