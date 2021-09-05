@@ -1,10 +1,10 @@
 <script>
 	import Github from "./Github.svelte";
-	import Table from "./Table.svelte";
+	import Brackets from "./Brackets.svelte";
 </script>
 
 <Github />
-<Table />
+<Brackets />
 
 <style>
 	:global(html), :global(body) {

@@ -45,4 +45,5 @@ brackets.data.img = {
     w: dim[0],
     h: dim[1],
 }
+brackets.data.modifier = brackets.data.name.toLowerCase().replace(' ', '-')
 storedBracketData.set(brackets);

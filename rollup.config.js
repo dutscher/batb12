@@ -71,6 +71,13 @@ export default {
 				assetsPreprocessor(),
 				sveltePreprocess({ sourceMap: !production }),
 			],
+			onwarn: (warning, handler) => {
+				const { code } = warning;
+				if (code === "css-unused-selector") {
+					return;
+				}
+				handler(warning);
+			},
 			compilerOptions: {
 				// enable run-time checks when not in production
 				dev: !production
