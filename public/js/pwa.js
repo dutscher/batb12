@@ -1,6 +1,6 @@
 window.onload = () => {
     if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./sw.js?cb=' + window.cacheBuster);
+        navigator.serviceWorker.register('./service-worker.js?cb=' + window.cacheBuster);
 
         // https://serviceworke.rs/push-get-payload_index_doc.html
 
