@@ -54,3 +54,37 @@ self.addEventListener('fetch', (evt) => {
             })
     );
 });
+
+// https://serviceworke.rs/push-get-payload_service-worker_doc.html
+function getEndpoint() {
+    return self.registration.pushManager.getSubscription()
+        .then(function(subscription) {
+            if (subscription) {
+                return subscription.endpoint;
+            }
+
+            throw new Error('User not subscribed');
+        });
+}
+
+const result = await Notification.requestPermission();
+if (result === 'granted') {
+    console.log('gogo notifications')
+}
+
+self.addEventListener('push', function(event) {
+    event.waitUntil(
+        getEndpoint()
+            .then(function(endpoint) {
+                return fetch('./getPayload?endpoint=' + endpoint);
+            })
+            .then(function(response) {
+                return response.text();
+            })
+            .then(function(payload) {
+                self.registration.showNotification('BATB12', {
+                    body: payload,
+                });
+            })
+    );
+});

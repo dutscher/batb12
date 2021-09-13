@@ -1,5 +1,5 @@
 const fs = require('fs-extra');
-const srcPath = './public/index.html';
+const srcPath = './src/index.html';
 const destPath = './public/index.html';
 const cacheBuster = (new Date().getTime());
 const argv = process.argv;
@@ -18,6 +18,6 @@ if (!isDev) {
         .replace(/Xsrc/g, 'src');
 }
 
-fs.writeFileSync(destPath, content, 'utf-8');
+fs.writeFileSync(destPath, indexHTML, 'utf-8');
 
 console.log('updated cache bust in ' + destPath)
