@@ -67,24 +67,26 @@ function getEndpoint() {
         });
 }
 
-const result = await Notification.requestPermission();
-if (result === 'granted') {
-    console.log('gogo notifications')
-}
+(async () => {
+    const result = await Notification.requestPermission();
+    if (result === 'granted') {
+        console.log('gogo notifications')
+    }
 
-self.addEventListener('push', function(event) {
-    event.waitUntil(
-        getEndpoint()
-            .then(function(endpoint) {
-                return fetch('./getPayload?endpoint=' + endpoint);
-            })
-            .then(function(response) {
-                return response.text();
-            })
-            .then(function(payload) {
-                self.registration.showNotification('BATB12', {
-                    body: payload,
-                });
-            })
-    );
-});
+    self.addEventListener('push', function (event) {
+        event.waitUntil(
+            getEndpoint()
+                .then(function (endpoint) {
+                    return fetch('./getPayload?endpoint=' + endpoint);
+                })
+                .then(function (response) {
+                    return response.text();
+                })
+                .then(function (payload) {
+                    self.registration.showNotification('BATB12', {
+                        body: payload,
+                    });
+                })
+        );
+    });
+})();
