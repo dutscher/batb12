@@ -47,9 +47,10 @@ window.onload = () => {
                     subscription: subscription
                 }),
             });
+
             console.log('subscription', subscription)
 
-            document.getElementById('doIt').onclick = function () {
+            window.notifyme = function () {
                 const payload = 'commit junge';
                 const delay = 10;
                 const ttl = 1;
