@@ -2,16 +2,21 @@ const fs = require('fs-extra');
 const srcPath = './public/index.html';
 const destPath = './public/index.html';
 const cacheBuster = (new Date().getTime());
-const tplCSS = `<link rel="stylesheet" href="./build/bundle.css?cb=${cacheBuster}">`;
-const tplJS = `<script defer src="./build/bundle.js?cb=${cacheBuster}"></script>`;
-const tplSW = `'./sw.js?cb=${cacheBuster}'`;
+const argv = process.argv;
+const isDev = argv.includes('--dev');
+let indexHTML = fs.readFileSync(srcPath, 'utf-8');
 
-let content = fs.readFileSync(srcPath, 'utf-8');
-content = content.replace(/<link rel="stylesheet" href="\.\/build\/bundle\.css\?cb=\d*">/, tplCSS);
-content = content.replace(/<script defer src="\.\/build\/bundle\.js\?cb=\d*"><\/script>/, tplJS);
-content = content.replace(/'\.\/sw\.js\?cb=\d*'/, tplSW);
-// activate tracking
-content = content.replace(/async xsrc/, 'async src');
+indexHTML = indexHTML
+    // replace cachebuster at <script /> and <link />
+    .replace(/\?cb=\d*"/g, `?cb=${cacheBuster}"`)
+    // replace cachebuster for ajax on global window
+    .replace(/(cacheBuster = ')\d*(')/, `$1${cacheBuster}$2`);
+
+if (!isDev) {
+    indexHTML = indexHTML
+        // activate tracking scripts
+        .replace(/Xsrc/g, 'src');
+}
 
 fs.writeFileSync(destPath, content, 'utf-8');
 
