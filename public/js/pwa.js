@@ -1,8 +1,10 @@
 window.onload = () => {
     if ('serviceWorker' in navigator) {
+        console.log('init service worker')
         navigator.serviceWorker.register('./js/service-worker.js?cb=' + window.cacheBuster);
 
         // https://serviceworke.rs/push-get-payload_index_doc.html
+        // https://rossta.net/blog/using-the-web-push-api-with-vapid.html
 
         // Web-Push
         // Public base64 to Uint
@@ -19,7 +21,7 @@ window.onload = () => {
             }
             return outputArray;
         }
-
+        console.log('when service worker ready')
         navigator.serviceWorker.ready
             .then(function (registration) {
                 return registration.pushManager.getSubscription()

@@ -1,9 +1,11 @@
 <script>
 	import Github from "./Github.svelte";
 	import Brackets from "./Brackets.svelte";
+	import Notification from "./Notification.svelte";
 </script>
 
 <Github />
+<Notification />
 <Brackets />
 
 <style>
