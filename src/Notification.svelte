@@ -1,16 +1,26 @@
 <script>
-    const promptThePermission = async () => {
-        console.log('check the permission')
-        const result = await Notification.requestPermission();
-        if (result === 'granted') {
+    import { onMount } from 'svelte';
 
+    const promptThePermission = async () => {
+        const result = await Notification.requestPermission();
+
+        if (result === 'granted') {
+            isGranted = true;
         }
     }
+
+    let isGranted = true;
+
+    onMount(() => {
+        isGranted = Notification.permission === "granted";
+    });
 </script>
 
+{#if !isGranted}
 <button on:click={promptThePermission}>
     Notify on Updates?
 </button>
+{/if}
 
 <style lang="scss">
   button {
