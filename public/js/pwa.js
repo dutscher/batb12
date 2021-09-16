@@ -53,7 +53,6 @@ window.onload = () => {
                 //     }),
                 // });
 
-                console.log(pre, 'subscription', subscription)
                 console.log(pre, 'window.notifyme()')
                 window.notifyme = function () {
                     const payload = 'commit junge';
