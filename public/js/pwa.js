@@ -1,6 +1,7 @@
 window.onload = () => {
     if ('serviceWorker' in navigator) {
-        console.log('init service worker')
+        const pre = '[ServiceWorker]';
+        console.log(pre, 'init')
         const sw = navigator.serviceWorker.register('./js/service-worker.js?cb=' + window.cacheBuster);
 
         // https://serviceworke.rs/push-get-payload_index_doc.html
@@ -21,17 +22,17 @@ window.onload = () => {
             }
             return outputArray;
         }
-        console.log('when service worker ready1')
         sw.then(function (registration) {
-                console.log('service worker is ready1')
+                console.log(pre, 'is ready')
                 return registration.pushManager.getSubscription()
                     .then(async function (subscription) {
                         if (subscription) {
+                            console.log(pre, 'subscription already there', subscription);
                             return subscription;
                         }
 
                         const response = await fetch('//api.willy-selma.de/push/vapidPublicKey');
-                        console.log('response', response)
+                        console.log(pre, 'create subscription', subscription, response);
                         const vapidPublicKey = await response.text();
                         const convertedVapidKey = urlBase64ToUint8Array(vapidPublicKey);
 
@@ -52,8 +53,8 @@ window.onload = () => {
                 //     }),
                 // });
 
-                console.log('subscription', subscription)
-                console.log('window.notifyme()')
+                console.log(pre, 'subscription', subscription)
+                console.log(pre, 'window.notifyme()')
                 window.notifyme = function () {
                     const payload = 'commit junge';
                     const delay = 10;
