@@ -81,7 +81,7 @@ self.addEventListener('push', function (event) {
             })
             .then(function (payload) {
                 let title = 'BATB12';
-                let body = payload || (event.data && event.data.text());
+                let body = (event.data && event.data.text()) || payload;
                 let tag = "batb-push-tag";
                 let icon = '/batb12/icons/apple-icon-120x120.png';
                 console.log(pre, 'showNotification', {title, body, tag, icon});
