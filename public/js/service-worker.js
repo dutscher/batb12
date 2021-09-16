@@ -1,5 +1,6 @@
 // Update cache names any time any of the cached files change.
 const CACHE_NAME = 'static-cache-v1';
+const pre = '[ServiceWorker]'
 
 // Add list of files to cache here.
 const FILES_TO_CACHE = [
@@ -8,7 +9,7 @@ const FILES_TO_CACHE = [
 ];
 
 self.addEventListener('install', (evt) => {
-    console.log('[ServiceWorker] Install');
+    console.log(pre, 'install');
 
     evt.waitUntil(
         caches.open(CACHE_NAME).then((cache) => {
@@ -21,7 +22,7 @@ self.addEventListener('install', (evt) => {
 });
 
 self.addEventListener('activate', (evt) => {
-    console.log('[ServiceWorker] Activate');
+    console.log(pre, 'activate');
     // Remove previous cached data from disk.
     evt.waitUntil(
         caches.keys().then((keyList) => {
@@ -38,7 +39,7 @@ self.addEventListener('activate', (evt) => {
 });
 
 self.addEventListener('fetch', (evt) => {
-    console.log('[ServiceWorker] Fetch', evt.request.url);
+    console.log(pre, 'fetch', evt.request.url);
     // Add fetch event handler here.
     if (evt.request.mode !== 'navigate') {
         // Not a page navigation, bail.
@@ -68,15 +69,18 @@ function getEndpoint() {
 }
 
 self.addEventListener('push', function (event) {
+    console.log(pre, 'push');
     event.waitUntil(
         getEndpoint()
             .then(function (endpoint) {
+                console.log(pre, 'endpoint', endpoint);
                 return fetch('./getPayload?endpoint=' + endpoint);
             })
             .then(function (response) {
                 return response.text();
             })
             .then(function (payload) {
+                console.log(pre, 'showNotification', payload);
                 self.registration.showNotification('BATB12', {
                     body: payload,
                 });

@@ -21,16 +21,18 @@ window.onload = () => {
             }
             return outputArray;
         }
-        console.log('when service worker ready')
+        console.log('when service worker ready1')
         navigator.serviceWorker.ready
             .then(function (registration) {
+                console.log('service worker is ready1')
                 return registration.pushManager.getSubscription()
                     .then(async function (subscription) {
                         if (subscription) {
                             return subscription;
                         }
 
-                        const response = await fetch('https://api.willy-selma.de/push/vapidPublicKey');
+                        const response = await fetch('//api.willy-selma.de/push/vapidPublicKey');
+                        console.log('response', response)
                         const vapidPublicKey = await response.text();
                         const convertedVapidKey = urlBase64ToUint8Array(vapidPublicKey);
 
@@ -52,13 +54,13 @@ window.onload = () => {
                 // });
 
                 console.log('subscription', subscription)
-
+                console.log('window.notifyme()')
                 window.notifyme = function () {
                     const payload = 'commit junge';
                     const delay = 10;
                     const ttl = 24 * 60 * 60;
 
-                    fetch('https://api.willy-selma.de/push/sendNotification', {
+                    fetch('//api.willy-selma.de/push/sendNotification', {
                         method: 'post',
                         headers: {
                             'Content-type': 'application/json'
