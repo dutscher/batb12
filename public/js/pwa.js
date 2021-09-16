@@ -1,7 +1,7 @@
 window.onload = () => {
     if ('serviceWorker' in navigator) {
         console.log('init service worker')
-        navigator.serviceWorker.register('./js/service-worker.js?cb=' + window.cacheBuster);
+        const sw = navigator.serviceWorker.register('./js/service-worker.js?cb=' + window.cacheBuster);
 
         // https://serviceworke.rs/push-get-payload_index_doc.html
         // https://rossta.net/blog/using-the-web-push-api-with-vapid.html
@@ -22,8 +22,7 @@ window.onload = () => {
             return outputArray;
         }
         console.log('when service worker ready1')
-        navigator.serviceWorker.ready
-            .then(function (registration) {
+        sw.then(function (registration) {
                 console.log('service worker is ready1')
                 return registration.pushManager.getSubscription()
                     .then(async function (subscription) {
