@@ -74,7 +74,7 @@ self.addEventListener('push', function (event) {
         getEndpoint()
             .then(function (endpoint) {
                 console.log(pre, 'endpoint', endpoint);
-                return fetch('./getPayload?endpoint=' + endpoint);
+                return fetch('//api.willy-selma.de/push/getPayload?endpoint=' + endpoint);
             })
             .then(function (response) {
                 return response.text();
