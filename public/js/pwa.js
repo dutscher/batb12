@@ -43,19 +43,19 @@ window.onload = () => {
                     });
             })
             .then(function (subscription) {
-                // fetch('https://api.willy-selma.de/push/register', {
-                //     method: 'post',
-                //     headers: {
-                //         'Content-type': 'application/json'
-                //     },
-                //     body: JSON.stringify({
-                //         subscription: subscription
-                //     }),
-                // });
+                fetch('https://api.willy-selma.de/push/register', {
+                    method: 'post',
+                    headers: {
+                        'Content-type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        subscription: subscription
+                    }),
+                });
 
                 console.log(pre, 'window.notifyme()')
-                window.notifyme = function () {
-                    const payload = 'commit junge';
+                window.notifyme = function (msg) {
+                    const payload = msg || 'commit junge';
                     const delay = 10;
                     const ttl = 24 * 60 * 60;
 
