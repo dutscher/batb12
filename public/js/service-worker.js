@@ -59,7 +59,7 @@ self.addEventListener('fetch', (evt) => {
 // https://serviceworke.rs/push-get-payload_service-worker_doc.html
 function getEndpoint() {
     return self.registration.pushManager.getSubscription()
-        .then(function(subscription) {
+        .then(function (subscription) {
             if (subscription) {
                 return subscription.endpoint;
             }
@@ -72,20 +72,21 @@ self.addEventListener('push', function (event) {
     console.log(pre, 'push');
     event.waitUntil(
         getEndpoint()
+        //     .then(function (endpoint) {
+        //         console.log(pre, 'endpoint', endpoint);
+        //         return fetch('//api.willy-selma.de/push/getPayload?endpoint=' + endpoint);
+        //     })
+        //     .then(function (response) {
+        //         return response.text();
+        //     })
+        //     .then(function (payload) {
             .then(function (endpoint) {
-                console.log(pre, 'endpoint', endpoint);
-                return fetch('//api.willy-selma.de/push/getPayload?endpoint=' + endpoint);
-            })
-            .then(function (response) {
-                return response.text();
-            })
-            .then(function (payload) {
                 let title = 'BATB12';
-                let body = (event.data && event.data.text()) || payload;
+                let body = (event.data && event.data.text());
                 let tag = "batb-push-tag";
                 let icon = '/batb12/icons/apple-icon-120x120.png';
-                console.log(pre, 'showNotification', {title, body, tag, icon});
-                self.registration.showNotification(title, { body, icon, tag })
-            })
+                console.log(pre, 'showNotification', { title, body, tag, icon });
+                self.registration.showNotification(title, { body, icon, vibrate: [500, 100, 500], })
+        })
     );
 });

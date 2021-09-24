@@ -22,36 +22,42 @@ window.onload = () => {
             }
             return outputArray;
         }
+
+        let subscriptionExists = false;
+
         sw.then(function (registration) {
-                console.log(pre, 'is ready')
-                return registration.pushManager.getSubscription()
-                    .then(async function (subscription) {
-                        if (subscription) {
-                            console.log(pre, 'subscription already there', subscription);
-                            return subscription;
-                        }
+            console.log(pre, 'is ready')
+            return registration.pushManager.getSubscription()
+                .then(async function (subscription) {
+                    if (subscription) {
+                        console.log(pre, 'subscription already there', subscription);
+                        subscriptionExists = true;
+                        return subscription;
+                    }
 
-                        const response = await fetch('//api.willy-selma.de/push/vapidPublicKey');
-                        console.log(pre, 'create subscription', subscription, response);
-                        const vapidPublicKey = await response.text();
-                        const convertedVapidKey = urlBase64ToUint8Array(vapidPublicKey);
+                    const response = await fetch('//api.willy-selma.de/push/vapidPublicKey');
+                    console.log(pre, 'create subscription', subscription, response);
+                    const vapidPublicKey = await response.text();
+                    const convertedVapidKey = urlBase64ToUint8Array(vapidPublicKey);
 
-                        return registration.pushManager.subscribe({
-                            userVisibleOnly: true,
-                            applicationServerKey: convertedVapidKey
-                        });
+                    return registration.pushManager.subscribe({
+                        userVisibleOnly: true,
+                        applicationServerKey: convertedVapidKey
                     });
-            })
-            .then(function (subscription) {
-                fetch('https://api.willy-selma.de/push/register', {
-                    method: 'post',
-                    headers: {
-                        'Content-type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        subscription: subscription
-                    }),
                 });
+        })
+            .then(function (subscription) {
+                if (!subscriptionExists) {
+                    fetch('https://api.willy-selma.de/push/register', {
+                        method: 'post',
+                        headers: {
+                            'Content-type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            subscription: subscription
+                        }),
+                    });
+                }
 
                 console.log(pre, 'window.notifyme()')
                 window.notifyme = function (msg) {
