@@ -9,10 +9,10 @@
         }
     }
 
-    let isGranted = true;
+    let isGranted = false;
 
     onMount(() => {
-        isGranted = Notification.permission === "granted";
+        //isGranted = Notification.permission === "granted";
     });
 </script>
 
