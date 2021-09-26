@@ -91,19 +91,21 @@ self.addEventListener('push', function (event) {
     );
 });
 
-// self.addEventListener('notificationclick', function (event) {
-//     const url = event.notification.data.redirectUrl;
-//     event.waitUntil(
-//         clients.matchAll({ type: 'window' }).then(windowClients => {
-//             for (var i = 0; i < windowClients.length; i++) {
-//                 var client = windowClients[i];
-//                 if (client.url === url && 'focus' in client) {
-//                     return client.focus();
-//                 }
-//             }
-//             if (clients.openWindow) {
-//                 return clients.openWindow(url);
-//             }
-//         })
-//     );
-// });
+self.addEventListener('notificationclick', function (event) {
+    console.log(pre, 'notificationclick', event.notification)
+    console.log(pre, 'clients', clients)
+    const url = event.notification.data.redirectUrl;
+    event.waitUntil(
+        clients.matchAll({ type: 'window' }).then(windowClients => {
+            for (let i = 0; i < windowClients.length; i++) {
+                const client = windowClients[i];
+                if (client.url === url && 'focus' in client) {
+                    return client.focus();
+                }
+            }
+            if (clients.openWindow) {
+                return clients.openWindow(url);
+            }
+        })
+    );
+});

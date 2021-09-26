@@ -2,20 +2,17 @@
     import { onMount } from 'svelte';
 
     const Notification = window.Notification || window.mozNotification || window.webkitNotification;
+    const granted = 'granted';
 
     const promptThePermission = () => {
-        console.log('promptThePermission')
         Notification.requestPermission(
             function (permission) {
-                console.log('User permission:', permission);
-                isGranted = permission === 'granted';
-                // https://stackoverflow.com/questions/35217959/how-to-listen-for-web-notification-permission-change
+                isGranted = permission === granted;
                 if ('permissions' in navigator) {
                     navigator.permissions.query({ name: 'notifications' })
                         .then(function (notificationPerm) {
                             notificationPerm.onchange = function () {
-                                console.log('User decided to change his settings. New permission:', notificationPerm.state);
-                                isGranted = notificationPerm.state === 'granted';
+                                isGranted = notificationPerm.state === granted;
                             };
                         });
                 }
@@ -26,7 +23,7 @@
     let isGranted = false;
 
     onMount(() => {
-        isGranted = Notification.permission === "granted";
+        isGranted = Notification.permission === granted;
     });
 </script>
 

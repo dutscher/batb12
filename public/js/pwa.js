@@ -1,6 +1,7 @@
 (() => {
     const pre = '[PWA Loader]';
     const registerPushSubscriptionAfterPermissionGranted = (sw) => {
+        console.log(pre, 'registerPushSubscriptionAfterPermissionGranted')
         let subscriptionExists = false;
 
         // https://serviceworke.rs/push-get-payload_index_doc.html
@@ -32,35 +33,34 @@
                         return subscription;
                     }
 
-                    const response = await fetch('//api.willy-selma.de/push/vapidPublicKey');
-                    console.log(pre, 'create subscription', subscription, response);
-                    const vapidPublicKey = await response.text();
-                    const convertedVapidKey = urlBase64ToUint8Array(vapidPublicKey);
+                    const vapidPublicKey = await fetch('//api.willy-selma.de/push/vapidPublicKey').then(res => res.text());
+                    console.log(pre, 'create subscription', subscription);
+                    const applicationServerKey = urlBase64ToUint8Array(vapidPublicKey);
 
                     return registration.pushManager.subscribe({
                         userVisibleOnly: true,
-                        applicationServerKey: convertedVapidKey
+                        applicationServerKey,
                     });
                 });
         })
             .then(async function (subscription) {
                 if (!subscriptionExists) {
-                    const dbsubscription = await fetch('https://api.willy-selma.de/push/register', {
+                    const dbsubscription = await fetch('//api.willy-selma.de/push/register', {
                         method: 'post',
                         headers: {
                             'Content-type': 'application/json'
                         },
                         body: JSON.stringify({
-                            subscription: subscription
+                            subscription,
                         }),
-                    });
+                    }).then(res => res.json());
                     localStorage.setItem('subscriptionID', dbsubscription.id);
                     console.log(pre, 'subscriptionID is in localstorage', dbsubscription)
                 }
 
-                console.log(pre, 'window.notifyme()')
+                console.log(pre, 'window.notifyme(\'payload\')')
                 window.notifyme = function (msg) {
-                    const payload = msg || 'commit junge';
+                    const payload = msg || 'ich bin ein notify';
                     const ttl = 24 * 60 * 60;
 
                     fetch('//api.willy-selma.de/push/sendNotification', {
@@ -69,8 +69,8 @@
                             'Content-type': 'application/json'
                         },
                         body: JSON.stringify({
-                            payload: payload,
-                            ttl: ttl,
+                            payload,
+                            ttl,
                         }),
                     });
                 };
@@ -88,8 +88,21 @@
                         console.log(pre, 'notification permission changed', notificationPerm.state)
                         notificationPerm.onchange = function () {
                             if (notificationPerm.state === 'granted') {
-                                console.log(pre, 'notification subcribed')
+                                console.log(pre, 'notification granted')
                                 registerPushSubscriptionAfterPermissionGranted(sw);
+                            }
+
+                            const subscriptionID = localStorage.getItem('subscriptionID');
+                            if (!!subscriptionID && (notificationPerm.state === 'prompt' || notificationPerm.state === 'denied')) {
+                                fetch('//api.willy-selma.de/push/unregister', {
+                                    method: 'post',
+                                    headers: {
+                                        'Content-type': 'application/json'
+                                    },
+                                    body: JSON.stringify({
+                                        subscriptionID
+                                    }),
+                                });
                             }
                         }
                     });
