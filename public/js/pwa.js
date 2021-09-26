@@ -46,9 +46,9 @@ window.onload = () => {
                     });
                 });
         })
-            .then(function (subscription) {
+            .then(async function (subscription) {
                 if (!subscriptionExists) {
-                    fetch('https://api.willy-selma.de/push/register', {
+                    const dbsubscription = await fetch('https://api.willy-selma.de/push/register', {
                         method: 'post',
                         headers: {
                             'Content-type': 'application/json'
@@ -57,12 +57,12 @@ window.onload = () => {
                             subscription: subscription
                         }),
                     });
+                    localStorage.setItem('subscriptionID', dbsubscription.id);
                 }
 
                 console.log(pre, 'window.notifyme()')
                 window.notifyme = function (msg) {
                     const payload = msg || 'commit junge';
-                    const delay = 10;
                     const ttl = 24 * 60 * 60;
 
                     fetch('//api.willy-selma.de/push/sendNotification', {
@@ -71,9 +71,7 @@ window.onload = () => {
                             'Content-type': 'application/json'
                         },
                         body: JSON.stringify({
-                            subscription: subscription,
                             payload: payload,
-                            delay: delay,
                             ttl: ttl,
                         }),
                     });

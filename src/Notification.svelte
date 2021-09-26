@@ -1,13 +1,13 @@
 <script>
     import { onMount } from 'svelte';
 
-    const Notification = window.Notification || window.mozNotification || window.webkitNotification;
+    // const Notification = window.Notification || window.mozNotification || window.webkitNotification;
 
     let wasQuestioned = false;
 
-    if (Notification.permission === 'default') {
-        wasQuestioned = true;
-    }
+    // if (Notification.permission === 'default') {
+    //     wasQuestioned = true;
+    // }
 
     const promptThePermission = () => {
         console.log('promptThePermission')
@@ -41,7 +41,7 @@
 </script>
 
 {#if !isGranted}
-    <button on:click={() => promptThePermission()}>
+    <button on:click={() => {}}>
         Notify on Updates?
     </button>
 {/if}
