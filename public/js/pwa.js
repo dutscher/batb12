@@ -55,7 +55,7 @@
                         }),
                     });
                     localStorage.setItem('subscriptionID', dbsubscription.id);
-                    console.log(pre, 'subscriptionID is in localstorage', dbsubscription.id)
+                    console.log(pre, 'subscriptionID is in localstorage', dbsubscription)
                 }
 
                 console.log(pre, 'window.notifyme()')
