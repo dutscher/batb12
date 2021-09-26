@@ -31,7 +31,7 @@
 </script>
 
 {#if !isGranted}
-    <button on:click={() => promptThePermission()}>
+    <button on:click={() => promptThePermission()}              >
         Notify on Updates?
     </button>
 {/if}
