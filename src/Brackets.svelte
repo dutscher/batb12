@@ -12,7 +12,7 @@
 
 <div class="table--horizontal-centered table--{bracket.data.modifier}">
     <div class="table"
-         style="zoom:{Math.ceil((100 * ( innerWidth / (bracket.data.img.w) ))) - 5}%; width:{bracket.data.img.w}px; height:{bracket.data.img.h}px">
+         style="zoom:{Math.ceil((100 * ( innerWidth / (bracket.data.img.w) ))) - 10}%; width:{bracket.data.img.w}px; height:{bracket.data.img.h}px">
         <a class="playlist"
            target="_blank"
            href={bracket.data.yt}
