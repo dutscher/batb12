@@ -1,11 +1,13 @@
 <script>
 	import Github from "./Github.svelte";
-	import Brackets from "./Brackets.svelte";
 	import Notification from "./Notification.svelte";
+    import Youtube from "./Youtube.svelte";
+    import Brackets from "./Brackets.svelte";
 </script>
 
 <Github />
 <Notification />
+<Youtube />
 <Brackets />
 
 <style>

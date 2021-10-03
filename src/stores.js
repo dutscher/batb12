@@ -2,6 +2,9 @@ import { writable } from 'svelte/store';
 
 import bracketsJSON from '../data/batb12.json';
 
+export const activeData = writable({});
+activeData.set({ version: 12, youtubeVideo: null });
+
 export const storedBracketData = writable({});
 const brackets = {
     data: {
@@ -29,9 +32,10 @@ Object.keys(bracketsJSON.videos).map(round => {
             const hasRematch = data.length > 4;
 
             return {
-                youtube: 'https://www.youtube.com/watch?v=' + data[!hasRematch ? 0 : 4],
+                id: data[!hasRematch ? 0 : 4],
                 title: data[1],
                 result: data[!hasRematch ? 2 : 5].split(' '),
+                skater: data[1].split(' Vs. '),
                 winner: data[!hasRematch ? 3 : 6],
             };
         });

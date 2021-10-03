@@ -1,7 +1,18 @@
 <script>
+    import { activeData } from './stores';
     export let video;
     export let index;
     export let type;
+
+    let youtubeVideo = null;
+    activeData.subscribe(store => youtubeVideo = store.youtubeVideo);
+
+    const openYoutubeLayer = (video) => {
+        activeData.update(store => {
+            store.youtubeVideo = video;
+            return store;
+        });
+    };
 </script>
 
 {#if video.winner}
@@ -13,10 +24,10 @@
             Winner:
         {/if}
         {#if video.winner !== '-'}
-            <a class="battle__link" href={video.youtube} target="_blank"
+            <div class="battle__link" on:click={() => openYoutubeLayer(video)}
                data-result-top={video.result[0]} data-result-bottom={video.result[1]}>
                 {video.winner}
-            </a>
+            </div>
         {:else}
             -
         {/if}
@@ -36,6 +47,7 @@
       position: relative;
       display: block;
       user-select: none;
+      cursor: pointer;
 
       &:hover {
         &::before,
