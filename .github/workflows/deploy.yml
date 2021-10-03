@@ -33,5 +33,5 @@ jobs:
         uses: muinmomin/webhook-action@v1.0.0
         with:
           url: ${{ secrets.NOTIFICATION_URL }}
-          data: ${{ format('{''payload''{0}''{1}''}', ':', github.event.head_commit.message) }}
+          data: ${{ format('{0}''payload''{1}''{2}''{3}', '{', ':', github.event.head_commit.message, '}') }}
 
