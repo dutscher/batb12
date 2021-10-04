@@ -2,7 +2,6 @@
     import { activeData } from "./stores";
 
     let activeVideo = '0AIKNWgOo6I'
-
     let youtubeVideo = null;
     activeData.subscribe(store => youtubeVideo = store.youtubeVideo);
 
@@ -18,13 +17,13 @@
 <div class="youtube">
     <div class="youtube__title">
         <div>
-            <h2>{youtubeVideo.skater[0]}</h2>
-            <span>{youtubeVideo.result[0]}</span>
+            <h2>{youtubeVideo.skater[!youtubeVideo.isSwitched ? 0 : 1]}</h2>
+            <span>{youtubeVideo.result[!youtubeVideo.isSwitched ? 0 : 1]}</span>
         </div>
         VS
         <div>
-            <h2>{youtubeVideo.skater[1]}</h2>
-            <span>{youtubeVideo.result[1]}</span>
+            <h2>{youtubeVideo.skater[!youtubeVideo.isSwitched ? 1 : 0]}</h2>
+            <span>{youtubeVideo.result[!youtubeVideo.isSwitched ? 1 : 0]}</span>
         </div>
     </div>
     <div class="youtube__close" on:click={()=>closeYoutubeLayer()}></div>

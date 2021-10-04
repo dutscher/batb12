@@ -28,15 +28,18 @@ Object.keys(bracketsJSON.videos).map(round => {
         brackets.videos[roundKey][category] = bracketsJSON.videos[round][category].map(video => {
             const data = video.split('|');
             // "0          |1                         |2      |3         |4          |5      |6          "
-            // "p1v7MNvUzbk|Sean Davis Vs. Shaun Hover|S SKATE|Sean Davis|l2I37cC1YWc|SKATE S|Shaun Hover" "
+            // "p1v7MNvUzbk|Sean Davis Vs. Shaun Hover|S SKATE|Sean Davis|l2I37cC1YWc|SKATE S|Shaun Hover"
+            // "p1v7MNvUzbk*|Sean Davis Vs. Shaun Hover|S SKATE|Sean Davis|l2I37cC1YWc|SKATE S|Shaun Hover"
             const hasRematch = data.length > 4;
+            const isSwitched = data[!hasRematch ? 0 : 4].includes('*');
 
             return {
-                id: data[!hasRematch ? 0 : 4],
+                id: data[!hasRematch ? 0 : 4].replace(/\*$/,''),
                 title: data[1],
                 result: data[!hasRematch ? 2 : 5].split(' '),
                 skater: data[1].split(' Vs. '),
                 winner: data[!hasRematch ? 3 : 6],
+                isSwitched,
             };
         });
     })
