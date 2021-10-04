@@ -90,22 +90,25 @@ self.addEventListener('push', function (event) {
         })
     );
 });
-
+// https://newbedev.com/how-can-i-initiate-a-pwa-progressive-webapp-open-from-a-click-on-a-push-notification
 self.addEventListener('notificationclick', function (event) {
     console.log(pre, 'notificationclick', event.notification)
-    console.log(pre, 'clients', clients)
-    const url = event.notification.data.redirectUrl;
+    //For root applications: just change "'./'" to "'/'"
+    //Very important having the last forward slash on "new URL('./', location)..."
+    const rootUrl = new URL('./', location).href;
+    event.notification.close();
     event.waitUntil(
-        clients.matchAll({ type: 'window' }).then(windowClients => {
-            for (let i = 0; i < windowClients.length; i++) {
-                const client = windowClients[i];
-                if (client.url === url && 'focus' in client) {
+        clients.matchAll().then(matchedClients =>
+        {
+            for (let client of matchedClients)
+            {
+                if (client.url.indexOf(rootUrl) >= 0)
+                {
                     return client.focus();
                 }
             }
-            if (clients.openWindow) {
-                return clients.openWindow(url);
-            }
+
+            return clients.openWindow(rootUrl).then(function (client) { client.focus(); });
         })
     );
 });

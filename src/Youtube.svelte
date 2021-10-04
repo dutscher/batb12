@@ -17,15 +17,15 @@
 {#if youtubeVideo}
 <div class="youtube">
     <div class="youtube__title">
-        <span>
+        <div>
             <h2>{youtubeVideo.skater[0]}</h2>
-            {youtubeVideo.result[0]}
-        </span>
+            <span>{youtubeVideo.result[0]}</span>
+        </div>
         VS
-        <span>
+        <div>
             <h2>{youtubeVideo.skater[1]}</h2>
-            {youtubeVideo.result[1]}
-        </span>
+            <span>{youtubeVideo.result[1]}</span>
+        </div>
     </div>
     <div class="youtube__close" on:click={()=>closeYoutubeLayer()}></div>
     <iframe
@@ -48,21 +48,29 @@
     z-index: 1337;
     width: 100%;
     height: 100%;
+    background: #000;
 
     &__title {
-      background: #000;
+      background: rgba(#000,.8);
       color: #fff;
       display: flex;
       align-items: center;
       justify-content: center;
+      position: absolute;
+      width: 100%;
+      top: 0;
 
-      span {
+      div {
         margin: 1rem;
       }
 
       h2 {
         display: block;
         margin: 0;
+      }
+
+      span {
+        color: #6AAB1B;
       }
     }
 
@@ -75,6 +83,14 @@
       background: #6AAB1B;
       cursor: pointer;
       border-radius: 1rem;
+
+      &:after {
+        display: inline-block;
+        content: "\00d7"; /* This will render the 'X' */
+        font-size: 60pt;
+        line-height: 35pt;
+        margin-left: 3pt;
+      }
 
       &:hover {
         background: white;
