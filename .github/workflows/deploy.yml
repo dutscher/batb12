@@ -31,7 +31,7 @@ jobs:
 
       - name: Get Commitmessage and Remove Newlines for JSON
         run: |
-          export COMMIT_MESSAGE="$(github.event.head_commit.message)"
+          export COMMIT_MESSAGE=github.event.head_commit.message
           COMMIT_MESSAGE="${COMMIT_MESSAGE//'%'/'%25'}"
           COMMIT_MESSAGE="${COMMIT_MESSAGE//$'\n'/'%0A'}"
           COMMIT_MESSAGE="${COMMIT_MESSAGE//$'\r'/'%0D'}"
