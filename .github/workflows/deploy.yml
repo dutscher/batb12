@@ -33,8 +33,8 @@ jobs:
         run: |
           COMMIT_MESSAGE="${{ github.event.head_commit.message }}"
           COMMIT_MESSAGE="${COMMIT_MESSAGE//'%'/'%25'}"
-          COMMIT_MESSAGE="${COMMIT_MESSAGE//$'\n'/'%0A'}"
-          COMMIT_MESSAGE="${COMMIT_MESSAGE//$'\r'/'%0D'}"
+          COMMIT_MESSAGE="${COMMIT_MESSAGE//$'\n'/' '}"
+          COMMIT_MESSAGE="${COMMIT_MESSAGE//$'\r'/' '}"
           echo "COMMIT_MESSAGE=${COMMIT_MESSAGE#*\/}" >> $GITHUB_ENV
           echo "$COMMIT_MESSAGE"
 
