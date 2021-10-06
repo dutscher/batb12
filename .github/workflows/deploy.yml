@@ -36,6 +36,7 @@ jobs:
           COMMIT_MESSAGE="${COMMIT_MESSAGE//$'\n'/'%0A'}"
           COMMIT_MESSAGE="${COMMIT_MESSAGE//$'\r'/'%0D'}"
           echo "::set-output name=COMMIT_MESSAGE::$COMMIT_MESSAGE"
+          echo "$COMMIT_MESSAGE"
 
       - name: Send Notificaton
         uses: muinmomin/webhook-action@v1.0.0
