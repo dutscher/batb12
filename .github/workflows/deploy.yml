@@ -30,11 +30,16 @@ jobs:
           single-commit: true
 
       - name: Get Commitmessage and Remove Newlines for JSON
-        run: echo COMMIT_MESSAGE=${github.event.head_commit.message//$'\n'/'%0A'} >> $GITHUB_ENV
+        run: |
+          export COMMIT_MESSAGE="$(github.event.head_commit.message)"
+          COMMIT_MESSAGE="${COMMIT_MESSAGE//'%'/'%25'}"
+          COMMIT_MESSAGE="${COMMIT_MESSAGE//$'\n'/'%0A'}"
+          COMMIT_MESSAGE="${COMMIT_MESSAGE//$'\r'/'%0D'}"
+          echo "::set-output name=COMMIT_MESSAGE::$(echo "COMMIT_MESSAGE")"
 
       - name: Send Notificaton
         uses: muinmomin/webhook-action@v1.0.0
         with:
           url: ${{ secrets.NOTIFICATION_URL }}
-          data: ${{ format('{0}"payload":"{1}"{2}', '{', env.COMMIT_MESSAGE, '}') }}
+          data: ${{ format('{0}"payload":"{1}"{2}', '{', COMMIT_MESSAGE, '}') }}
 
