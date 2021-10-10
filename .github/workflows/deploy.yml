@@ -35,7 +35,7 @@ jobs:
           COMMIT_MESSAGE="${COMMIT_MESSAGE//'%'/'%25'}"
           COMMIT_MESSAGE="${COMMIT_MESSAGE//$'\n'/' '}"
           COMMIT_MESSAGE="${COMMIT_MESSAGE//$'\r'/' '}"
-          COMMIT_MESSAGE="${COMMIT_MESSAGE//$'"'/'\"'}"
+          COMMIT_MESSAGE="${COMMIT_MESSAGE//$'\"'/'\\"'}"
           echo "COMMIT_MESSAGE=${COMMIT_MESSAGE#*\/}" >> $GITHUB_ENV
           echo "$COMMIT_MESSAGE"
 
