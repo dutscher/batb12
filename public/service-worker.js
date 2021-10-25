@@ -4,8 +4,9 @@ const pre = '[ServiceWorker]'
 
 // Add list of files to cache here.
 const FILES_TO_CACHE = [
-    '../offline.html',
-    '../assets/table-12.jpg',
+    './index.html',
+    './offline.html',
+    './assets/table-12.jpg',
 ];
 
 self.addEventListener('install', (evt) => {
@@ -95,7 +96,7 @@ self.addEventListener('notificationclick', function (event) {
     console.log(pre, 'notificationclick', event.notification)
     //For root applications: just change "'./'" to "'/'"
     //Very important having the last forward slash on "new URL('./', location)..."
-    const rootUrl = new URL('./', location).href;
+    const rootUrl = 'https://dutscher.github.io/batb12';
     event.notification.close();
     event.waitUntil(
         clients.matchAll().then(matchedClients =>

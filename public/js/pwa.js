@@ -1,5 +1,6 @@
 (() => {
     const pre = '[PWA Loader]';
+    const api = '//api.willy-selma.de/push';
     const registerPushSubscriptionAfterPermissionGranted = (sw) => {
         console.log(pre, 'registerPushSubscriptionAfterPermissionGranted')
         let subscriptionExists = false;
@@ -33,7 +34,7 @@
                         return subscription;
                     }
 
-                    const vapidPublicKey = await fetch('//api.willy-selma.de/push/vapidPublicKey').then(res => res.text());
+                    const vapidPublicKey = await fetch(api + '/vapidPublicKey').then(res => res.text());
                     console.log(pre, 'create subscription', subscription);
                     const applicationServerKey = urlBase64ToUint8Array(vapidPublicKey);
 
@@ -45,7 +46,7 @@
         })
             .then(async function (subscription) {
                 if (!subscriptionExists) {
-                    const dbsubscription = await fetch('//api.willy-selma.de/push/register', {
+                    const dbsubscription = await fetch(api + '/register', {
                         method: 'post',
                         headers: {
                             'Content-type': 'application/json'
@@ -63,7 +64,7 @@
                     const payload = msg || 'ich bin ein notify';
                     const ttl = 24 * 60 * 60;
 
-                    fetch('//api.willy-selma.de/push/sendNotification', {
+                    fetch(api + '/sendNotification', {
                         method: 'post',
                         headers: {
                             'Content-type': 'application/json'
@@ -80,7 +81,7 @@
     window.onload = () => {
         if ('serviceWorker' in navigator) {
             console.log(pre, 'init service worker')
-            const sw = navigator.serviceWorker.register('./js/service-worker.js?cb=' + window.cacheBuster);
+            const sw = navigator.serviceWorker.register('./service-worker.js?cb=' + window.cacheBuster);
 
             if ('permissions' in navigator) {
                 navigator.permissions.query({ name: 'notifications' })
@@ -94,7 +95,7 @@
 
                             const subscriptionID = localStorage.getItem('subscriptionID');
                             if (!!subscriptionID && (notificationPerm.state === 'prompt' || notificationPerm.state === 'denied')) {
-                                fetch('//api.willy-selma.de/push/unregister', {
+                                fetch(api + '/unregister', {
                                     method: 'post',
                                     headers: {
                                         'Content-type': 'application/json'
