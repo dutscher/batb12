@@ -1,4 +1,4 @@
-const fs = require('fs-extra');
+import fs from 'fs-extra';
 const srcPath = './src/index.html';
 const destPath = './public/index.html';
 const cacheBuster = (new Date().getTime());

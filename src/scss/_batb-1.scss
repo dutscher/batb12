@@ -1,0 +1,171 @@
+@mixin bracket-1 {
+  .playlist {
+    left: 713px;
+    top: 27px;
+    width: 218px;
+    height: 210px;
+
+    &:hover {
+      border-color: #DE5E1B;
+    }
+  }
+}
+
+@mixin youtube-1 ($selector) {
+  #{$selector} {
+    &__title {
+      span {
+        color: #DE5E1B;
+      }
+    }
+
+    &__close {
+      background: #DE5E1B;
+      color: white;
+    }
+  }
+}
+
+@mixin battles-1 {
+  &--1 {
+    width: 282px;
+    height: 390px;
+
+    &#{$selector} {
+      &--lt {
+        left: 15px;
+        top: 7px;
+      }
+
+      &--lb {
+        left: 15px;
+        top: 500px;
+      }
+
+      &--rt {
+        right: 30px;
+        top: 7px;
+      }
+
+      &--rb {
+        right: 30px;
+        top: 500px;
+      }
+    }
+  }
+
+  &--2 {
+    width: 285px;
+    height: 341px;
+
+    &#{$selector} {
+      &--lt {
+        left: 180px;
+        top: 80px;
+      }
+
+      &--lb {
+        left: 180px;
+        top: 525px;
+      }
+
+      &--rt {
+        right: 195px;
+        top: 80px;
+      }
+
+      &--rb {
+        right: 195px;
+        top: 525px;
+      }
+    }
+  }
+
+  &--3 {
+    width: 363px;
+    height: 732px;
+
+    &#{$selector} {
+      &--l {
+        left: 331px;
+        top: 80px;
+      }
+
+      &--r {
+        right: 344px;
+        top: 80px;
+      }
+    }
+  }
+
+  &--4 {
+    width: 363px;
+    height: 732px;
+
+    &#{$selector} {
+      &--l {
+        left: 331px;
+        top: 80px;
+      }
+
+      &--r {
+        right: 344px;
+        top: 80px;
+      }
+    }
+  }
+}
+
+@mixin battle-1 ($selector) {
+  #{$selector} {
+    &__link {
+      color: #fff;
+
+      &:hover {
+        color: #B20C1E;
+      }
+
+      &::before,
+      &::after {
+        background: #B20C1E;
+        color: #fff;
+      }
+    }
+
+    &--1 {
+      top: 23px;
+    }
+
+    &--2 {
+      top: 125px;
+    }
+
+    &--3 {
+      top: 245px;
+    }
+
+    &--4 {
+      top: 345px;
+    }
+  }
+
+  :global(.battles--2) #{$selector} {
+    &--1 {
+      top: 52px;
+    }
+
+    &--2 {
+      top: 276px;
+    }
+  }
+
+  :global(.battles--3) #{$selector} {
+    &--1 {
+      top: 163px;
+    }
+
+    &--2 {
+      top: 605px;
+    }
+  }
+}

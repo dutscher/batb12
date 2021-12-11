@@ -23,24 +23,24 @@
         <Battles battles={bracket.videos["1"]["right-top"]} round="1" type="rt"/>
         <Battles battles={bracket.videos["1"]["right-bottom"]} round="1" type="rb"/>
 
-<!--        <Battles battles={bracket.videos["2"]["left-top"]} round="2" type="lt"/>-->
-<!--        <Battles battles={bracket.videos["2"]["left-bottom"]} round="2" type="lb"/>-->
-<!--        <Battles battles={bracket.videos["2"]["right-top"]} round="2" type="rt"/>-->
-<!--        <Battles battles={bracket.videos["2"]["right-bottom"]} round="2" type="rb"/>-->
+        <!--        <Battles battles={bracket.videos["2"]["left-top"]} round="2" type="lt"/>-->
+        <!--        <Battles battles={bracket.videos["2"]["left-bottom"]} round="2" type="lb"/>-->
+        <!--        <Battles battles={bracket.videos["2"]["right-top"]} round="2" type="rt"/>-->
+        <!--        <Battles battles={bracket.videos["2"]["right-bottom"]} round="2" type="rb"/>-->
 
-<!--        <Battles battles={bracket.videos["3"]["left-top"]} round="3" type="lt"/>-->
-<!--        <Battles battles={bracket.videos["3"]["left-bottom"]} round="3" type="lb"/>-->
-<!--        <Battles battles={bracket.videos["3"]["right-top"]} round="3" type="rt"/>-->
-<!--        <Battles battles={bracket.videos["3"]["right-bottom"]} round="3" type="rb"/>-->
+        <!--        <Battles battles={bracket.videos["3"]["left-top"]} round="3" type="lt"/>-->
+        <!--        <Battles battles={bracket.videos["3"]["left-bottom"]} round="3" type="lb"/>-->
+        <!--        <Battles battles={bracket.videos["3"]["right-top"]} round="3" type="rt"/>-->
+        <!--        <Battles battles={bracket.videos["3"]["right-bottom"]} round="3" type="rb"/>-->
 
-<!--        <Battles battles={bracket.videos["3"]["left"]} round="3" type="l"/>-->
-<!--        <Battles battles={bracket.videos["3"]["right"]} round="3" type="r"/>-->
+        <!--        <Battles battles={bracket.videos["3"]["left"]} round="3" type="l"/>-->
+        <!--        <Battles battles={bracket.videos["3"]["right"]} round="3" type="r"/>-->
 
-<!--        <Battles battles={bracket.videos["Finals"]["left"]} round="4" type="l"/>-->
-<!--        <Battles battles={bracket.videos["Finals"]["right"]} round="4" type="r"/>-->
+        <!--        <Battles battles={bracket.videos["Finals"]["left"]} round="4" type="l"/>-->
+        <!--        <Battles battles={bracket.videos["Finals"]["right"]} round="4" type="r"/>-->
 
-<!--        <Battles battles={bracket.videos["Championship Battle"]["middle"]} round="5" type="m"/>-->
-<!--        <Battles battles={bracket.videos["Championship Battle"]["3rd-place"]} round="5" type="3rd"/>-->
+        <!--        <Battles battles={bracket.videos["Championship Battle"]["middle"]} round="5" type="m"/>-->
+        <!--        <Battles battles={bracket.videos["Championship Battle"]["3rd-place"]} round="5" type="3rd"/>-->
 
         <img
                 class="table__img"
@@ -51,7 +51,10 @@
 </div>
 
 <style lang="scss">
+  @import './scss/all-battles';
+
   $selector: '.table';
+
   #{$selector} {
     position: relative;
     color: #fff;
@@ -73,30 +76,16 @@
       align-items: center;
     }
 
-    &--batb-12 {
-      .playlist {
-        left: 836px;
-        top: 75px;
-        width: 218px;
-        height: 187px;
-
-        &:hover {
-          border: solid 1px #B20C1E;
-        }
-      }
+    &--batb-1 {
+      @include bracket-1();
     }
 
     &--batb-11 {
-      .playlist {
-        left: 823px;
-        top: 27px;
-        width: 218px;
-        height: 210px;
+      @include bracket-11();
+    }
 
-        &:hover {
-          border-color: #DE5E1B;
-        }
-      }
+    &--batb-12 {
+      @include bracket-12();
     }
   }
 </style>

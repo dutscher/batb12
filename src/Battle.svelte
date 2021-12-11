@@ -35,6 +35,7 @@
 {/if}
 
 <style lang="scss">
+  @import './scss/all-battles';
   @import "./scss/mixins";
 
   $selector: ".battle";
@@ -83,159 +84,15 @@
     }
   }
 
-  :global(.table--batb-12) {
-    #{$selector} {
-      &__link {
-        color: #fff;
-
-        &:hover {
-          color: #B20C1E;
-        }
-
-        &::before,
-        &::after {
-          background: #B20C1E;
-          color: #fff;
-        }
-      }
-
-      &--1 {
-        top: 13px;
-      }
-
-      &--2 {
-        top: 67px;
-      }
-
-      &--3 {
-        top: 120px;
-      }
-
-      &--4 {
-        top: 174px;
-      }
-
-      &--5 {
-        top: 227px;
-      }
-
-      &--6 {
-        top: 281px;
-      }
-
-      &--7 {
-        top: 333px;
-      }
-
-      &--8 {
-        top: 387px;
-      }
-    }
-
-    :global(.battles--2) #{$selector} {
-      &--1 {
-        top: 25px;
-      }
-
-      &--2 {
-        top: 132px;
-      }
-
-      &--3 {
-        top: 239px;
-      }
-
-      &--4 {
-        top: 347px;
-      }
-    }
-
-    :global(.battles--3) #{$selector} {
-      &--1 {
-        top: 52px;
-      }
-
-      &--2 {
-        top: 266px;
-      }
-    }
-
-    :global(.battles--4) #{$selector} {
-      &--1 {
-        top: 104px;
-      }
-
-      &--2 {
-        top: 531px;
-      }
-    }
-
-    :global(.battles--m) #{$selector} {
-      &--1 {
-        top: 229px;
-        text-align: center;
-      }
-    }
-
-    :global(.battles--3rd) #{$selector} {
-      &--1 {
-        text-align: center;
-      }
-    }
+  :global(.table--batb-1) {
+    @include battle-1($selector);
   }
 
   :global(.table--batb-11) {
-    #{$selector} {
-      &__link {
-        color: #fff;
-
-        &:hover {
-          color: #B20C1E;
-        }
-
-        &::before,
-        &::after {
-          background: #B20C1E;
-          color: #fff;
-        }
-      }
-
-      &--1 {
-        top: 23px;
-      }
-
-      &--2 {
-        top: 125px;
-      }
-
-      &--3 {
-        top: 245px;
-      }
-
-      &--4 {
-        top: 345px;
-      }
-    }
-
-    :global(.battles--2) #{$selector} {
-      &--1 {
-        top: 52px;
-      }
-
-      &--2 {
-        top: 276px;
-      }
-    }
-
-    :global(.battles--3) #{$selector} {
-      &--1 {
-        top: 163px;
-      }
-
-      &--2 {
-        top: 605px;
-      }
-    }
+    @include battle-11($selector);
   }
 
+  :global(.table--batb-12) {
+    @include battle-12($selector);
+  }
 </style>

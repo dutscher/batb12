@@ -1,9 +1,12 @@
 <script>
-    import { activeData } from "./stores";
+    import { activeData, storedBracketData } from "./stores";
 
     let activeVideo = '0AIKNWgOo6I'
     let youtubeVideo = null;
+    let bracket;
+
     activeData.subscribe(store => youtubeVideo = store.youtubeVideo);
+    storedBracketData.subscribe(store => bracket = store);
 
     const closeYoutubeLayer = () => {
         activeData.update(store => {
@@ -14,7 +17,7 @@
 </script>
 
 {#if youtubeVideo}
-<div class="youtube">
+<div class="youtube battle--{bracket.data.modifier}">
     <div class="youtube__title">
         <div>
             <h2>{youtubeVideo.skater[!youtubeVideo.isSwitched ? 0 : 1]}</h2>
@@ -39,6 +42,7 @@
 {/if}
 
 <style lang="scss">
+  @import "./scss/all-battles";
   @import "./scss/mixins";
 
   $selector: ".youtube";
@@ -100,5 +104,13 @@
       width: 100%;
       height: 100%;
     }
+  }
+
+  :global(.battle--batb-1) {
+    @include youtube-1($selector);
+  }
+
+  :global(.battle--batb-11) {
+    @include youtube-11($selector);
   }
 </style>
