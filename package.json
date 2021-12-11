@@ -2,6 +2,7 @@
   "name": "batb",
   "version": "1.0.0",
   "licence": "MIT",
+  "type": "module",
   "scripts": {
     "npm:install": "npm install",
     "build": "rollup -c && npm run build:files",
