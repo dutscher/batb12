@@ -1,8 +1,8 @@
 import { writable } from 'svelte/store';
-import bracketsJSON from '../data/batb1.json';
+import bracketsJSON from '../data/batb12.json';
 
 export const activeData = writable({});
-activeData.set({ version: 1, youtubeVideo: null });
+activeData.set({ version: 12, youtubeVideo: null });
 
 export const storedBracketData = writable({});
 const brackets = {
