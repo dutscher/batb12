@@ -25,23 +25,39 @@ Object.keys(bracketsJSON.videos).map(round => {
     brackets.videos[roundKey] = {};
     Object.keys(bracketsJSON.videos[round]).map(category => {
         brackets.videos[roundKey][category] = bracketsJSON.videos[round][category].map(video => {
-            const data = video.split('|');
-            // "0          |1                         |2      |3         |4          |5      |6          "
-            // "p1v7MNvUzbk|Sean Davis Vs. Shaun Hover|S SKATE|Sean Davis|l2I37cC1YWc|SKATE S|Shaun Hover"
-            // "p1v7MNvUzbk*|Sean Davis Vs. Shaun Hover|S SKATE|Sean Davis|l2I37cC1YWc|SKATE S|Shaun Hover"
-            const hasRematch = data.length > 4;
-            const isSwitched = data[!hasRematch ? 0 : 4].includes('*');
-
-            //console.log({hasRematch, isSwitched, data})
-
-            return {
-                id: data[!hasRematch ? 0 : 4].replace(/\*$/,''),
-                title: data[1],
-                result: data[!hasRematch ? 2 : 5].split(' '),
-                skater: data[1].replace(' vs. ', ' Vs. ').split(' Vs. '),
-                winner: data[!hasRematch ? 3 : 6],
-                isSwitched,
-            };
+            if (!video.startsWith('-|-|-')) {
+                const data = video.split('|');
+                // "0          |1                         |2      |3         |4          |5      |6          "
+                // "p1v7MNvUzbk|Sean Davis Vs. Shaun Hover|S SKATE|Sean Davis|l2I37cC1YWc|SKATE S|Shaun Hover"
+                // "p1v7MNvUzbk*|Sean Davis* Vs. Shaun Hover|S SKATE|Sean Davis|l2I37cC1YWc|SKATE S|Shaun Hover"
+                const hasRematch = data.length > 4;
+                const isSwitched = data[!hasRematch ? 0 : 4].includes('*');
+                const skaterRaw = data[1].replace(' vs. ', ' Vs. ').split(' Vs. ');
+                const skater = {
+                    left: skaterRaw[isSwitched ? 1 : 0],
+                    right: skaterRaw[isSwitched ? 0 : 1],
+                }
+                if (skater.left.includes('*')) {
+                    skater.replaceLeft = true;
+                    skater.left = skater.left.replace('*', '');
+                }
+                if (skater.right.includes('*')) {
+                    skater.replaceRight = true;
+                    skater.right = skater.right.replace('*', '');
+                }
+                const resultRaw = data[!hasRematch ? 2 : 5].split(' ');
+                const result = resultRaw.length === 1 ? {} : {
+                    left: resultRaw[isSwitched ? 1 : 0],
+                    right: resultRaw[isSwitched ? 0 : 1],
+                }
+                return {
+                    id: data[!hasRematch ? 0 : 4].replace(/\*$/, ''),
+                    skater,
+                    result,
+                    winner: data[!hasRematch ? 3 : 6],
+                    isSwitched,
+                };
+            }
         });
     })
 });

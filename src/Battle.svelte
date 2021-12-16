@@ -1,5 +1,6 @@
 <script>
     import { activeData } from './stores';
+
     export let video;
     export let index;
     export let type;
@@ -8,29 +9,32 @@
     activeData.subscribe(store => youtubeVideo = store.youtubeVideo);
 
     const openYoutubeLayer = (video) => {
-        activeData.update(store => {
-            store.youtubeVideo = video;
-            return store;
-        });
+        if (video.winner !== '-') {
+            activeData.update(store => {
+                store.youtubeVideo = video;
+                return store;
+            });
+        }
     };
 </script>
 
 {#if video.winner}
-    <div class="battle battle--{index + 1} battle--{type}" title={video.title}>
+    <div class="battle battle--{index + 1} battle--{type}" title="{video.skater.left} Vs. {video.skater.right}">
         {#if type === '3rd'}
             3rd:
         {/if}
         {#if type === 'm'}
             Winner:
         {/if}
-        {#if video.winner !== '-'}
-            <div class="battle__link" on:click={() => openYoutubeLayer(video)}
-               data-result-top={video.result[0]} data-result-bottom={video.result[1]}>
-                {video.winner}
+        <div class="battle__link" on:click={() => openYoutubeLayer(video)}
+             {...(video.skater.replaceLeft ? { 'data-rider-top': video.skater.left } : {})}
+             {...(video.skater.replaceRight ? { 'data-rider-bottom': video.skater.right } : {})}>
+            <div class="battle__label"
+                 {...(video.result.left ? { 'data-result-top': video.result.left } : {})}
+                 {...(video.result.right ? { 'data-result-bottom': video.result.right } : {})}>
+                {video.winner || '-'}
             </div>
-        {:else}
-            -
-        {/if}
+        </div>
     </div>
 {/if}
 
@@ -46,10 +50,37 @@
 
     &__link {
       position: relative;
-      display: block;
       user-select: none;
       cursor: pointer;
 
+      &::before,
+      &::after {
+        content: attr(data-rider-top);
+        display: block;
+        position: absolute;
+        top: -100%;
+        width: 50%;
+        text-align: center;
+        border-radius: 2px;
+        z-index: 1;
+      }
+
+      &::after {
+        content: attr(data-rider-bottom);
+        top: 100%;
+      }
+
+      #{$selector}--r &,
+      #{$selector}--rt &,
+      #{$selector}--rb & {
+        &::before,
+        &::after {
+          right: 0
+        }
+      }
+    }
+
+    &__label {
       &:hover {
         &::before,
         &::after {
@@ -66,6 +97,7 @@
         width: 50%;
         text-align: center;
         border-radius: 2px;
+        z-index: 2;
       }
 
       &::after {

@@ -134,14 +134,24 @@
     &__link {
       color: #fff;
 
-      &:hover {
-        color: #B20C1E;
-      }
-
       &::before,
       &::after {
         background: #B20C1E;
         color: #fff;
+      }
+    }
+
+    &__label {
+      color: #fff;
+
+      &:hover {
+        color: #69B421;
+      }
+
+      &::before,
+      &::after {
+        background: #69B421;
+        color: #000;
       }
     }
 

@@ -7,7 +7,7 @@ import css from 'rollup-plugin-css-only';
 // added custom plugins
 import sveltePreprocess from 'svelte-preprocess';
 import assetsPreprocessor from 'svelte-assets-preprocessor';
-import replace from 'rollup-plugin-replace';
+import replace from '@rollup/plugin-replace';
 import json from '@rollup/plugin-json';
 import url from '@rollup/plugin-url'
 import { svelteSVG } from 'rollup-plugin-svelte-svg';
@@ -84,6 +84,7 @@ export default {
 			}
 		}),
 		replace({
+			preventAssignment: true,
 			'process.env.NODE_ENV': JSON.stringify( production ? 'production' : 'development' )
 		}),
 		// we'll extract any component CSS out into

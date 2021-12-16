@@ -20,20 +20,20 @@
 <div class="youtube battle--{bracket.data.modifier}">
     <div class="youtube__title">
         <div>
-            <h2>{youtubeVideo.skater[!youtubeVideo.isSwitched ? 0 : 1]}</h2>
-            <span>{youtubeVideo.result[!youtubeVideo.isSwitched ? 0 : 1]}</span>
+            <h2>{youtubeVideo.skater.left}</h2>
+            <span>{youtubeVideo.result.left}</span>
         </div>
-        VS
+        Vs.
         <div>
-            <h2>{youtubeVideo.skater[!youtubeVideo.isSwitched ? 1 : 0]}</h2>
-            <span>{youtubeVideo.result[!youtubeVideo.isSwitched ? 1 : 0]}</span>
+            <h2>{youtubeVideo.skater.right}</h2>
+            <span>{youtubeVideo.result.right}</span>
         </div>
     </div>
     <div class="youtube__close" on:click={()=>closeYoutubeLayer()}></div>
     <iframe
         class="youtube__iframe"
         width="560" height="315"
-        title="Battle - {youtubeVideo.title}"
+        title="Battle - {youtubeVideo.skater.left} Vs. {youtubeVideo.skater.right}"
         src="https://www.youtube.com/embed/{youtubeVideo.id}"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
