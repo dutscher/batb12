@@ -5,7 +5,7 @@
     let bracket;
     let innerWidth;
 
-    storedBracketData.subscribe(value => bracket = value);
+    storedBracketData.subscribe(store => bracket = store);
 </script>
 
 <svelte:window bind:innerWidth={innerWidth}/>
@@ -23,10 +23,10 @@
         <Battles battles={bracket.videos["1"]["right-top"]} round="1" type="rt"/>
         <Battles battles={bracket.videos["1"]["right-bottom"]} round="1" type="rb"/>
 
-        <!--        <Battles battles={bracket.videos["2"]["left-top"]} round="2" type="lt"/>-->
-        <!--        <Battles battles={bracket.videos["2"]["left-bottom"]} round="2" type="lb"/>-->
-        <!--        <Battles battles={bracket.videos["2"]["right-top"]} round="2" type="rt"/>-->
-        <!--        <Battles battles={bracket.videos["2"]["right-bottom"]} round="2" type="rb"/>-->
+        <Battles battles={bracket.videos["2"]["left-top"]} round="2" type="lt"/>
+        <Battles battles={bracket.videos["2"]["left-bottom"]} round="2" type="lb"/>
+        <Battles battles={bracket.videos["2"]["right-top"]} round="2" type="rt"/>
+        <Battles battles={bracket.videos["2"]["right-bottom"]} round="2" type="rb"/>
 
         <!--        <Battles battles={bracket.videos["3"]["left-top"]} round="3" type="lt"/>-->
         <!--        <Battles battles={bracket.videos["3"]["left-bottom"]} round="3" type="lb"/>-->
@@ -77,15 +77,15 @@
     }
 
     &--batb-1 {
-      @include bracket-1();
+      @include comp-brackets-1();
     }
 
     &--batb-11 {
-      @include bracket-11();
+      @include comp-brackets-11();
     }
 
     &--batb-12 {
-      @include bracket-12();
+      @include comp-brackets-12();
     }
   }
 </style>

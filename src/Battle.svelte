@@ -32,7 +32,7 @@
             <div class="battle__label"
                  {...(video.result.left ? { 'data-result-top': video.result.left } : {})}
                  {...(video.result.right ? { 'data-result-bottom': video.result.right } : {})}>
-                {video.winner || '-'}
+                <span>{video.winner || '-'}</span>
             </div>
         </div>
     </div>
@@ -117,14 +117,14 @@
   }
 
   :global(.table--batb-1) {
-    @include battle-1($selector);
+    @include comp-battle-1($selector);
   }
 
   :global(.table--batb-11) {
-    @include battle-11($selector);
+    @include comp-battle-11($selector);
   }
 
   :global(.table--batb-12) {
-    @include battle-12($selector);
+    @include comp-battle-12($selector);
   }
 </style>

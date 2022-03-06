@@ -1,4 +1,4 @@
-@mixin bracket-11 {
+@mixin comp-brackets-11 {
   .playlist {
     left: 823px;
     top: 27px;
@@ -11,7 +11,7 @@
   }
 }
 
-@mixin youtube-11 ($selector) {
+@mixin comp-youtube-11 ($selector) {
   #{$selector} {
     &__title {
       span {
@@ -26,7 +26,7 @@
   }
 }
 
-@mixin battles-11 {
+@mixin comp-battles-11 {
   &--1 {
     width: 305px;
     height: 390px;
@@ -116,7 +116,7 @@
   }
 }
 
-@mixin battle-11 ($selector) {
+@mixin comp-battle-11 ($selector) {
   #{$selector} {
     &__link {
       color: #fff;

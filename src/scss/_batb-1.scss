@@ -1,4 +1,4 @@
-@mixin bracket-1 {
+@mixin comp-brackets-1 {
   .playlist {
     left: 713px;
     top: 27px;
@@ -11,7 +11,7 @@
   }
 }
 
-@mixin youtube-1 ($selector) {
+@mixin comp-youtube-1($selector) {
   #{$selector} {
     &__title {
       span {
@@ -26,98 +26,115 @@
   }
 }
 
-@mixin battles-1 {
-  &--1 {
-    width: 282px;
-    height: 390px;
+@mixin comp-battles-1 {
+  &--round {
+    &-1 {
+      width: 274px;
 
-    &#{$selector} {
-      &--lt {
-        left: 15px;
-        top: 7px;
-      }
+      &#{$selector} {
+        &--lt {
+          left: 15px;
+          top: 7px;
+        }
 
-      &--lb {
-        left: 15px;
-        top: 500px;
-      }
+        &--lb {
+          left: 15px;
+          top: 500px;
+        }
 
-      &--rt {
-        right: 30px;
-        top: 7px;
-      }
+        &--rt {
+          right: 30px;
+          top: 7px;
+        }
 
-      &--rb {
-        right: 30px;
-        top: 500px;
-      }
-    }
-  }
-
-  &--2 {
-    width: 285px;
-    height: 341px;
-
-    &#{$selector} {
-      &--lt {
-        left: 180px;
-        top: 80px;
-      }
-
-      &--lb {
-        left: 180px;
-        top: 525px;
-      }
-
-      &--rt {
-        right: 195px;
-        top: 80px;
-      }
-
-      &--rb {
-        right: 195px;
-        top: 525px;
+        &--rb {
+          right: 30px;
+          top: 500px;
+        }
       }
     }
-  }
 
-  &--3 {
-    width: 363px;
-    height: 732px;
+    &-2 {
+      width: 285px;
 
-    &#{$selector} {
-      &--l {
-        left: 331px;
-        top: 80px;
-      }
+      &#{$selector} {
+        &--lt {
+          left: 153px;
+          top: 32px;
+        }
 
-      &--r {
-        right: 344px;
-        top: 80px;
+        &--lb {
+          left: 180px;
+          top: 525px;
+        }
+
+        &--rt {
+          right: 195px;
+          top: 80px;
+        }
+
+        &--rb {
+          right: 195px;
+          top: 525px;
+        }
       }
     }
-  }
 
-  &--4 {
-    width: 363px;
-    height: 732px;
+    &-3 {
+      width: 363px;
 
-    &#{$selector} {
-      &--l {
-        left: 331px;
-        top: 80px;
+      &#{$selector} {
+        &--l {
+          left: 331px;
+          top: 80px;
+        }
+
+        &--r {
+          right: 344px;
+          top: 80px;
+        }
       }
+    }
 
-      &--r {
-        right: 344px;
-        top: 80px;
+    &-4 {
+      width: 363px;
+
+      &#{$selector} {
+        &--l {
+          left: 331px;
+          top: 80px;
+        }
+
+        &--r {
+          right: 344px;
+          top: 80px;
+        }
       }
     }
   }
 }
 
-@mixin battle-1 ($selector) {
+@mixin comp-battle-1($selector) {
   #{$selector} {
+    &__link,
+    &__label {
+      &::before,
+      &::after {
+        background: #000;
+        text-align: right;
+        color: #fff;
+        width: 47%;
+      }
+
+      &::before {
+        top: -40%;
+      }
+
+      &::after {
+        top: 210%;
+      }
+    }
+
     &__link {
       color: #fff;
 
@@ -127,8 +144,13 @@
 
       &::before,
       &::after {
-        background: #B20C1E;
         color: #fff;
+      }
+    }
+
+    &__label {
+      span {
+        background: #000;
       }
     }
 
@@ -137,29 +159,29 @@
     }
 
     &--2 {
-      top: 125px;
+      top: 127px;
     }
 
     &--3 {
-      top: 245px;
+      top: 233px;
     }
 
     &--4 {
-      top: 345px;
+      top: 337px;
     }
   }
 
-  :global(.battles--2) #{$selector} {
+  :global(.battles--round-2) #{$selector} {
     &--1 {
-      top: 52px;
+      top: 49px;
     }
 
     &--2 {
-      top: 276px;
+      top: 260px;
     }
   }
 
-  :global(.battles--3) #{$selector} {
+  :global(.battles--round-3) #{$selector} {
     &--1 {
       top: 163px;
     }

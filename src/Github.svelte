@@ -1,4 +1,4 @@
-<a href="https://github.com/dutscher/batb12/blob/master/data/batb12.json" class="github-corner"
+<a href="https://github.com/dutscher/batb12/blob/master/data/batb12.json" target="_blank" class="github-corner"
    aria-label="View source on GitHub">
     <svg width="80" height="80" viewBox="0 0 250 250"
          style="fill:#fff; color:#151513; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">

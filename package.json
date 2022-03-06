@@ -8,7 +8,7 @@
     "build": "rollup -c && npm run build:files",
     "dev": "npm run build:files -- --dev && rollup -c -w",
     "build:files": "node ./scripts/build.js",
-    "start": "sirv public --no-clear"
+    "start:by-rollup": "sirv public --no-clear"
   },
   "dependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",

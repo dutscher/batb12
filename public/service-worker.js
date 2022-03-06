@@ -10,7 +10,7 @@ const FILES_TO_CACHE = [
 ];
 
 self.addEventListener('install', (evt) => {
-    console.log(pre, 'install');
+    // console.log(pre, 'install');
 
     evt.waitUntil(
         caches.open(CACHE_NAME).then((cache) => {
@@ -23,7 +23,7 @@ self.addEventListener('install', (evt) => {
 });
 
 self.addEventListener('activate', (evt) => {
-    console.log(pre, 'activate');
+    // console.log(pre, 'activate');
     // Remove previous cached data from disk.
     evt.waitUntil(
         caches.keys().then((keyList) => {
@@ -40,7 +40,7 @@ self.addEventListener('activate', (evt) => {
 });
 
 self.addEventListener('fetch', (evt) => {
-    console.log(pre, 'fetch', evt.request.url);
+    // console.log(pre, 'fetch', evt.request.url);
     // Add fetch event handler here.
     if (evt.request.mode !== 'navigate') {
         // Not a page navigation, bail.
@@ -70,7 +70,7 @@ function getEndpoint() {
 }
 
 self.addEventListener('push', function (event) {
-    console.log(pre, 'push');
+    // console.log(pre, 'push');
     event.waitUntil(
         getEndpoint()
         //     .then(function (endpoint) {

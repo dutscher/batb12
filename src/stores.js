@@ -1,8 +1,7 @@
 import { writable } from 'svelte/store';
 import bracketsJSON from '../data/batb12.json';
 
-export const activeData = writable({});
-activeData.set({ version: 12, youtubeVideo: null });
+export const activeData = writable({ version: bracketsJSON.nr, youtubeVideo: null });
 
 export const storedBracketData = writable({});
 const brackets = {
@@ -32,7 +31,8 @@ Object.keys(bracketsJSON.videos).map(round => {
                 // "p1v7MNvUzbk*|Sean Davis* Vs. Shaun Hover|S SKATE|Sean Davis|l2I37cC1YWc|SKATE S|Shaun Hover"
                 const hasRematch = data.length > 4;
                 const isSwitched = data[!hasRematch ? 0 : 4].includes('*');
-                const skaterRaw = data[1].replace(' vs. ', ' Vs. ').split(' Vs. ');
+                // "TnrqvN6ChPE|Nick Tucker* Vs. Sierra Fellers*/Ishod Wair* Vs. Shane O'Neill*|S SKATE|Nick Tucker",
+                const skaterRaw = data[1].replace(' vs. ', ' Vs. ').split('/')[0].split(' Vs. ');
                 const skater = {
                     left: skaterRaw[isSwitched ? 1 : 0],
                     right: skaterRaw[isSwitched ? 0 : 1],
@@ -71,4 +71,5 @@ brackets.data.img = {
 }
 brackets.data.modifier = brackets.data.name.toLowerCase().replace(' ', '-')
 //console.log(brackets)
+console.log(brackets)
 storedBracketData.set(brackets);

@@ -107,10 +107,10 @@
   }
 
   :global(.battle--batb-1) {
-    @include youtube-1($selector);
+    @include comp-youtube-1($selector);
   }
 
   :global(.battle--batb-11) {
-    @include youtube-11($selector);
+    @include comp-youtube-11($selector);
   }
 </style>

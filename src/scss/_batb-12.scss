@@ -1,4 +1,4 @@
-@mixin bracket-12 {
+@mixin comp-brackets-12 {
   .playlist {
     left: 836px;
     top: 75px;
@@ -11,125 +11,122 @@
   }
 }
 
-@mixin battles-12 {
-  &--1 {
-    height: 415px;
-    width: 253px;
+@mixin comp-battles-12 {
+  &--round {
+    &-1 {
+      width: 253px;
 
-    &#{$selector} {
-      &--lt {
-        left: 68px;
-        top: 65px;
-      }
+      &#{$selector} {
+        &--lt {
+          left: 68px;
+          top: 65px;
+        }
 
-      &--lb {
-        left: 68px;
-        top: 494px;
-      }
+        &--lb {
+          left: 68px;
+          top: 494px;
+        }
 
-      &--rt {
-        right: 65px;
-        top: 65px;
-      }
+        &--rt {
+          right: 65px;
+          top: 65px;
+        }
 
-      &--rb {
-        right: 65px;
-        top: 494px;
-      }
-    }
-  }
-
-  &--2 {
-    height: 387px;
-    width: 250px;
-
-    &#{$selector} {
-      &--lt {
-        left: 200px;
-        top: 80px;
-      }
-
-      &--lb {
-        left: 200px;
-        top: 507px;
-      }
-
-      &--rt {
-        right: 198px;
-        top: 80px;
-      }
-
-      &--rb {
-        right: 198px;
-        top: 507px;
+        &--rb {
+          right: 65px;
+          top: 494px;
+        }
       }
     }
-  }
 
-  &--3 {
-    height: 333px;
-    width: 250px;
+    &-2 {
+      width: 250px;
 
-    &#{$selector} {
-      &--lt {
-        left: 329px;
-        top: 107px;
-      }
+      &#{$selector} {
+        &--lt {
+          left: 200px;
+          top: 80px;
+        }
 
-      &--lb {
-        left: 329px;
-        top: 534px;
-      }
+        &--lb {
+          left: 200px;
+          top: 507px;
+        }
 
-      &--rt {
-        right: 329px;
-        top: 107px;
-      }
+        &--rt {
+          right: 198px;
+          top: 80px;
+        }
 
-      &--rb {
-        right: 329px;
-        top: 534px;
-      }
-    }
-  }
-
-  &--4 {
-    height: 653px;
-    width: 250px;
-
-    &#{$selector} {
-      &--l {
-        left: 457px;
-        top: 162px;
-      }
-
-      &--r {
-        right: 457px;
-        top: 162px;
+        &--rb {
+          right: 198px;
+          top: 507px;
+        }
       }
     }
-  }
 
-  &--5 {
-    height: 159px;
-    width: 244px;
+    &-3 {
+      width: 250px;
 
-    &#{$selector} {
-      &--m {
-        left: 713px;
-        top: 415px;
+      &#{$selector} {
+        &--lt {
+          left: 329px;
+          top: 107px;
+        }
+
+        &--lb {
+          left: 329px;
+          top: 534px;
+        }
+
+        &--rt {
+          right: 329px;
+          top: 107px;
+        }
+
+        &--rb {
+          right: 329px;
+          top: 534px;
+        }
       }
+    }
 
-      &--3rd {
-        height: 50px;
-        left: 713px;
-        top: 765px;
+    &-4 {
+      width: 250px;
+
+      &#{$selector} {
+        &--l {
+          left: 457px;
+          top: 162px;
+        }
+
+        &--r {
+          right: 457px;
+          top: 162px;
+        }
+      }
+    }
+
+    &-5 {
+      width: 244px;
+
+      &#{$selector} {
+        &--m {
+          left: 713px;
+          top: 415px;
+        }
+
+        &--3rd {
+          height: 50px;
+          left: 713px;
+          top: 765px;
+        }
       }
     }
   }
 }
 
-@mixin battle-12 ($selector) {
+@mixin comp-battle-12($selector) {
   #{$selector} {
     &__link {
       color: #fff;
@@ -188,7 +185,18 @@
     }
   }
 
-  :global(.battles--2) #{$selector} {
+  :global(.battles--round-2) #{$selector} {
+    &__label,
+    &__link {
+      &::before {
+        top: -200%;
+      }
+
+      &::after {
+        top: 200%;
+      }
+    }
+
     &--1 {
       top: 25px;
     }
@@ -206,7 +214,7 @@
     }
   }
 
-  :global(.battles--3) #{$selector} {
+  :global(.battles--round-3) #{$selector} {
     &--1 {
       top: 52px;
     }
@@ -216,7 +224,7 @@
     }
   }
 
-  :global(.battles--4) #{$selector} {
+  :global(.battles--round-4) #{$selector} {
     &--1 {
       top: 104px;
     }

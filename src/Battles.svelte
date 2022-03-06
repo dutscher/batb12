@@ -6,7 +6,7 @@
     export let type;
 </script>
 
-<div class="battles battles--{round} battles--{type}">
+<div class="battles battles--round-{round} battles--{type}">
     {#each battles as video, index}
         <Battle {video} {index} {type}/>
     {/each}
@@ -29,41 +29,40 @@
       text-align: left;
     }
 
-    &--1 {
-      z-index: 5;
-      //background: rgba(255, 255, 255, 0.5);
-    }
+    &--round {
+      &-1 {
+        //background: rgba(255, 255, 255, 0.5);
+      }
 
-    &--2 {
-      z-index: 4;
-      //background: rgba(255, 255, 255, 0.5);
-    }
+      &-2 {
+        //background: rgba(255, 255, 255, 0.5);
+      }
 
-    &--3 {
-      z-index: 3;
-      //background: rgba(255, 255, 255, 0.5);
-    }
-    // finals
-    &--4 {
-      z-index: 2;
-      //background: rgba(255, 255, 255, 0.5);
-    }
-    // winner + 3rd
-    &--5 {
-      z-index: 1;
-      //background: rgba(255, 255, 255, 0.5);
+      &-3 {
+        //background: rgba(255, 255, 255, 0.5);
+      }
+
+      // finals
+      &-4 {
+        //background: rgba(255, 255, 255, 0.5);
+      }
+
+      // winner + 3rd
+      &-5 {
+        //background: rgba(255, 255, 255, 0.5);
+      }
     }
 
     :global(.table--batb-1) & {
-      @include battles-1();
+      @include comp-battles-1();
     }
 
     :global(.table--batb-11) & {
-      @include battles-11();
+      @include comp-battles-11();
     }
 
     :global(.table--batb-12) & {
-      @include battles-12();
+      @include comp-battles-12();
     }
   }
 </style>
