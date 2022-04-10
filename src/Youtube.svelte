@@ -5,7 +5,7 @@
     let youtubeVideo = null;
     let bracket;
 
-    activeData.subscribe(store => youtubeVideo = store.youtubeVideo);
+    activeData.subscribe(store => youtubeVideo = store.youtubeVideo)
     storedBracketData.subscribe(store => bracket = store);
 
     const closeYoutubeLayer = () => {
@@ -20,13 +20,13 @@
 <div class="youtube battle--{bracket.data.modifier}">
     <div class="youtube__title">
         <div>
-            <h2>{youtubeVideo.skater.left}</h2>
-            <span>{youtubeVideo.result.left}</span>
+            <h2>{youtubeVideo.skater[!youtubeVideo.isSwitched ? 'left' : 'right']}</h2>
+            <span>{youtubeVideo.result[!youtubeVideo.isSwitched ? 'left' : 'right']}</span>
         </div>
         Vs.
         <div>
-            <h2>{youtubeVideo.skater.right}</h2>
-            <span>{youtubeVideo.result.right}</span>
+            <h2>{youtubeVideo.skater[!youtubeVideo.isSwitched ? 'right' : 'left']}</h2>
+            <span>{youtubeVideo.result[!youtubeVideo.isSwitched ? 'right' : 'left']}</span>
         </div>
     </div>
     <div class="youtube__close" on:click={()=>closeYoutubeLayer()}></div>

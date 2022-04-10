@@ -25,17 +25,16 @@ Object.keys(bracketsJSON.videos).map(round => {
     Object.keys(bracketsJSON.videos[round]).map(category => {
         brackets.videos[roundKey][category] = bracketsJSON.videos[round][category].map(video => {
             if (!video.startsWith('-|-|-')) {
-                const data = video.split('|');
+                const [youtubeId, skaterRaw, resultsRaw, winner, rematchYoutubeId, rematchResultsRaw, rematchWinner] = video.split('|');
                 // "0          |1                         |2      |3         |4          |5      |6          "
                 // "p1v7MNvUzbk|Sean Davis Vs. Shaun Hover|S SKATE|Sean Davis|l2I37cC1YWc|SKATE S|Shaun Hover"
                 // "p1v7MNvUzbk*|Sean Davis* Vs. Shaun Hover|S SKATE|Sean Davis|l2I37cC1YWc|SKATE S|Shaun Hover"
-                const hasRematch = data.length > 4;
-                const isSwitched = data[!hasRematch ? 0 : 4].includes('*');
+                const isSwitched = (rematchYoutubeId || youtubeId).includes('*');
                 // "TnrqvN6ChPE|Nick Tucker* Vs. Sierra Fellers*/Ishod Wair* Vs. Shane O'Neill*|S SKATE|Nick Tucker",
-                const skaterRaw = data[1].replace(' vs. ', ' Vs. ').split('/')[0].split(' Vs. ');
+                const [ leftSkater, rightSkater ] = skaterRaw.replace(' vs. ', ' Vs. ').split('/')[0].split(' Vs. ');
                 const skater = {
-                    left: skaterRaw[isSwitched ? 1 : 0],
-                    right: skaterRaw[isSwitched ? 0 : 1],
+                    left: leftSkater,
+                    right: rightSkater,
                 }
                 if (skater.left.includes('*')) {
                     skater.replaceLeft = true;
@@ -45,16 +44,16 @@ Object.keys(bracketsJSON.videos).map(round => {
                     skater.replaceRight = true;
                     skater.right = skater.right.replace('*', '');
                 }
-                const resultRaw = data[!hasRematch ? 2 : 5].split(' ');
+                const resultRaw = (rematchResultsRaw || resultsRaw).split(' ');
                 const result = resultRaw.length === 1 ? {} : {
-                    left: resultRaw[isSwitched ? 1 : 0],
-                    right: resultRaw[isSwitched ? 0 : 1],
+                    left: resultRaw[0],
+                    right: resultRaw[1],
                 }
                 return {
-                    id: data[!hasRematch ? 0 : 4].replace(/\*$/, ''),
+                    id: (rematchYoutubeId || youtubeId).replace(/\*$/, ''),
                     skater,
                     result,
-                    winner: data[!hasRematch ? 3 : 6],
+                    winner: (rematchWinner || winner),
                     isSwitched,
                 };
             }
