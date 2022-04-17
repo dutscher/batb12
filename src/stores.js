@@ -33,16 +33,28 @@ Object.keys(bracketsJSON.videos).map(round => {
                 // "TnrqvN6ChPE|Nick Tucker* Vs. Sierra Fellers*/Ishod Wair* Vs. Shane O'Neill*|S SKATE|Nick Tucker",
                 const [ leftSkater, rightSkater ] = skaterRaw.replace(' vs. ', ' Vs. ').split('/')[0].split(' Vs. ');
                 const skater = {
-                    left: leftSkater,
-                    right: rightSkater,
+                    left: {name:leftSkater},
+                    right: {name:rightSkater},
                 }
-                if (skater.left.includes('*')) {
-                    skater.replaceLeft = true;
-                    skater.left = skater.left.replace('*', '');
+                // replace inital
+                if (skater.left.name.includes('*')) {
+                    skater.left.replaced = true;
+                    skater.left.name = skater.left.name.replace('*', '');
                 }
-                if (skater.right.includes('*')) {
-                    skater.replaceRight = true;
-                    skater.right = skater.right.replace('*', '');
+                // legion of doom / Tyler Peterson-Legion of Doom
+                if (skater.left.name.includes('-')) {
+                    skater.left.crossed = true;
+                    skater.left.name = skater.left.name.split('-')[1];
+                }
+                // replace inital
+                if (skater.right.name.includes('*')) {
+                    skater.right.replaced = true;
+                    skater.right.name = skater.right.name.replace('*', '');
+                }
+                // legion of doom
+                if (skater.right.name.includes('-')) {
+                    skater.right.crossed = true;
+                    skater.right.name = skater.right.name.split('-')[1];
                 }
                 const resultRaw = (rematchResultsRaw || resultsRaw).split(' ');
                 const result = resultRaw.length === 1 ? {} : {
@@ -70,5 +82,4 @@ brackets.data.img = {
 }
 brackets.data.modifier = brackets.data.name.toLowerCase().replace(' ', '-')
 //console.log(brackets)
-console.log(brackets)
 storedBracketData.set(brackets);

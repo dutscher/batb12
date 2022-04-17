@@ -20,12 +20,12 @@
 <div class="youtube battle--{bracket.data.modifier}">
     <div class="youtube__title">
         <div>
-            <h2>{youtubeVideo.skater[!youtubeVideo.isSwitched ? 'left' : 'right']}</h2>
+            <h2>{youtubeVideo.skater[!youtubeVideo.isSwitched ? 'left' : 'right'].name}</h2>
             <span>{youtubeVideo.result[!youtubeVideo.isSwitched ? 'left' : 'right']}</span>
         </div>
         Vs.
         <div>
-            <h2>{youtubeVideo.skater[!youtubeVideo.isSwitched ? 'right' : 'left']}</h2>
+            <h2>{youtubeVideo.skater[!youtubeVideo.isSwitched ? 'right' : 'left'].name}</h2>
             <span>{youtubeVideo.result[!youtubeVideo.isSwitched ? 'right' : 'left']}</span>
         </div>
     </div>

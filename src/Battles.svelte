@@ -8,7 +8,7 @@
 
 <div class="battles battles--round-{round} battles--{type}">
     {#each battles as video, index}
-        <Battle {video} {index} {type}/>
+        <Battle {video} {index} {type} {round}/>
     {/each}
 </div>
 
