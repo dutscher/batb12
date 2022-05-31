@@ -8,7 +8,7 @@
 
 <div class="battles battles--round-{round} battles--{type}">
     {#each battles as video, index}
-        <Battle {video} {index} {type} {round}/>
+        <Battle {video} {index} {type}/>
     {/each}
 </div>
 
@@ -30,6 +30,7 @@
     }
 
     &--round {
+      // debug
       &-1 {
         //background: rgba(255, 255, 255, 0.5);
       }

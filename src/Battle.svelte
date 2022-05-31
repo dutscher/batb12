@@ -21,12 +21,12 @@
 {#if video.winner}
     <div class="battle battle--{index + 1} battle--{type}"
          title="{video.skater.left.name} Vs. {video.skater.right.name}">
-        {#if type === '3rd'}
-            3rd:
-        {/if}
-        {#if type === 'm'}
-            Winner:
-        {/if}
+        <!--{#if type === '3rd'}-->
+        <!--    3rd:-->
+        <!--{/if}-->
+        <!--{#if type === 'm'}-->
+        <!--    Winner:-->
+        <!--{/if}-->
         <div class="battle__link{video.skater.left.crossed ? ' battle__link--crossed' : ''}" on:click={() => openYoutubeLayer(video)}
              {...(video.skater.left.replaced || video.skater.left.crossed ? { 'data-rider-top': video.skater.left.name } : {})}
              {...(video.skater.right.replaced || video.skater.right.crossed ? { 'data-rider-bottom': video.skater.right.name } : {})}>

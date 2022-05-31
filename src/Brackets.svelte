@@ -18,29 +18,24 @@
            href={bracket.data.yt}
            title="Open Youtube Playlist">&nbsp;</a>
 
-        <Battles battles={bracket.videos["1"]["left-top"]} round="1" type="lt"/>
-        <Battles battles={bracket.videos["1"]["left-bottom"]} round="1" type="lb"/>
-        <Battles battles={bracket.videos["1"]["right-top"]} round="1" type="rt"/>
-        <Battles battles={bracket.videos["1"]["right-bottom"]} round="1" type="rb"/>
+        <Battles battles={bracket.videos["1"].lt} round="1" type="lt"/>
+        <Battles battles={bracket.videos["1"].lb} round="1" type="lb"/>
+        <Battles battles={bracket.videos["1"].rt} round="1" type="rt"/>
+        <Battles battles={bracket.videos["1"].rb} round="1" type="rb"/>
 
-        <Battles battles={bracket.videos["2"]["left-top"]} round="2" type="lt"/>
-        <Battles battles={bracket.videos["2"]["left-bottom"]} round="2" type="lb"/>
-        <Battles battles={bracket.videos["2"]["right-top"]} round="2" type="rt"/>
-        <Battles battles={bracket.videos["2"]["right-bottom"]} round="2" type="rb"/>
+        <Battles battles={bracket.videos["2"].lt} round="2" type="lt"/>
+        <Battles battles={bracket.videos["2"].lb} round="2" type="lb"/>
+        <Battles battles={bracket.videos["2"].rt} round="2" type="rt"/>
+        <Battles battles={bracket.videos["2"].rb} round="2" type="rb"/>
 
-        <!--        <Battles battles={bracket.videos["3"]["left-top"]} round="3" type="lt"/>-->
-        <!--        <Battles battles={bracket.videos["3"]["left-bottom"]} round="3" type="lb"/>-->
-        <!--        <Battles battles={bracket.videos["3"]["right-top"]} round="3" type="rt"/>-->
-        <!--        <Battles battles={bracket.videos["3"]["right-bottom"]} round="3" type="rb"/>-->
+        <Battles battles={bracket.videos["3"].l} round="3" type="l"/>
+        <Battles battles={bracket.videos["3"].r} round="3" type="r"/>
 
-        <!--        <Battles battles={bracket.videos["3"]["left"]} round="3" type="l"/>-->
-        <!--        <Battles battles={bracket.videos["3"]["right"]} round="3" type="r"/>-->
+        <Battles battles={bracket.videos["Finals"].l} round="4" type="l"/>
+        <Battles battles={bracket.videos["Finals"].r} round="4" type="r"/>
 
-        <!--        <Battles battles={bracket.videos["Finals"]["left"]} round="4" type="l"/>-->
-        <!--        <Battles battles={bracket.videos["Finals"]["right"]} round="4" type="r"/>-->
-
-        <!--        <Battles battles={bracket.videos["Championship Battle"]["middle"]} round="5" type="m"/>-->
-        <!--        <Battles battles={bracket.videos["Championship Battle"]["3rd-place"]} round="5" type="3rd"/>-->
+        <Battles battles={bracket.videos["Championship Battle"].m} round="5" type="m"/>
+        <Battles battles={bracket.videos["Championship Battle"]["3rd"]} round="5" type="r"/>
 
         <img
                 class="table__img"

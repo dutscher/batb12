@@ -69,24 +69,14 @@
       width: 250px;
 
       &#{$selector} {
-        &--lt {
-          left: 329px;
+        &--l {
+          left: 326px;
+          top: 108px;
+        }
+
+        &--r {
+          right: 326px;
           top: 107px;
-        }
-
-        &--lb {
-          left: 329px;
-          top: 534px;
-        }
-
-        &--rt {
-          right: 329px;
-          top: 107px;
-        }
-
-        &--rb {
-          right: 329px;
-          top: 534px;
         }
       }
     }
@@ -128,6 +118,7 @@
 
 @mixin comp-battle-12($selector) {
   #{$selector} {
+    // youtube opener
     &__link {
       color: #fff;
 
@@ -137,7 +128,7 @@
         color: #fff;
       }
     }
-
+    // SKATE result over last round
     &__label {
       color: #fff;
 
@@ -215,6 +206,17 @@
   }
 
   :global(.battles--round-3) #{$selector} {
+    &__link,
+    &__label {
+      &::before {
+        top: -55px
+      }
+
+      &::after {
+        top: 55px
+      }
+    }
+
     &--1 {
       top: 52px;
     }
@@ -222,9 +224,28 @@
     &--2 {
       top: 266px;
     }
+
+    &--3 {
+      top: 477px;
+    }
+
+    &--4 {
+      top: 693px;
+    }
   }
 
   :global(.battles--round-4) #{$selector} {
+    &__link,
+    &__label {
+      &::before {
+        top: -105px
+      }
+
+      &::after {
+        top: 108px
+      }
+    }
+
     &--1 {
       top: 104px;
     }
@@ -236,7 +257,7 @@
 
   :global(.battles--m) #{$selector} {
     &--1 {
-      top: 229px;
+      top: 0;
       text-align: center;
     }
   }
