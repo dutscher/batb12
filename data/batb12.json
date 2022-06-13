@@ -79,35 +79,39 @@
     },
     "Round 3": {
       "left": [
-        "-|Luan Oliveira Vs. Dashawn Jordan|- -|-",
+        "L0U9fiJKfDc|Luan Oliveira Vs. Dashawn Jordan|SKA SKATE|Luan Oliveira",
         "eW5JJcdISt4*|Sewa Kroetkov Vs. Aurelien Giraud-Chris Joslin|SKAT SKATE|Sewa Kroetkov",
         "qlT0QoFOHCs*|Tyler Peterson Vs. Ray Corey|- SKATE|Tyler Peterson",
-        "-|Kyonosuke Yamashita Vs. Nick Holt|- -|-"
+        "2YY8lPNKnCg|Kyonosuke Yamashita Vs. Nick Holt|SKA -|Nick Holt"
       ],
       "right": [
         "57JEDmn3M2M*|Lil Dre Vs. Sunny Suljic|- SKATE|Lil Dre",
-        "-|Vinnie Banh Vs. ?|- -|-",
-        "-|? Vs. Nick Tucker|- -|-",
+        "lU0dlT9OFP8|Vinnie Banh Vs. Jamie Griffin|SKATE -|Jamie Griffin",
+        "-|Paul Rodriguez Vs. Nick Tucker|- -|-",
         "ggQAPt84SX4*|Eric Koston Vs. Chris Cole|SKATE SK|Chris Cole"
       ]
     },
-    "Finals": {
+    "Round 4": {
       "left": [
-        "-|-|- -|-",
-        "-|-|- -|-"
+        "-|Luan Oliveira Vs. Sewa Kroetkov|- -|-",
+        "-|Tyler Peterson Vs. Nick Holt|SKA SKATE|Tyler Peterson"
       ],
       "right": [
-        "-|-|- -|-",
-        "-|-|- -|-"
+        "-|Lil Dre Vs. Jamie Griffin|- -|-",
+        "-|? Vs. Chris Cole|- -|-"
       ]
     },
-    "Championship Battle": {
+    "Finals": {
       "middle": [
+        "-|? Vs. Tyler Peterson|- -|-"
+        "-|-|- -|-"
+      ],
+      "champs": [
         "-|-|- -|-"
       ],
       "3rd-place": [
         "-|-|- -|-"
-      ]
+      ],
     }
   }
 }
