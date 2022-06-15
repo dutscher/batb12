@@ -1,0 +1,12 @@
+{
+  // This is an alias to @tsconfig/node12: https://github.com/tsconfig/bases
+  "extends": "ts-node/node12/tsconfig.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    /* ... your props ... */
+  },
+  "ts-node": {
+    "esm": true
+  }
+}

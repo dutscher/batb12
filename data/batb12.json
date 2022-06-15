@@ -102,15 +102,19 @@
       ]
     },
     "Finals": {
-      "middle": [
+      "left": [
         "-|Sewa Kroetkov Vs. Tyler Peterson|- -|-"
-        "-|Jamie Griffin Vs. ?|- -|-"
       ],
-      "champs": [
-        "-|-|- -|-"
+      "right": [
+        "-|Jamie Griffin Vs. ?|- -|-"
+      ]
+    },
+    "Championship Battle": {
+      "middle": [
+        "-|? Vs. ?|- -|-"
       ],
       "3rd-place": [
-        "-|-|- -|-"
+        "-|? Vs. ?|- -|-"
       ]
     }
   }
