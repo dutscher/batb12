@@ -137,19 +137,19 @@
   :global(.battles--round-1 #{$selector}--rb #{$selector}__link) {
     &::before,
     &::after {
-      text-align: right !important;;
+      text-align: right !important;
     }
   }
 
   :global(.table--batb-1) {
-    @include comp-battle-1($selector);
+    @include battle-1($selector);
   }
 
   :global(.table--batb-11) {
-    @include comp-battle-11($selector);
+    @include battle-11($selector);
   }
 
   :global(.table--batb-12) {
-    @include comp-battle-12($selector);
+    @include battle-12($selector);
   }
 </style>

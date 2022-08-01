@@ -80,7 +80,7 @@
     "Round 3": {
       "left": [
         "L0U9fiJKfDc|Luan Oliveira Vs. Dashawn Jordan|SKA SKATE|Luan Oliveira",
-        "eW5JJcdISt4*|Sewa Kroetkov Vs. Aurelien Giraud-Chris Joslin|SKAT SKATE|Sewa Kroetkov",
+        "eW5JJcdISt4*|Sewa Kroetkov Vs. Aurelien Giraud--Chris Joslin|SKAT SKATE|Sewa Kroetkov",
         "qlT0QoFOHCs*|Tyler Peterson Vs. Ray Corey|- SKATE|Tyler Peterson",
         "2YY8lPNKnCg|Kyonosuke Yamashita Vs. Nick Holt|SKA -|Nick Holt"
       ],
@@ -94,27 +94,27 @@
     "Round 4": {
       "left": [
         "W1OKPNvfwqE|Luan Oliveira Vs. Sewa Kroetkov|SKATE SKA|Sewa Kroetkov",
-        "FyblAAFOBhs|Tyler Peterson Vs. Nick Holt|SKA SKATE|Tyler Peterson"
+        "FyblAAFOBhs*|Tyler Peterson Vs. Nick Holt|SKA SKATE|Tyler Peterson"
       ],
       "right": [
-        "NuJFCcMsaDw|Lil Dre Vs. Jamie Griffin|SKATE -|Jamie Griffin",
+        "NuJFCcMsaDw*|Lil Dre Vs. Jamie Griffin|SKATE -|Jamie Griffin",
         "ynTyXiwNWdg|Paul Rodriguez Vs. Chris Cole|S SKATE|Paul Rodriguez"
       ]
     },
     "Finals": {
       "left": [
-        "-|Sewa Kroetkov Vs. Tyler Peterson|- -|-"
+        "rpeB8Bv8aTA|Sewa Kroetkov Vs. Tyler Peterson|SKATE S|Tyler Peterson"
       ],
       "right": [
-        "-|Jamie Griffin Vs. Paul Rodriguez|- -|-"
+        "pyIewUdAN20|Jamie Griffin Vs. Paul Rodriguez--Chris Cole|SK SKATE|Jamie Griffin"
       ]
     },
     "Championship Battle": {
       "middle": [
-        "-|? Vs. ?|- -|-"
+        "_oRoo1x1uzM*|Tyler Peterson Vs. Jamie Griffin|SKATE SK|Jamie Griffin"
       ],
       "3rd-place": [
-        "-|? Vs. ?|- -|-"
+        "YcmPDIj2BFo*|Sewa Kroetkov Vs. Chris Cole|S SKATE|Sewa Kroetkov"
       ]
     }
   }

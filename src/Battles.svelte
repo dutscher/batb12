@@ -43,27 +43,31 @@
         //background: rgba(255, 255, 255, 0.5);
       }
 
-      // finals
       &-4 {
         //background: rgba(255, 255, 255, 0.5);
       }
 
-      // winner + 3rd
+      // finals
       &-5 {
+        //background: rgba(255, 255, 255, 0.5);
+      }
+
+      // winner + 3rd
+      &-6 {
         //background: rgba(255, 255, 255, 0.5);
       }
     }
 
     :global(.table--batb-1) & {
-      @include comp-battles-1();
+      @include battles-1();
     }
 
     :global(.table--batb-11) & {
-      @include comp-battles-11();
+      @include battles-11();
     }
 
     :global(.table--batb-12) & {
-      @include comp-battles-12();
+      @include battles-12();
     }
   }
 </style>

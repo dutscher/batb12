@@ -31,11 +31,14 @@
         <Battles battles={bracket.videos["3"].l} round="3" type="l"/>
         <Battles battles={bracket.videos["3"].r} round="3" type="r"/>
 
-        <Battles battles={bracket.videos["Finals"].l} round="4" type="l"/>
-        <Battles battles={bracket.videos["Finals"].r} round="4" type="r"/>
+        <Battles battles={bracket.videos["4"].l} round="4" type="l"/>
+        <Battles battles={bracket.videos["4"].r} round="4" type="r"/>
 
-        <Battles battles={bracket.videos["Championship Battle"].m} round="5" type="m"/>
-        <Battles battles={bracket.videos["Championship Battle"]["3rd"]} round="5" type="r"/>
+        <Battles battles={bracket.videos["Finals"].l} round="5" type="l"/>
+        <Battles battles={bracket.videos["Finals"].r} round="5" type="r"/>
+
+        <Battles battles={bracket.videos["Championship Battle"].m} round="6" type="m"/>
+        <Battles battles={bracket.videos["Championship Battle"]["3rd"]} round="6" type="3rd"/>
 
         <img
                 class="table__img"
@@ -72,15 +75,15 @@
     }
 
     &--batb-1 {
-      @include comp-brackets-1();
+      @include brackets-1();
     }
 
     &--batb-11 {
-      @include comp-brackets-11();
+      @include brackets-11();
     }
 
     &--batb-12 {
-      @include comp-brackets-12();
+      @include brackets-12();
     }
   }
 </style>

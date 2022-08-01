@@ -1,4 +1,19 @@
-@mixin comp-brackets-12 {
+@mixin youtube-12($selector) {
+  #{$selector} {
+    &__title {
+      span {
+        color: #B20C1E;
+      }
+    }
+
+    &__close {
+      background: #B20C1E;
+      color: white;
+    }
+  }
+}
+
+@mixin brackets-12 {
   .playlist {
     left: 836px;
     top: 75px;
@@ -11,7 +26,7 @@
   }
 }
 
-@mixin comp-battles-12 {
+@mixin battles-12 {
   &--round {
     &-1 {
       width: 253px;
@@ -101,22 +116,37 @@
       width: 244px;
 
       &#{$selector} {
+        &--l {
+          left: 713px;
+          top: 400px;
+        }
+
+        &--r {
+          left: 713px;
+          top: 548px;
+        }
+      }
+    }
+
+    &-6 {
+      width: 244px;
+
+      &#{$selector} {
         &--m {
           left: 713px;
-          top: 415px;
+          top: 476px;
         }
 
         &--3rd {
-          height: 50px;
           left: 713px;
-          top: 765px;
+          top: 619px;
         }
       }
     }
   }
 }
 
-@mixin comp-battle-12($selector) {
+@mixin battle-12($selector) {
   #{$selector} {
     // youtube opener
     &__link {
@@ -128,6 +158,7 @@
         color: #fff;
       }
     }
+
     // SKATE result over last round
     &__label {
       color: #fff;
@@ -255,16 +286,91 @@
     }
   }
 
-  :global(.battles--m) #{$selector} {
+  :global(.battles--round-5) #{$selector} {
+    &--l #{$selector} {
+      &__link,
+      &__label {
+        &::before {
+          top: -148px;
+          left: -125px;
+        }
+
+        &::after {
+          top: 281px;
+          left: -125px;
+        }
+      }
+    }
+
+    &--r #{$selector} {
+      &__link,
+      &__label {
+        &::before {
+          top: -295px;
+          right: -125px;
+        }
+
+        &::after {
+          top: 132px;
+          right: -125px;
+        }
+      }
+    }
+
     &--1 {
-      top: 0;
       text-align: center;
     }
   }
 
-  :global(.battles--3rd) #{$selector} {
-    &--1 {
+  :global(.battles--round-6) {
+    #{$selector}--1 {
       text-align: center;
+
+      &#{$selector}--m {
+        &::before {
+          content: "1st:";
+          font-weight: bold;
+          color: #69B421;
+        }
+
+        #{$selector} {
+          &__link,
+          &__label {
+            &::before {
+              top: -88px;
+              right: 60px;
+            }
+
+            &::after {
+              top: 58px;
+              right: 60px;
+            }
+          }
+        }
+      }
+
+      &#{$selector}--3rd {
+        &::before {
+          content: "3rd:";
+          font-weight: bold;
+          color: #B20C1E;
+        }
+
+        #{$selector} {
+          &__link,
+          &__label {
+            &::before {
+              top: -380px;
+              right: 248px;
+            }
+
+            &::after {
+              top: 48px;
+              right: -126px;
+            }
+          }
+        }
+      }
     }
   }
 }

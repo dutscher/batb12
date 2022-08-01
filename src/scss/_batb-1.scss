@@ -1,4 +1,4 @@
-@mixin comp-brackets-1 {
+@mixin brackets-1 {
   .playlist {
     left: 713px;
     top: 27px;
@@ -11,7 +11,7 @@
   }
 }
 
-@mixin comp-youtube-1($selector) {
+@mixin youtube-1($selector) {
   #{$selector} {
     &__title {
       span {
@@ -26,7 +26,7 @@
   }
 }
 
-@mixin comp-battles-1 {
+@mixin battles-1 {
   &--round {
     &-1 {
       width: 274px;
@@ -114,7 +114,7 @@
   }
 }
 
-@mixin comp-battle-1($selector) {
+@mixin battle-1($selector) {
   #{$selector} {
     &__link,
     &__label {
