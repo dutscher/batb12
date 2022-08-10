@@ -1,55 +1,35 @@
-@mixin brackets-1 {
-  .playlist {
-    left: 713px;
-    top: 27px;
-    width: 218px;
-    height: 210px;
+:global(.active-bracket-1) {
+  --youtube-title-color: #817D4A;
+  --youtube-close-bgcolor: #373424;
+  --youtube-close-color: white;
 
-    &:hover {
-      border-color: #DE5E1B;
-    }
-  }
+  --playlist-left: 735px;
+  --playlist-top: 6px;
+  --playlist-width: 436px;
+  --playlist-height: 167px;
+  --playlist-hover-border-color: #817D4A;
 }
 
-@mixin youtube-1($selector) {
-  #{$selector} {
-    &__title {
-      span {
-        color: #DE5E1B;
-      }
-    }
-
-    &__close {
-      background: #DE5E1B;
-      color: white;
-    }
-  }
-}
-
-@mixin battles-1 {
+@mixin battles-1($battles) {
   &--round {
     &-1 {
       width: 274px;
 
-      &#{$selector} {
+      &#{$battles} {
         &--lt {
           left: 15px;
-          top: 7px;
         }
 
         &--lb {
           left: 15px;
-          top: 500px;
         }
 
         &--rt {
-          right: 30px;
-          top: 7px;
+          right: 17px;
         }
 
         &--rb {
-          right: 30px;
-          top: 500px;
+          right: 17px;
         }
       }
     }
@@ -57,65 +37,71 @@
     &-2 {
       width: 285px;
 
-      &#{$selector} {
+      &#{$battles} {
         &--lt {
           left: 153px;
-          top: 32px;
         }
 
         &--lb {
-          left: 180px;
-          top: 525px;
+          left: 153px;
         }
 
         &--rt {
-          right: 195px;
-          top: 80px;
+          right: 154px;
         }
 
         &--rb {
-          right: 195px;
-          top: 525px;
+          right: 154px;
         }
       }
     }
 
     &-3 {
-      width: 363px;
+      width: 282px;
 
-      &#{$selector} {
+      &#{$battles} {
         &--l {
-          left: 331px;
-          top: 80px;
+          left: 301px;
         }
 
         &--r {
-          right: 344px;
-          top: 80px;
+          right: 303px;
         }
       }
     }
 
     &-4 {
-      width: 363px;
+      width: 289px;
 
-      &#{$selector} {
+      &#{$battles} {
         &--l {
-          left: 331px;
-          top: 80px;
+          left: 447px;
         }
 
         &--r {
-          right: 344px;
-          top: 80px;
+          right: 449px;
+        }
+      }
+    }
+
+    &-5 {
+      width: 289px;
+
+      &#{$battles} {
+        &--m {
+          left: 497px;
+        }
+
+        &--3rd {
+          right: 719px;
         }
       }
     }
   }
 }
 
-@mixin battle-1($selector) {
-  #{$selector} {
+@mixin battle-1($battle) {
+  #{$battle} {
     &__link,
     &__label {
       &::before,
@@ -171,23 +157,62 @@
     }
   }
 
-  :global(.battles--round-2) #{$selector} {
-    &--1 {
-      top: 49px;
-    }
+  :global(.battles--round-1.battles--lt),
+  :global(.battles--round-1.battles--rt) {
+    top: 8px;
+  }
+  :global(.battles--round-1.battles--lb),
+  :global(.battles--round-1.battles--rb) {
+    top: 505px;
+  }
 
-    &--2 {
-      top: 260px;
+  :global(.battles--round-2) {
+    #{$battle}--2 {
+      top: 236px;
     }
   }
 
-  :global(.battles--round-3) #{$selector} {
-    &--1 {
-      top: 163px;
+  :global(.battles--round-2.battles--lt),
+  :global(.battles--round-2.battles--rt) {
+    top: 61px;
+  }
+
+  :global(.battles--round-2.battles--lb),
+  :global(.battles--round-2.battles--rb) {
+    top: 555px;
+  }
+
+  :global(.battles--round-3) {
+    #{$battle}--1 {
+      top: 188px;
     }
 
-    &--2 {
-      top: 605px;
+    #{$battle}--2 {
+      top: 683px;
+    }
+  }
+
+  :global(.battles--round-4.battles--l) {
+    #{$battle} {
+      top: 348px;
+    }
+  }
+
+  :global(.battles--round-4.battles--r) {
+    #{$battle} {
+      top: 525px;
+    }
+  }
+
+  :global(.battles--round-5.battles--m) {
+    #{$battle} {
+      top: 606px;
+    }
+  }
+
+  :global(.battles--round-5.battles--3rd) {
+    #{$battle} {
+      top: 647px;
     }
   }
 }

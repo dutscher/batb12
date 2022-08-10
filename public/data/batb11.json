@@ -6,33 +6,35 @@
     "date": "Aug 10, 2018",
     "yt": "https://www.youtube.com/watch?v=xH37JwXZtps&list=PLmxvVi4Ors7a6lQgH3aJ3y77q5JWasNmv",
     "ws": "https://theberrics.com/the-best-of-batb-11",
-    "img": "assets/table-11.jpg|1662x915"
+    "img": "assets/table-11.jpg|1662x915",
+    "prev": 1,
+    "next": 12
   },
   "videos": {
     "Round 1": {
       "left-top": [
-        "WHxuoehY1Bw|Chris Roberts vs. Mike Mo Capaldi|SKATE SKAT|Mike Mo Capaldi",
-        "9Y_tUSnhV1k|Sean Malto vs. Eric Koston|SK SKATE|Sean Malto",
-        "YBvzZ2JLahc|Trent McClung vs. John Dilorenzo|SK SKATE|Trent McClung",
-        "Ugp2OdcTCg0|Tom Asta vs. Tom Rohrer|SKAT SKATE|Tom Asta"
+        "WHxuoehY1Bw|Chris Roberts* vs. Mike Mo Capaldi*|SKATE SKAT|Mike Mo Capaldi",
+        "9Y_tUSnhV1k|Sean Malto* vs. Eric Koston*|SK SKATE|Sean Malto",
+        "YBvzZ2JLahc|Trent McClung* vs. John Dilorenzo*|SK SKATE|Trent McClung",
+        "Ugp2OdcTCg0|Tom Asta* vs. Tom Rohrer*|SKAT SKATE|Tom Asta"
       ],
       "left-bottom": [
-        "Q2Npjwi8gzw|Chris Joslin vs. Carlos Ribeiro|S SKATE|Chris Joslin",
-        "3ULhKtZ0HfY|Cody Cepeda vs. Tyson Bowerbank|SKAT SKATE|Cody Cepeda",
-        "4jJPd327INw|Felipe Gustavo vs. Nate Greenwood|S SKATE|Felipe Gustavo",
-        "9Xts0UyIS8Y|Trevor McClung vs. Jack Olson|- SKATE|Trevor McClung"
+        "Q2Npjwi8gzw|Chris Joslin* vs. Carlos Ribeiro*|S SKATE|Chris Joslin",
+        "3ULhKtZ0HfY|Cody Cepeda* vs. Tyson Bowerbank*|SKAT SKATE|Cody Cepeda",
+        "4jJPd327INw|Felipe Gustavo* vs. Nate Greenwood*|S SKATE|Felipe Gustavo",
+        "9Xts0UyIS8Y|Trevor McClung* vs. Jack Olson*|- SKATE|Trevor McClung"
       ],
       "right-top": [
-        "auK0oDZGUpo|Luan Oliveira vs. Chris Colbourn|- SKATE|Luan Oliveira",
-        "sUOQQLWqb7g|Kevin White vs. Hyun Kummer|- SKATE|Kevin White",
-        "JWxXqiQvRrE|Louie Lopez vs. Justin Drysen|SK SKATE|Louie Lopez",
-        "-5PCBOhNvEc|Ishod Wair vs. TJ Rogers|SKA SKATE|Ishod Wair"
+        "auK0oDZGUpo|Luan Oliveira* vs. Chris Colbourn*|- SKATE|Luan Oliveira",
+        "sUOQQLWqb7g|Kevin White* vs. Hyun Kummer*|- SKATE|Kevin White",
+        "JWxXqiQvRrE|Louie Lopez* vs. Justin Drysen*|SK SKATE|Louie Lopez",
+        "-5PCBOhNvEc|Ishod Wair* vs. TJ Rogers*|SKA SKATE|Ishod Wair"
       ],
       "right-bottom": [
-        "mbTW1WBokhU|Jamie Foy vs. Diego Najera|SKATE -|Diego Najera",
-        "c_iHIoTQxmY|Taylor McClung vs. Robert Neal|SKATE SK|Robert Neal",
-        "?|Walker Ryan vs. Domo Walker|? SKATE|Walker Ryan",
-        "hN7pXfer9y4|Scott Decenzo vs. Sewa Kroetkov|SKATE -|Sewa Kroetkov"
+        "mbTW1WBokhU|Jamie Foy* vs. Diego Najera*|SKATE -|Diego Najera",
+        "c_iHIoTQxmY|Taylor McClung* vs. Robert Neal*|SKATE SK|Robert Neal",
+        "?|Walker Ryan* vs. Domo Walker*|? SKATE|Walker Ryan",
+        "hN7pXfer9y4|Scott Decenzo* vs. Sewa Kroetkov*|SKATE -|Sewa Kroetkov"
       ]
     },
     "Round 2": {
@@ -65,10 +67,10 @@
     },
     "Finals": {
       "left": [
-        "V8Ree3Nf_HU|Luan Oliveira vs. Sewa Kroetkov|SKAT SKATE|Luan Oliveira"
+        "9IBFYTGfuAY*|Tom Asta vs. Chris Joslin|SKATE -|Chris Joslin"
       ],
       "right": [
-        "9IBFYTGfuAY|Tom Asta vs. Chris Joslin|SKATE -|Chris Joslin"
+        "V8Ree3Nf_HU*|Luan Oliveira vs. Sewa Kroetkov|SKAT SKATE|Luan Oliveira"
       ]
     },
     "Championship Battle": {

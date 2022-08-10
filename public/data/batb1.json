@@ -6,7 +6,8 @@
     "date": "Feb 23, 2009",
     "yt": "https://www.youtube.com/c/berrics/search?query=BATB1",
     "ws": "https://theberrics.com/battle-at-the-berrics",
-    "img": "assets/table-1.jpg|1474x916"
+    "img": "assets/table-1.jpg|1474x916",
+    "next": 11
   },
   "videos": {
     "Round 1": {
@@ -18,7 +19,7 @@
       ],
       "left-bottom": [
         "fwZ7sUXKSBo|Steve Berra* Vs. Chris Roberts*|SKA SKATE|Steve Berra",
-        "YX7Vr0QUedk*|Marc Johnson* Vs. Johnny Layton*|SKAT SKATE|Marc Johnson",
+        "lCwIIcbNUDc|Marc Johnson* Vs. Johnny Layton--Chris Roberts and The Legion of Doom|SKA SKATE|Marc Johnson",
         "POQaDcvhpTs|Billy Marks* Vs. Danny Supa*|SKA SKATE|Billy Marks",
         "3lqNen-Qccw|Brandon Biebel* Vs. Nick McLouth*|SKAT SKATE|Brandon Biebel"
       ],
@@ -33,9 +34,6 @@
         "EG55_X4U8E8|PJ Ladd* Vs. Tyler Bledsoe*|SKA SKATE|PJ Ladd",
         "lWeiGaQQV2g|Eric Koston* Vs. Rob Dyrdek*|- SKATE|Eric Koston",
         "wGSotlk4uQc*|Sean Malto* Vs. Donovan Strain*|SKATE SKAT|Donovan Strain"
-      ],
-      "special": [
-        "lCwIIcbNUDc|Marc Johnson Vs. Chris Roberts and The Legion of Doom|SKA SKATE|Marc Johnson"
       ]
     },
     "Round 2": {
@@ -44,7 +42,7 @@
         "s3mzDwF2Za4|Chico Brenes Vs. Mike Mo Capaldi|SKATE S|Mike Mo Capaldi"
       ],
       "left-bottom": [
-        "YX7Vr0QUedk|Marc Johnson Vs. Johnny Layton|SKATE SKAT|Johnny Layton",
+        "YX7Vr0QUedk|Marc Johnson Vs. Steve Berra--Johnny Layton|SKATE SKAT|Johnny Layton",
         "mjuS0Mwt5pA|Billy Marks Vs. Brandon Biebel|SK SKATE|Billy Marks"
       ],
       "right-top": [

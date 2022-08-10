@@ -3,12 +3,19 @@
 	import Notification from "./Notification.svelte";
     import Youtube from "./Youtube.svelte";
     import Brackets from "./Brackets.svelte";
+
+    let bracketNr;
+
+    import { storedBracketData } from "./stores";
+    storedBracketData.subscribe(store => bracketNr = store.data.nr);
 </script>
 
-<Github />
-<Notification />
-<Youtube />
-<Brackets />
+<div class="active-bracket-{bracketNr}">
+    <Github />
+    <Notification />
+    <Youtube />
+    <Brackets />
+</div>
 
 <style>
 	:global(html), :global(body) {

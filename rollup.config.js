@@ -48,7 +48,7 @@ export default {
 		json({
 			// All JSON files will be parsed by default,
 			// but you can also specifically include/exclude files
-			include: 'data/**',
+			include: 'public/data/**',
 			exclude: ['node_modules/**'],
 
 			// for tree-shaking, properties will be declared as

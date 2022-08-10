@@ -6,7 +6,7 @@
     export let type;
 </script>
 
-<div class="battles battles--round-{round} battles--{type}">
+<div class="battles battles--round battles--round-{round} battles--{type}">
     {#each battles as video, index}
         <Battle {video} {index} {type}/>
     {/each}
@@ -29,45 +29,18 @@
       text-align: left;
     }
 
-    &--round {
-      // debug
-      &-1 {
-        //background: rgba(255, 255, 255, 0.5);
-      }
-
-      &-2 {
-        //background: rgba(255, 255, 255, 0.5);
-      }
-
-      &-3 {
-        //background: rgba(255, 255, 255, 0.5);
-      }
-
-      &-4 {
-        //background: rgba(255, 255, 255, 0.5);
-      }
-
-      // finals
-      &-5 {
-        //background: rgba(255, 255, 255, 0.5);
-      }
-
-      // winner + 3rd
-      &-6 {
-        //background: rgba(255, 255, 255, 0.5);
-      }
-    }
+    //@include battles-debug();
 
     :global(.table--batb-1) & {
-      @include battles-1();
+      @include battles-1($selector);
     }
 
     :global(.table--batb-11) & {
-      @include battles-11();
+      @include battles-11($selector);
     }
 
     :global(.table--batb-12) & {
-      @include battles-12();
+      @include battles-12($selector);
     }
   }
 </style>

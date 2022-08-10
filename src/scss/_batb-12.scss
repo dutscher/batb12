@@ -1,37 +1,25 @@
-@mixin youtube-12($selector) {
-  #{$selector} {
-    &__title {
-      span {
-        color: #B20C1E;
-      }
-    }
+:global(.active-bracket-12) {
+  --text-color: white;
+  --primary-color: #B20C1E;
+  --accent-color: #6AAB1B;
 
-    &__close {
-      background: #B20C1E;
-      color: white;
-    }
-  }
+  --youtube-title-color: var(--accent-color);
+  --youtube-close-bgcolor: var(--accent-color);
+  --youtube-close-color: var(--text-color);
+
+  --playlist-left: 836px;
+  --playlist-top: 75px;
+  --playlist-width: 218px;
+  --playlist-height: 187px;
+  --playlist-hover-border-color: var(--accent-color);
 }
 
-@mixin brackets-12 {
-  .playlist {
-    left: 836px;
-    top: 75px;
-    width: 218px;
-    height: 187px;
-
-    &:hover {
-      border: solid 1px #B20C1E;
-    }
-  }
-}
-
-@mixin battles-12 {
+@mixin battles-12 ($battles) {
   &--round {
     &-1 {
       width: 253px;
 
-      &#{$selector} {
+      &#{$battles} {
         &--lt {
           left: 68px;
           top: 65px;
@@ -57,7 +45,7 @@
     &-2 {
       width: 250px;
 
-      &#{$selector} {
+      &#{$battles} {
         &--lt {
           left: 200px;
           top: 80px;
@@ -83,7 +71,7 @@
     &-3 {
       width: 250px;
 
-      &#{$selector} {
+      &#{$battles} {
         &--l {
           left: 326px;
           top: 108px;
@@ -99,7 +87,7 @@
     &-4 {
       width: 250px;
 
-      &#{$selector} {
+      &#{$battles} {
         &--l {
           left: 457px;
           top: 162px;
@@ -115,7 +103,7 @@
     &-5 {
       width: 244px;
 
-      &#{$selector} {
+      &#{$battles} {
         &--l {
           left: 713px;
           top: 400px;
@@ -131,7 +119,7 @@
     &-6 {
       width: 244px;
 
-      &#{$selector} {
+      &#{$battles} {
         &--m {
           left: 713px;
           top: 476px;
@@ -146,8 +134,8 @@
   }
 }
 
-@mixin battle-12($selector) {
-  #{$selector} {
+@mixin battle-12($battle) {
+  #{$battle} {
     // youtube opener
     &__link {
       color: #fff;
@@ -207,7 +195,7 @@
     }
   }
 
-  :global(.battles--round-2) #{$selector} {
+  :global(.battles--round-2) #{$battle} {
     &__label,
     &__link {
       &::before {
@@ -236,7 +224,7 @@
     }
   }
 
-  :global(.battles--round-3) #{$selector} {
+  :global(.battles--round-3) #{$battle} {
     &__link,
     &__label {
       &::before {
@@ -265,7 +253,7 @@
     }
   }
 
-  :global(.battles--round-4) #{$selector} {
+  :global(.battles--round-4) #{$battle} {
     &__link,
     &__label {
       &::before {
@@ -286,8 +274,8 @@
     }
   }
 
-  :global(.battles--round-5) #{$selector} {
-    &--l #{$selector} {
+  :global(.battles--round-5) #{$battle} {
+    &--l #{$battle} {
       &__link,
       &__label {
         &::before {
@@ -302,7 +290,7 @@
       }
     }
 
-    &--r #{$selector} {
+    &--r #{$battle} {
       &__link,
       &__label {
         &::before {
@@ -323,17 +311,17 @@
   }
 
   :global(.battles--round-6) {
-    #{$selector}--1 {
+    #{$battle}--1 {
       text-align: center;
 
-      &#{$selector}--m {
+      &#{$battle}--m {
         &::before {
           content: "1st:";
           font-weight: bold;
           color: #69B421;
         }
 
-        #{$selector} {
+        #{$battle} {
           &__link,
           &__label {
             &::before {
@@ -349,14 +337,14 @@
         }
       }
 
-      &#{$selector}--3rd {
+      &#{$battle}--3rd {
         &::before {
           content: "3rd:";
           font-weight: bold;
           color: #B20C1E;
         }
 
-        #{$selector} {
+        #{$battle} {
           &__link,
           &__label {
             &::before {

@@ -1,7 +1,6 @@
 <script>
     import { activeData, storedBracketData } from "./stores";
 
-    let activeVideo = '0AIKNWgOo6I'
     let youtubeVideo = null;
     let bracket;
 
@@ -33,7 +32,7 @@
     <iframe
         class="youtube__iframe"
         width="560" height="315"
-        title="Battle - {youtubeVideo.skater.left} Vs. {youtubeVideo.skater.right}"
+        title="Battle - {youtubeVideo.skater.left.name} Vs. {youtubeVideo.skater.right.name}"
         src="https://www.youtube.com/embed/{youtubeVideo.id}"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen>
@@ -55,7 +54,7 @@
 
     &__title {
       background: rgba(#000,.8);
-      color: #fff;
+      color: var(--text-color);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -73,7 +72,7 @@
       }
 
       span {
-        color: #6AAB1B;
+        color: var(--youtube-title-color, --accent-color);
       }
     }
 
@@ -83,7 +82,8 @@
       top: 1rem;
       height: 4rem;
       width: 4rem;
-      background: #6AAB1B;
+      background: var(--youtube-close-bgcolor, --accent-color);
+      color: var(--youtube-close-color, --primary-color);
       cursor: pointer;
       border-radius: 1rem;
 
@@ -96,7 +96,8 @@
       }
 
       &:hover {
-        background: white;
+        background: var(--youtube-primary-color);
+        color: var(--youtube-close-bgcolor, --accent-color);
       }
     }
 
@@ -104,17 +105,5 @@
       width: 100%;
       height: 100%;
     }
-  }
-
-  :global(.battle--batb-1) {
-    @include youtube-1($selector);
-  }
-
-  :global(.battle--batb-11) {
-    @include youtube-11($selector);
-  }
-
-  :global(.battle--batb-12) {
-    @include youtube-12($selector);
   }
 </style>
