@@ -1,0 +1,82 @@
+{
+  "data": {
+    "name": "BATB 4",
+    "nr": 4,
+    "title": "U.S. Vs. Them",
+    "date": "Jun 12, 2011",
+    "yt": "https://www.youtube.com/c/berrics/search?query=BATB4",
+    "ws": "https://theberrics.com/battle-at-the-berrics-4"
+  },
+  "videos": {
+    "Round 1": {
+      "left-top": [
+        "dl5-FeRV_mI|Mike Mo Capaldi Vs Lem Villemin|S SKATE|Mike Mo Capaldi",
+        "rcgHIpuwffc|Sean Malto-Jimmy Carlin Vs Felipe Gustavo|SKAT SKATE|Jimmy Carlin",
+        "DIw7cwIdU94|Dennis Busenitz Vs Wade Desarmo|- SKATE|Dennis Busenitz",
+        "kXeV_sGO_Ho|Eric Koston Vs Mark Appleyard|S SKATE|Eric Koston"
+      ],
+      "left-bottom": [
+        "MSceqejNT2s|Paul Rodriguez Vs Danny Cerezini|S SKATE|Paul Rodriguez",
+        "Mf-9zROHWKo|Peter Ramondetta Vs Rodrigo TX|SKATE SKAT|Rodrigo TX",
+        "fu8_zpzxtfw|Tommy Sandoval Vs Morgan Smith|SKATE -|Morgan Smith",
+        "YGPLkIjym_A|Tom Asta Vs Alex Mizurov|SKATE S|Alex Mizurov"
+      ],
+      "right-top": [
+        "9y21JM8EWkM|Ishod Wair Vs Shane O'neill|SKATE SKA|Shane O'neill",
+        "C2ocUpTsAq8|Davis Torgerson Vs Sewa Kroetkov|S SKATE|Davis Torgerson",
+        "AIPxg5lEDr8|Ronnie Creager Vs Enrique Lorenzo|- SKATE|Ronnie Creager",
+        "_qBSgth841U|Cory Kennedy Vs David Gonzalez|SKAT SKATE|Cory Kennedy"
+      ],
+      "right-bottom": [
+        "iZxajpwA09k|Chris Cole Vs Willow|- SKATE|Chris Cole",
+        "X2yYjxAl7DM|Billy Marks Vs Benny Fairfax|SKATE SKA|Benny Fairfax",
+        "1KkjI2vdki8|PJ Ladd Vs Albert Nyberg|SKAT SKATE|PJ Ladd",
+        "lE4fbyna8Vs|Torey Pudwill Vs Luan Oliveira|SKATE SKA|Luan Oliveira"
+      ]
+    },
+    "Round 2": {
+      "left-top": [
+        "M8yhQiHLnUg|Mike Mo Capaldi Vs Jimmy Carlin|- SKATE|Mike Mo Capaldi",
+        "iypxDwduas8|Dennis Busenitz Vs Eric Koston|SKATE SK|Eric Koston"
+      ],
+      "left-bottom": [
+        "vmXrTlA_c4E|Paul Rodriguez Vs Rodrigo TX|SKATE SK|Rodrigo TX",
+        "U9HHPdoTVjw|Morgan Smith Vs Alex Mizurov|SKAT SKATE|Morgan Smith"
+      ],
+      "right-top": [
+        "W6lfFfgZtcs|Shane O'neill Vs Davis Torgerson|SKATE SKA|Davis Torgerson",
+        "_Pp5WQWiNAA|Ronnie Creager Vs Cory Kennedy|SKA SKATE|Ronnie Creager"
+      ],
+      "right-bottom": [
+        "zSpPx5z0WL8|Chris Cole Vs Benny Fairfax|SK SKATE|Chris Cole",
+        "WxgXFXWPa6c|PJ Ladd Vs Luan Oliveira|SK SKATE|PJ Ladd"
+      ]
+    },
+    "Round 3": {
+      "left": [
+        "lbF6Q7tPzBA|Mike Mo Capaldi Vs Eric Koston|- SKATE|Mike Mo Capaldi",
+        "1VVVbPU0JAU|Rodrigo TX vs Morgan Smith|SKATE -|Morgan Smith"
+      ],
+      "right": [
+        "5JygzyiM3f0|Davis Torgerson Vs Ronnie Creager|SKAT SKATE|Davis Torgerson",
+        "QZj8p77LYqM|Chris Cole Vs PJ Ladd|SKATE S|PJ Ladd"
+      ]
+    },
+    "Finals": {
+      "left": [
+        "I5vovdq5z4o|Mike Mo Capaldi Vs Morgan Smith|SKATE SK|Morgan Smith"
+      ],
+      "right": [
+        "-GvHs5DGMYQ|Davis Torgerson Vs PJ Ladd|SKATE S|PJ Ladd"
+      ]
+    },
+    "Championship Battle": {
+      "middle": [
+        "iIvosZagjdU|Morgan Smith Vs PJ Ladd|- SKATE|Morgan Smith"
+      ],
+      "3rd-place": [
+        "PaKlD9e7VC0|Davis Torgerson Vs Mike Mo Capaldi|SKAT SKATE|Davis Torgerson"
+      ]
+    }
+  }
+}

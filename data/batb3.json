@@ -1,0 +1,82 @@
+{
+  "data": {
+    "name": "BATB 3",
+    "nr": 3,
+    "title": "Battle At The Berrics 3",
+    "date": "Oct 1, 2010",
+    "yt": "https://www.youtube.com/c/berrics/search?query=BATB3",
+    "ws": "https://theberrics.com/battle-at-the-berrics-3"
+  },
+  "videos": {
+    "Round 1": {
+      "left-top": [
+        "xRZjULW7aqY|Chris Cole Vs Joey Brezinski|SK SKATE|Chris Cole",
+        "PfvuV-oPB1w|Johnny Layton Vs Danny Garcia|SKA SKATE|Johnny Layton",
+        "uAolAZta1hw|Gilbert Crockett Vs Shane O'neill|SKATE SK|",
+        "8t3WRoSPfeg|Greg Lutzka Vs Eric Koston|SKATE S|Eric Koston"
+      ],
+      "left-bottom": [
+        "eBNKhbhzYSk|Benny Fairfax Vs Cesar Fernandez|SKA SKATE|Benny Fairfax",
+        "6FlWSZ65Yck|Josiah Gatlyn Vs PJ Ladd|SKATE S|PJ Ladd",
+        "6DhC8xwwvH0|Cory Kennedy Vs Jimmy Cao|SKAT SKATE|Cory Kennedy",
+        "edvoZ867xMw|Ryan Gallant-Kelly Hart Vs Erik Ellington|SK SKATE|"
+      ],
+      "right-top": [
+        "D6aOOZuZJXM|Mike Mo Capaldi Vs Peter Ramondetta|SKAT SKATE|Mike Mo Capaldi",
+        "EcpQLA3kOSk|Brandon Biebel Vs Mark Appleyard|SKATE SKAT|Mark Appleyard",
+        "M8E_LwaRZ6U|Marc Johnson Vs Rick Howard|SKA SKATE|Marc Johnson",
+        "e-Fj-HHQf-8|Marty Murawski Vs Torey Pudwill|SKATE SKAT|Torey Pudwill"
+      ],
+      "right-bottom": [
+        "rZIX-NsYmlI|Paul Rodriguez Vs Sean Malto|- SKATE|Paul Rodriguez",
+        "onLCnz77BXY|Chico Brenes Vs Dennis Busenitz|S SKATE|Chico Brenes",
+        "qqXuV8bxQ10|Billy Marks Vs David Gonzalez|SKATE SK|David Gonzalez",
+        "G0VTowb6hbc|Steve Berra Vs Heath Kirchart|SKATE S|Heath Kirchart"
+      ]
+    },
+    "Round 2": {
+      "left-top": [
+        "evuRkDCYyiI|Chris Cole Vs Johnny Layton|- SKATE|Chris Cole",
+        "LEecyEQ0Bh8|Shane O'neill Vs Eric Koston|SKAT SKATE|Shane O'neill"
+      ],
+      "left-bottom": [
+        "YtHl_g78so8|Benny Fairfax Vs PJ Ladd|SKATE -|PJ Ladd",
+        "tqT9PoePNDU|Cory Kennedy Vs Kelly Hart|S SKATE|Cory Kennedy"
+      ],
+      "right-top": [
+        "axLaH9zvkRI|Mike Mo Capaldi Vs Mark Appleyard|- SKATE|Mike Mo Capaldi",
+        "GgykIk9WGnw|Marc Johnson Vs Torey Pudwill|SKATE S|Torey Pudwill"
+      ],
+      "right-bottom": [
+        "maNSV3k-Ocs|Paul Rodriguez Vs Chico Brenes|- SKATE|Paul Rodriguez",
+        "_RiBy06w4kc|David Gonzalez Vs Heath Kirchart|SKA SKATE|David Gonzalez"
+      ]
+    },
+    "Round 3": {
+      "left": [
+        "3b7Wjlm_37A|Chris Cole Vs Shane O'neill|SKATE SKAT|Shane O'neill",
+        "qHS3Cp63mX4|PJ Ladd Vs Cory Kennedy|- SKATE|PJ Ladd"
+      ],
+      "right": [
+        "MS7OIzKL0FU|Mike Mo Capaldi Vs Torey Pudwill|SKATE S|Torey Pudwill",
+        "ZOWHSnnQNXg|Paul Rodriguez Vs David Gonzalez|S SKATE|Paul Rodriguez"
+      ]
+    },
+    "Finals": {
+      "left": [
+        "8r83UjKi-L0|Shane O'neill Vs PJ Ladd|SKATE -|PJ Ladd"
+      ],
+      "right": [
+        "9Vs0XPMzTds|Torey Pudwill Vs Paul Rodriguez|SKATE -|Paul Rodriguez"
+      ]
+    },
+    "Championship Battle": {
+      "middle": [
+        "WI1Sd5ikwOc|PJ Ladd Vs Paul Rodriguez|SKATE SKAT|Paul Rodriguez"
+      ],
+      "3rd-place": [
+        "MrryWODC6Oo|Shane O'neill Vs Torey Pudwill|SK SKATE|Shane O'neill"
+      ]
+    }
+  }
+}

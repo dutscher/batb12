@@ -1,0 +1,82 @@
+{
+  "data": {
+    "name": "BATB X",
+    "nr": 10,
+    "title": "Best of the Best",
+    "date": "Jul 1, 2017",
+    "yt": "https://www.youtube.com/c/berrics/search?query=BATBX",
+    "ws": "https://theberrics.com/battle-at-the-berrics-x"
+  },
+  "videos": {
+    "Round 1": {
+      "left-top": [
+        "Fdlo8V8Eczs|Chris Cole vs. Dennis Busenitz|SK SKATE|Chris Cole",
+        "skOinAwPGhE|Nick Tucker vs. Eric Koston|SK SKATE|Nick Tucker",
+        "HpUlUwGZZEY|Louie Lopez vs. Sean Malto|SKATE SKAT|Sean Malto",
+        "z_2PI5VNKOs|Paul Rodriguez vs. Chris Colbourn|SKATE SKA|Chris Colbourn"
+      ],
+      "left-bottom": [
+        "DxB-EGpIK6U|Luan Oliveira vs. Torey Pudwill|S SKATE|Luan Oliveira",
+        "MJCwJyvAwfw|Felipe Gustavo vs. Blake Carpenter|SK SKATE|Felipe Gustavo",
+        "s5cY6XQ0lqQ|Tom Asta vs. Youness Amrani|- SKATE|Tom Asta",
+        "KznlxfbsaC8|Diego Najera vs. Chris Joslin|SKATE SKA|Chris Joslin"
+      ],
+      "right-top": [
+        "IcFPh2nrGJU|Sewa Kroetkov vs. Michael Sommer|- SKATE|Sewa Kroetkov",
+        "cmWgcsizAsU|Cody Cepeda vs. Micky Papa|SKAT SKATE|Cody Cepeda",
+        "MBeIaUvna0s|Walker Ryan vs. Will Fyock|SKATE -|Will Fyock",
+        "GHadxsQdBL0|Carlos Ribeiro vs. Morgan Smith|SKATE S|Morgan Smith"
+      ],
+      "right-bottom": [
+        "r9J8FJQCdx0|Shane O'neill vs. Davis Torgerson|S SKATE|Shane O'neill",
+        "qzPaHEmje84|Ishod Wair vs. Miles Silvas|S SKATE|Ishod Wair",
+        "BMFZz41gQuo|Trent McClung vs. Moose|SKATE SKAT|Moose",
+        "vH-02npY7OU|PJ Ladd vs. Billy Marks-The Legion of Doom|SKA SKATE|PJ Ladd"
+      ]
+    },
+    "Round 2": {
+      "left-top": [
+        "skN2QeOXlak|Chris Cole vs. Nick Tucker|SKATE SKA|Nick Tucker",
+        "uqx7wPH8tJ8|Sean Malto vs. Chris Colbourn|SKAT SKATE|Sean Malto"
+      ],
+      "left-bottom": [
+        "3kY2qf7NrkE|Luan Oliveira vs. Felipe Gustavo|SK SKATE|Luan Oliveira",
+        "xMqmfIdBtdU|Tom Asta vs. Chris Joslin|SKATE SK|Chris Joslin"
+      ],
+      "right-top": [
+        "Cr1Ob-cTHwk|Sewa Kroetkov vs. Cody Cepeda|SK SKATE|Sewa Kroetkov",
+        "KvRJjTsoCqs|Will Fyock vs. Morgan Smith|SKAT SKATE|Will Fyock"
+      ],
+      "right-bottom": [
+        "1KXTCv1Uxpk|Shane O'Neill vs. Ishod Wair|- SKATE|Shane O'Neill",
+        "a23Di-vQSg8|Moose vs. PJ Ladd|SKATE SKA|PJ Ladd"
+      ]
+    },
+    "Round 3": {
+      "left": [
+        "7EAkSOTXJLg|Nick Tucker vs. Sean Malto|SK SKATE|Nick Tucker",
+        "BcMFshZ5ZYM|Luan Oliveira vs. Chris Joslin|SKATE S|Chris Joslin"
+      ],
+      "right": [
+        "5i-7hcsQstQ|Sewa Kroetkov vs. Will Fyock|S SKATE|Sewa Kroetkov",
+        "QkX7YUxIBQo|Shane O'Neill vs. PJ Ladd|SKA SKATE|Shane O'Neill"
+      ]
+    },
+    "Finals": {
+      "left": [
+        "4voWRDVVtbM|Nick Tucker vs. Chris Joslin|SKATE SK|Chris Joslin"
+      ],
+      "right": [
+        "K9tg8oYHf0g|Sewa Kroetkov vs. Shane O'neill|SKAT SKATE|Sewa Kroetkov"
+      ]
+    },
+    "Championship Battle": {
+      "middle": [
+        "DJkWP8e2Ghw|Chris Joslin vs. Sewa Kroetkov|SKAT SKATE|Chris Joslin"
+      ],
+      "3rd-place": [
+        "z-_rePTZOJU|Nick Tucker vs Shane O'neill|SKATE SK|Shane O'neill"
+      ]
+    }
+  }
+}

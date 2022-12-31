@@ -1,0 +1,67 @@
+{
+  "data": {
+    "name": "BATQ",
+    "title": "Battle at the Quarantine",
+    "date": "Mar 10, 2020",
+    "yt": "https://www.youtube.com/playlist?list=PLmxvVi4Ors7Y_Zoa9FRYyZ7SwmK8e_VDz",
+    "ws": "https://theberrics.com/series/battle-at-the-berrics-12",
+    "img": "assets/table-12.jpg|1669x929"
+  },
+  "videos": {
+    "Round 1": {
+      "left-top": [
+        "-|-|- -|-"
+      ],
+      "left-bottom": [
+        "-|-|- -|-"
+      ],
+      "right-top": [
+        "-|-|- -|-"
+      ],
+      "right-bottom": [
+        "-|-|- -|-"
+      ]
+    },
+    "Round 2": {
+      "left-top": [
+        "yNNWR7Qv01Y|Chris Joslin Vs. TJ Rogers|SKATE SKA|TJ Rogers",
+        "-|-|- -|-"
+      ],
+      "left-bottom": [
+        "-|-|- -|-"
+      ],
+      "right-top": [
+        "-|-|- -|-"
+      ],
+      "right-bottom": [
+        "-|-|- -|-"
+      ]
+    },
+    "Round 3": {
+      "left": [
+        "-|-|- -|-"
+      ],
+      "right": [
+        "-|-|- -|-"
+      ]
+    },
+    "Finals": {
+      "left": [
+        "-|-|- -|-",
+        "-|-|- -|-"
+      ],
+      "right": [
+        "-|-|- -|-",
+        "-|-|- -|-"
+      ]
+    },
+    "Championship Battle": {
+      "middle": [
+        "-|-|- -|-"
+      ],
+      "3rd-place": [
+        "-|-|- -|-"
+      ]
+    }
+  }
+}

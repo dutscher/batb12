@@ -1,0 +1,82 @@
+{
+  "data": {
+    "name": "BATB 8",
+    "nr": 8,
+    "title": "Battle At The Berrics 8",
+    "date": "Jun 29, 2015",
+    "yt": "https://www.youtube.com/c/berrics/search?query=BATB8",
+    "ws": "https://theberrics.com/battle-at-the-berrics-8"
+  },
+  "videos": {
+    "Round 1": {
+      "left-top": [
+        "Ps_sg26ERso|Sean Malto Vs Matt Berger|SKATE SK|Matt Berger",
+        "vMM29C7VxQ0|Trent McClung Vs Chaz Ortiz|SKATE SK|Chaz Ortiz",
+        "AKxHQn994OI|Paul Rodriguez Vs Spencer Brown|SK SKATE|Paul Rodriguez",
+        "czdJvyWUqxY|Sewa Kroetkov Vs Torey Pudwill|SKAT SKATE|Sewa Kroetkov"
+      ],
+      "left-bottom": [
+        "y6kP6yzGWe4|Miles Silvas Vs Eric Koston|SKATE SKAT|Eric Koston",
+        "qZfUvwnWULQ|PJ Ladd Vs Ishod Wair|SKAT SKATE|PJ Ladd",
+        "wf-9iVHaXBo|Shaun Rodriguez Vs Tom Asta|SKATE -|Tom Asta",
+        "lzZG66DCer0|Andrew Reynolds Vs Cyril Jackson|SKATE SKAT|Cyril Jackson"
+      ],
+      "right-top": [
+        "z_TZo60nCXU|Chris Cole Vs Moose|SKATE SK|Moose",
+        "gP-_TCuSh50|Shane O'neill Vs Louie Lopez|- SKATE|Shane O'neill",
+        "FxVqx54J3g4|Felipe Gustavo Vs Will Fyock|SKATE SKAT|Will Fyock",
+        "PQTHWFUfjVk|Chris Joslin Vs Kevin Ramsay|SK SKATE|Chris Joslin"
+      ],
+      "right-bottom": [
+        "lmVAo-PwtRE|Carlos Ribeiro Vs Morgan Smith|SKATE SKAT|Morgan Smith  ",
+        "-FM7o-WA7U8|Luan Oliveira Vs Trevor McClung|- SKATE|Luan Oliveira",
+        "E8r9I1KDw24|Cody Cepeda Vs Mike Piwowar|SKAT SKATE|Cody Cepeda",
+        "tN7At4FPicQ|Chris Chann Vs Bastien Salabanzi|- SKATE|Chris Chann"
+      ]
+    },
+    "Round 2": {
+      "left-top": [
+        "FkqoDnRZDzY|Matt Berger Vs Chaz Ortiz|- SKATE|Matt Berger",
+        "Q3sD3jwH9FE|Paul Rodriguez Vs Sewa Kroetkov|SKATE SK|Sewa Kroetkov"
+      ],
+      "left-bottom": [
+        "XmKLJg_ZuLs|Eric Koston Vs PJ Ladd|S SKATE|PJ Ladd",
+        "kGLx0am4Qfs|Tom Asta Vs Cyril Jackson|SKAT SKATE|Tom Asta"
+      ],
+      "right-top": [
+        "b7_UiWSVBGs|Moose Vs Shane O'neill|SKATE -|Shane O'neill",
+        "s-zi-EqtFZA|Will Fyock Vs Chris Joslin|S SKATE|Will Fyock"
+      ],
+      "right-bottom": [
+        "JckLtBh6gQI|Morgan Smith Vs Luan Oliveira|SKATE SKAT|Luan Oliveira",
+        "D-tXdJFIzjY|Cody Cepeda Vs Chris Chann|- SKATE|Cody Cepeda"
+      ]
+    },
+    "Round 3": {
+      "left": [
+        "eD3MGBM47lA|Matt Berger Vs Sewa Kroetkov|SKATE S|Sewa Kroetkov",
+        "d41HdwIig-M|PJ Ladd Vs Tom Asta|SKATE SKAT|Tom Asta"
+      ],
+      "right": [
+        "1VqJhx4Mbak|Shane O'neill Vs Will Fyock|SKA SKATE|Shane O'neill",
+        "Qck_y2FaP_E|Luan Oliveira Vs Cody Cepeda|SKATE SKAT|Cody Cepeda"
+      ]
+    },
+    "Finals": {
+      "left": [
+        "l2YtclKTLd0|Sewa Kroetkov Vs Tom Asta|S SKATE|Sewa Kroetkov"
+      ],
+      "right": [
+        "eFwOTg4jbDg|Shane O'neill Vs Cody Cepeda|- SKATE|Shane O'neill"
+      ]
+    },
+    "Championship Battle": {
+      "middle": [
+        "QPvDy2-2SBo|Shane O'neill Vs Sewa Kroetkov|SKATE -|Sewa Kroetkov"
+      ],
+      "3rd-place": [
+        "EExTL3HaQtI|Cody Cepeda Vs Tom Asta|- SKATE|Cody Cepeda"
+      ]
+    }
+  }
+}
